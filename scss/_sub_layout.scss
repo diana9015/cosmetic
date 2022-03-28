@@ -1,0 +1,402 @@
+@charset "UTF-8";
+#header_sub {
+  width: 100%;
+  background: $BkColor;
+  height: 150px;
+
+  .mobilenav {
+    display: none;
+    position: absolute;
+    top: 5%;
+    right: 7%;
+
+    .btnCall {
+      position: absolute;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+    }
+    .btnCall::before {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: white;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      transition: 0.5s 0s, transform 0.5s 0.5s;
+    }
+
+    .btnCall::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: white;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      transition: 0.5s 0s, transform 0.5s 0.5s;
+    }
+
+    .btnCall span {
+      background: white;
+      height: 2px;
+      position: absolute;
+      width: 100%;
+      top: calc(50% - 1px);
+      text-indent: -9999px;
+    }
+
+    .btnCall:hover::after {
+      transform: rotate(-45deg);
+      bottom: calc(50% - 1px);
+    }
+
+    .btnCall:hover::before {
+      transform: rotate(45deg);
+      top: calc(50% - 1px);
+    }
+
+    .btnCall:hover span {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+
+  .inner {
+    width: 1180px;
+    margin: 0 auto;
+
+    .wrap {
+      width: 100%;
+
+      position: relative;
+      z-index: 6;
+      nav {
+        .webnav {
+          width: 1080px;
+          height: 100%;
+          margin: 0 auto;
+          padding-top: 29px;
+          position: relative;
+          .top_nav {
+            width: 100%;
+            height: 50px;
+
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+
+            &:after {
+              content: "";
+              display: block;
+              clear: both;
+            }
+
+            ul li {
+              float: left;
+              margin-right: 20px;
+
+              a {
+                color: white;
+                font: bold 17px/1 "arial";
+                transition: 0.5s;
+              }
+              a:hover {
+                color: $Hovercolor;
+              }
+
+              &:nth-of-type(2) {
+                margin-right: 0;
+              }
+            }
+
+            h1 {
+              margin: 0 auto;
+              padding-top: 10px;
+              padding-right: 15px;
+              a {
+                font: bold 50px/1px "arial";
+                color: white;
+                transition: 0.5s;
+
+                &:hover {
+                  color: $Hovercolor;
+                }
+              }
+            }
+          }
+
+          .centernav {
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            padding-left: 6%;
+
+            &:after {
+              content: "";
+              display: block;
+              clear: both;
+            }
+
+            ul {
+              height: 100%;
+              text-align: center;
+              li {
+                margin-right: 20px;
+                text-align: center;
+                display: inline;
+
+                a {
+                  color: white;
+                  transition: 0.5s;
+                  font: bold 17px/1 "arial";
+                }
+
+                a:hover {
+                  color: $Hovercolor;
+                }
+
+                &:nth-of-type(3) {
+                  margin-right: 0px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.content {
+  width: 100%;
+  padding: 0 0 150px;
+
+  .sub_visual {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 100px;
+    background: gray;
+  }
+  .inner {
+    width: 1180px;
+    margin: 0 auto;
+    min-height: 500px;
+
+    h1 {
+      font: normal 50px/1 "arial";
+      color: #000;
+      margin: 100px 0;
+
+      span {
+        font: normal 20px/1 "맑은 고딕";
+        color: #aaa;
+
+        &::before {
+          content: "";
+          margin-right: 20px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+#footer_sub {
+  width: 100%;
+  padding: 100px 0;
+  background: #444;
+
+  .inner {
+    width: 1180px;
+    margin: 0 auto;
+
+    h1 {
+      font: bold 24px/1 "arial";
+      color: $Strongcolor;
+      text-align: center;
+    }
+
+    p {
+      font: 12px/1 "arial";
+      color: #777;
+      padding-top: 10px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  #header_sub {
+    .inner {
+      width: 100%;
+
+      .wrap {
+        nav {
+          padding-left: 4%;
+          padding-right: 4%;
+          .webnav {
+            width: 100%;
+            .top_nav {
+              ul li {
+                a {
+                  font: normal 15px/1 "arial";
+                }
+              }
+
+              h1 {
+                a {
+                  font: bold 40px/1 "aria";
+                }
+              }
+            }
+
+            .centernav {
+              width: 100%;
+              ul {
+                li {
+                  a {
+                    font: normal 14px/1 "arial";
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    width: 100%;
+    padding: 0 0 150px;
+
+    .sub_visual {
+      width: 100%;
+      height: 250px;
+      background: #bbb;
+      margin-bottom: 100px;
+    }
+    .inner {
+      width: 100%;
+      margin: 0 auto;
+      min-height: 500px;
+
+      h1 {
+        font: normal 50px/1 "arial";
+        color: #000;
+        margin-bottom: 60px;
+
+        span {
+          font: normal 20px/1 "맑은 고딕";
+          color: #aaa;
+
+          &::before {
+            content: "/";
+            margin-right: 20px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  #footer_sub {
+    width: 100%;
+    padding: 100px 0;
+    background: #444;
+    .inner {
+      width: 100%;
+      margin: 0 auto;
+
+      h1 {
+        font: bold 24px/1 "arial";
+        color: $Strongcolor;
+        text-align: center;
+      }
+
+      p {
+        font: 12px/1 "arial";
+        color: #777;
+        padding-top: 10px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  #header_sub {
+    .mobilenav {
+      display: block;
+      z-index: 10;
+    }
+    .inner {
+      width: 100%;
+
+      .wrap {
+        nav {
+          padding-left: 3%;
+          padding-right: 3%;
+
+          .webnav {
+            width: 100%;
+            padding-top: 20px;
+            .top_nav {
+              ul li {
+                display: none;
+                a {
+                  font: normal 15px/1 "arial";
+                }
+              }
+
+              h1 {
+                a {
+                  font: bold 40px/1 "aria";
+                }
+              }
+            }
+
+            .centernav {
+              width: 100%;
+              padding-left: 0px;
+              padding-top: 10px;
+              ul {
+                li {
+                  a {
+                    font: normal 14px/1 "arial";
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #footer_sub {
+    width: 100%;
+    padding: 100px 0;
+    background: #444;
+    .inner {
+      width: 100%;
+      margin: 0 auto;
+
+      h1 {
+        font: bold 24px/1 "arial";
+        color: #777;
+        text-align: center;
+      }
+
+      p {
+        font: 12px/1 "arial";
+        color: #777;
+        padding-top: 10px;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.aboutus {
+  .sub_visual {
+  }
+  .inner {
+    .innertop {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      border-bottom: 1px dotted $BkColor;
+      padding-bottom: 100px;
+      p {
+        font: bold 20px/1 "Voces", cursive;
+        text-align: center;
+        color: $BkColor;
+      }
+      h1 {
+        font: normal 25px/1.2 "Voces", cursive;
+        text-align: center;
+        color: $BkColor;
+        display: inline;
+      }
+
+      h2 {
+        font: normal 25px/1 "Voces", cursive;
+        text-align: center;
+        color: $BkColor;
+        display: inline;
+      }
+    }
+  }
+}

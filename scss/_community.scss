@@ -1,0 +1,95 @@
+.community {
+  .sub_visual {
+  }
+
+  .inner {
+    table {
+      width: 100%;
+      border-top: 5px solid rgb(233, 232, 232);
+      padding-top: 2px;
+
+      tr {
+        border: 1px solid gray;
+
+        th {
+          background: rgb(243, 243, 243);
+
+          padding: 20px 0;
+        }
+
+        td {
+          text-align: center;
+          color: teal;
+          border-bottom: 1px solid #ddd;
+          &:nth-of-type(2) {
+            text-align: left;
+            padding: 20px 10px;
+          }
+
+          a {
+            color: teal;
+          }
+
+          :hover {
+            color: $Strongcolor;
+          }
+        }
+      }
+    }
+
+    .pagination {
+      width: 100%;
+      text-align: center;
+      padding: 20px 30%;
+
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .prev {
+        float: left;
+        display: block;
+        background: white;
+        font: 12px/30px "arial";
+        color: black;
+        text-align: center;
+
+        :hover {
+          color: $Strongcolor;
+        }
+      }
+      .next {
+        float: right;
+        display: block;
+        background: white;
+        font: 12px/30px "arial";
+        color: black;
+        text-align: center;
+
+        :hover {
+          color: $Strongcolor;
+        }
+      }
+
+      .numbers {
+        display: inline-block;
+        font-size: 0;
+
+        a {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          font: 12px/30px "arial";
+          color: black;
+          margin: 0 5px;
+          transition: 0.5s;
+
+          &:hover {
+            border: 1px solid gray;
+          }
+        }
+      }
+    }
+  }
+}
