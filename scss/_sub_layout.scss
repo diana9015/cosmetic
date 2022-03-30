@@ -1,8 +1,8 @@
 @charset "UTF-8";
 #header_sub {
   width: 100%;
-  background: $BkColor;
-  height: 150px;
+  background: $Hovercolor;
+  height: 140px;
 
   .mobilenav {
     display: none;
@@ -103,7 +103,7 @@
                 transition: 0.5s;
               }
               a:hover {
-                color: $Hovercolor;
+                color: $BkColor;
               }
 
               &:nth-of-type(2) {
@@ -121,7 +121,7 @@
                 transition: 0.5s;
 
                 &:hover {
-                  color: $Hovercolor;
+                  color: $BkColor;
                 }
               }
             }
@@ -155,7 +155,7 @@
                 }
 
                 a:hover {
-                  color: $Hovercolor;
+                  color: $BkColor;
                 }
 
                 &:nth-of-type(3) {
@@ -178,7 +178,7 @@
     width: 100%;
     height: 300px;
     margin-bottom: 100px;
-    background: gray;
+    background: $DkColor;
   }
   .inner {
     width: 1180px;

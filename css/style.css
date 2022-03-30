@@ -50,8 +50,8 @@ font-family: 'Voces', cursive;
 */
 #header_sub {
   width: 100%;
-  background: #675c5c;
-  height: 150px;
+  background: #8ec0c1;
+  height: 140px;
 }
 #header_sub .mobilenav {
   display: none;
@@ -143,7 +143,7 @@ font-family: 'Voces', cursive;
   transition: 0.5s;
 }
 #header_sub .inner .wrap nav .webnav .top_nav ul li a:hover {
-  color: #e7dfdf;
+  color: #5a5151;
 }
 #header_sub .inner .wrap nav .webnav .top_nav ul li:nth-of-type(2) {
   margin-right: 0;
@@ -159,7 +159,7 @@ font-family: 'Voces', cursive;
   transition: 0.5s;
 }
 #header_sub .inner .wrap nav .webnav .top_nav h1 a:hover {
-  color: #e7dfdf;
+  color: #5a5151;
 }
 #header_sub .inner .wrap nav .webnav .centernav {
   height: 100%;
@@ -188,7 +188,7 @@ font-family: 'Voces', cursive;
   font: bold 17px/1 "arial";
 }
 #header_sub .inner .wrap nav .webnav .centernav ul li a:hover {
-  color: #e7dfdf;
+  color: #5a5151;
 }
 #header_sub .inner .wrap nav .webnav .centernav ul li:nth-of-type(3) {
   margin-right: 0px;
@@ -202,7 +202,7 @@ font-family: 'Voces', cursive;
   width: 100%;
   height: 300px;
   margin-bottom: 100px;
-  background: gray;
+  background: #383434;
 }
 .content .inner {
   width: 1180px;
@@ -235,7 +235,7 @@ font-family: 'Voces', cursive;
 }
 #footer_sub .inner h1 {
   font: bold 24px/1 "arial";
-  color: #e7dede;
+  color: #e7f4f7;
   text-align: center;
 }
 #footer_sub .inner p {
@@ -310,7 +310,7 @@ font-family: 'Voces', cursive;
   }
   #footer_sub .inner h1 {
     font: bold 24px/1 "arial";
-    color: #e7dede;
+    color: #e7f4f7;
     text-align: center;
   }
   #footer_sub .inner p {
@@ -400,7 +400,7 @@ font-family: 'Voces', cursive;
   color: teal;
 }
 .community .inner table tr td :hover {
-  color: #e7dede;
+  color: #e7f4f7;
 }
 .community .inner .pagination {
   width: 100%;
@@ -421,7 +421,7 @@ font-family: 'Voces', cursive;
   text-align: center;
 }
 .community .inner .pagination .prev :hover {
-  color: #e7dede;
+  color: #e7f4f7;
 }
 .community .inner .pagination .next {
   float: right;
@@ -432,7 +432,7 @@ font-family: 'Voces', cursive;
   text-align: center;
 }
 .community .inner .pagination .next :hover {
-  color: #e7dede;
+  color: #e7f4f7;
 }
 .community .inner .pagination .numbers {
   display: inline-block;
@@ -463,7 +463,7 @@ font-family: 'Voces', cursive;
   background: white;
 }
 .join .inner fieldset h2 {
-  color: #b09d9d;
+  color: #568d9b;
   size: 90px;
   font-weight: 700;
 }
@@ -485,7 +485,7 @@ font-family: 'Voces', cursive;
   /*글씨 크키가 조절이 안됨*/
 }
 .join .inner fieldset table caption .h {
-  color: #b09d9d;
+  color: #568d9b;
   size: 90px;
   font-weight: 700;
 }
@@ -535,45 +535,151 @@ font-family: 'Voces', cursive;
   color: pink;
 }
 
-.department .inner {
-  width: 1180px;
+.information .inner {
+  width: 1080px;
   margin: 0 auto;
 }
-.department .inner .innertop {
+.information .inner .innertop {
   width: 100%;
   height: 100%;
   text-align: center;
-  border-bottom: 1px dotted #675c5c;
+  border-bottom: 1px dotted #5a5151;
   padding-bottom: 100px;
 }
-.department .inner .innertop p {
-  font: normal 17px/1 "Merriweather", serif;
+.information .inner .innertop p {
+  font: normal 17px/1 "Voces", cursive;
   text-align: center;
-  color: #e7dede;
+  color: #383434;
 }
-.department .inner .innertop h1 {
-  font: normal 30px/1.2 "Merriweather", serif;
+.information .inner .innertop h1 {
+  font: normal 30px/1.2 "Voces", cursive;
   text-align: center;
   display: inline;
+  color: #5a5151;
 }
-.department .inner .innertop h2 {
-  font: normal 30px/1 "Merriweather", serif;
+.information .inner .innertop h2 {
+  font: normal 30px/1 "Voces", cursive;
   text-align: center;
-  color: #e7dede;
+  color: #383434;
   display: inline;
 }
-.department .inner .division {
+.information .inner .contwrap {
+  width: 100%;
+  margin: 0 auto;
+}
+.information .inner .contwrap .pictures {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: white;
+  padding-top: 50px;
+}
+.information .inner .contwrap .pictures::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.information .inner .contwrap .pictures .item {
+  display: inline-block;
+  float: left;
+  padding: 5px;
+  margin: 3px;
+  border: 1px solid #d1cfcf;
+}
+.information .inner .contwrap .pictures .item a {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+.information .inner .contwrap .pictures .item .pic img {
+  width: 100%;
+  height: 100%;
+}
+.information .inner .contwrap .pictures .item p {
+  padding: 5px;
+  text-align: center;
+  color: #383434;
+  font: bold 15px/1 "Voces", cursive;
+}
+.information .inner .contwrap .pictures .item .profile {
+  background: white;
+}
+.information .inner .contwrap .pictures .item .profile img {
+  border-radius: 10%;
+}
+.information .inner .contwrap .pictures .item .profile span {
+  color: #383434;
+}
+
+@media screen and (max-width: 1179px) {
+  .department .inner {
+    width: 100%;
+  }
+  .department .inner .division {
+    background: url(../img/images.jpg) no-repeat center;
+    width: 100%;
+    height: 800px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .department .inner {
+    width: 100%;
+    /*호버가 안걸리는 이유?*/
+  }
+  .department .inner h1 {
+    font-size: 40px;
+  }
+  .department .inner .division {
+    height: auto;
+    background: none;
+  }
+  .department .inner .division .div_tree {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+    transition: 3s;
+  }
+}
+.aboutus .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.aboutus .inner .innertop {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-bottom: 1px dotted #5a5151;
+  padding-bottom: 100px;
+}
+.aboutus .inner .innertop p {
+  font: normal 17px/1 "Voces", cursive;
+  text-align: center;
+  color: #383434;
+}
+.aboutus .inner .innertop h1 {
+  font: normal 30px/1.2 "Voces", cursive;
+  text-align: center;
+  display: inline;
+  color: #5a5151;
+}
+.aboutus .inner .innertop h2 {
+  font: normal 30px/1 "Voces", cursive;
+  text-align: center;
+  color: #383434;
+  display: inline;
+}
+.aboutus .inner .division {
   margin-top: 80px;
   background: url(../img/images.jpg) no-repeat center;
   width: 100%;
   height: 800px;
 }
-.department .inner .div_tree {
+.aboutus .inner .div_tree {
   position: absolute;
   top: -9999px;
   opacity: 0;
 }
-.department .inner .div_tree li span {
+.aboutus .inner .div_tree li span {
   margin-left: 50px;
   display: block;
   width: 25%;
@@ -587,11 +693,11 @@ font-family: 'Voces', cursive;
   border-radius: 20px;
   position: relative;
 }
-.department .inner .div_tree li span:hover {
+.aboutus .inner .div_tree li span:hover {
   background: #474747;
   transition: 0.8s;
 }
-.department .inner .div_tree li span::after {
+.aboutus .inner .div_tree li span::after {
   content: "";
   display: block;
   width: 1px;
@@ -601,16 +707,16 @@ font-family: 'Voces', cursive;
   top: 50px;
   left: 50px;
 }
-.department .inner .div_tree li ul li span {
+.aboutus .inner .div_tree li ul li span {
   transform: translateX(70px);
   background: #64b5fc;
 }
-.department .inner .div_tree li ul li span:hover {
+.aboutus .inner .div_tree li ul li span:hover {
   background: #474747;
   transition: 0.8s;
   color: white;
 }
-.department .inner .div_tree li ul li span::before {
+.aboutus .inner .div_tree li ul li span::before {
   content: "";
   display: block;
   height: 1px;
@@ -620,45 +726,45 @@ font-family: 'Voces', cursive;
   top: 50%;
   left: -20px;
 }
-.department .inner .div_tree li ul li:nth-of-type(1) span::after {
+.aboutus .inner .div_tree li ul li:nth-of-type(1) span::after {
   height: 0;
 }
-.department .inner .div_tree li ul li:nth-of-type(2) span::after {
+.aboutus .inner .div_tree li ul li:nth-of-type(2) span::after {
   height: 955px;
   background: gray;
 }
-.department .inner .div_tree li ul li ul li span {
+.aboutus .inner .div_tree li ul li ul li span {
   transform: translateX(140px);
   background: #baddfc;
   font: bold 13px/50px "arial";
   color: #0371f8;
 }
-.department .inner .div_tree li ul li ul li:nth-of-type(1) span::after {
+.aboutus .inner .div_tree li ul li ul li:nth-of-type(1) span::after {
   height: 115px;
   background: gray;
 }
-.department .inner .div_tree li ul li ul li:nth-of-type(2) span::after {
+.aboutus .inner .div_tree li ul li ul li:nth-of-type(2) span::after {
   height: 115px;
   background: gray;
 }
-.department .inner .div_tree li ul li ul li:nth-of-type(3) span::after {
+.aboutus .inner .div_tree li ul li ul li:nth-of-type(3) span::after {
   height: 115px;
   background: gray;
 }
-.department .inner .div_tree li ul li ul li:nth-of-type(4) span::after {
+.aboutus .inner .div_tree li ul li ul li:nth-of-type(4) span::after {
   height: 185px;
   background: gray;
 }
-.department .inner .div_tree li ul li ul li:nth-of-type(5) span::after {
+.aboutus .inner .div_tree li ul li ul li:nth-of-type(5) span::after {
   height: 45px;
   background: gray;
 }
-.department .inner .div_tree li ul li ul li ul li span {
+.aboutus .inner .div_tree li ul li ul li ul li span {
   transform: translateX(210px);
   background: #edf3f8;
   color: #0371f8;
 }
-.department .inner .div_tree li ul li ul li ul li span::after {
+.aboutus .inner .div_tree li ul li ul li ul li span::after {
   display: none;
 }
 
@@ -691,31 +797,6 @@ font-family: 'Voces', cursive;
     transition: 3s;
   }
 }
-.aboutus .inner .innertop {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  border-bottom: 1px dotted #675c5c;
-  padding-bottom: 100px;
-}
-.aboutus .inner .innertop p {
-  font: bold 20px/1 "Voces", cursive;
-  text-align: center;
-  color: #675c5c;
-}
-.aboutus .inner .innertop h1 {
-  font: normal 25px/1.2 "Voces", cursive;
-  text-align: center;
-  color: #675c5c;
-  display: inline;
-}
-.aboutus .inner .innertop h2 {
-  font: normal 25px/1 "Voces", cursive;
-  text-align: center;
-  color: #675c5c;
-  display: inline;
-}
-
 header {
   width: 100%;
   height: 100%;
@@ -820,7 +901,7 @@ header .visual .top_header .webnav .top_nav ul li a {
   transition: 0.5s;
 }
 header .visual .top_header .webnav .top_nav ul li a:hover {
-  color: #e7dfdf;
+  color: #383434;
 }
 header .visual .top_header .webnav .top_nav ul li:nth-of-type(2) {
   margin-right: 0;
@@ -835,7 +916,7 @@ header .visual .top_header .webnav .top_nav h1 a {
   transition: 0.5s;
 }
 header .visual .top_header .webnav .top_nav h1 a:hover {
-  color: #e7dfdf;
+  color: #383434;
 }
 header .visual .top_header .webnav .centernav {
   height: 100%;
@@ -864,7 +945,7 @@ header .visual .top_header .webnav .centernav ul li a {
   font: bold 17px/1 "arial";
 }
 header .visual .top_header .webnav .centernav ul li a:hover {
-  color: #e7dfdf;
+  color: #383434;
 }
 header .visual .top_header .webnav .centernav ul li:nth-of-type(3) {
   margin-right: 0px;
@@ -889,7 +970,7 @@ header .visual .inner a {
   display: inline-block;
   padding: 10px 40px;
   color: white;
-  background: #2a2424;
+  background: #383434;
   border: 1px solid #fff;
 }
 header .top {
@@ -908,18 +989,18 @@ header .top article {
   top: 50%;
   transform: translate(-150%, -50%);
   margin-right: 10px;
-  border: 8px solid #e7dede;
+  border: 8px solid #e7f4f7;
   float: left;
 }
 header .top article i {
   font-size: 30px;
   padding-top: 25px;
-  color: #675c5c;
+  color: #568d9b;
 }
 header .top article h3 {
   padding-top: 18px;
   font: bold 14px/1 "arial";
-  color: #2a2424;
+  color: #383434;
 }
 
 #content {
@@ -949,7 +1030,7 @@ header .top article h3 {
   width: 50%;
   height: 75%;
   margin-top: 5%;
-  background: #675c5c;
+  background: #568d9b;
   position: absolute;
   right: 0px;
   top: 0px;
@@ -983,7 +1064,7 @@ header .top article h3 {
   background-image: url(../img/set2.jpg);
 }
 #content .boxwrap .box2 .txt {
-  background: #675c5c;
+  background: #568d9b;
   width: 50%;
   height: 75%;
   margin-top: 5%;
@@ -1004,7 +1085,7 @@ header .top article h3 {
   width: 100%;
   height: 100%;
   padding: 20px 0 50px 0;
-  background: #2a2424;
+  background: #383434;
   position: relative;
 }
 #content .member .slider {
@@ -1120,13 +1201,13 @@ header .top article h3 {
   width: 100%;
 }
 #content .member .slider .btns li:hover {
-  background: #675c5c;
+  background: #568d9b;
 }
 
 #footer {
   width: 100%;
   padding: 100px 0;
-  background: #2a2424;
+  background: #383434;
   margin-top: 10%;
 }
 #footer .inner {
@@ -1135,12 +1216,12 @@ header .top article h3 {
 }
 #footer .inner h1 {
   font: bold 24px/1 "arial";
-  color: #e7dede;
+  color: #e7f4f7;
   text-align: center;
 }
 #footer .inner p {
   font: 12px/1 "arial";
-  color: #e7dede;
+  color: #e7f4f7;
   padding-top: 10px;
   text-align: center;
 }

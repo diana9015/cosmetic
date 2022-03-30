@@ -1,21 +1,3 @@
-//변수설정
-//document.querySelector("css선택자")
-//btnCall이라는 변수에 .btnCall을 담는다
-//menuMo라는 변수에 .menuMo를 담음
-const btnCall = document.querySelector(".btnCall");
-const menuMo = document.querySelector(".menuMo");
-
-//btnCall을 클릭했을 때
-btnCall.onclick = function (e) {
-  //링크이동금지
-  e.preventDefault();
-
-  //btnCall에 on이 있으면 제거, 없으면 추가
-  btnCall.classList.toggle("on");
-  //menuMo에 on이 있으면 제거, 없으면 추가
-  menuMo.classList.toggle("on");
-};
-
 //-------------------------------
 
 //fetch 구문 - 비동기로 데이터 요청하기
@@ -90,3 +72,33 @@ fetch(url)
 //   const close = pop.querySelector("span");
 //   if (e.target == close) e.target.closest("aside").remove();
 // });
+
+vid.addEventListener("click", (e) => createPop(e));
+//popup close버튼 클릭 이벤트 위임
+body.addEventListener("click", (e) => removePop(e));
+
+function createPop(e) {
+  e.preventDefault();
+
+  //a요소의 data-vid값을 받아야 하므로
+  //클릭한 요소의 부모태그가 a태그가 아니라면 중지
+  if (!e.target.closest("a")) return;
+  const vidId = e.target.closest("a").getAttribute("data-vid");
+
+  let pop = document.createElement("aside");
+  pop.innerHTML = `
+                    <iframe src="https://youtube.com/embed/${vidId}" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
+                    <span class="btnClose">close</span>
+    `;
+
+  body.append(pop);
+}
+
+function removePop(e) {
+  const pop = document.querySelector("aside");
+  if (pop == null) return;
+  const close = pop.querySelector("span");
+  if (e.target == close) e.target.closest("aside").remove();
+}
+
+////////----------------------------------------------------------------

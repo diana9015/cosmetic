@@ -5,7 +5,7 @@
 @import "sub_layout.scss";
 @import "community.scss";
 @import "join.scss";
-@import "department.scss";
+@import "information.scss";
 @import "aboutus.scss";
 
 //미디어쿼리 설정
@@ -121,7 +121,7 @@ header {
               transition: 0.5s;
             }
             a:hover {
-              color: $Hovercolor;
+              color: $DkColor;
             }
 
             &:nth-of-type(2) {
@@ -139,7 +139,7 @@ header {
               transition: 0.5s;
 
               &:hover {
-                color: $Hovercolor;
+                color: $DkColor;
               }
             }
           }
@@ -173,7 +173,7 @@ header {
               }
 
               a:hover {
-                color: $Hovercolor;
+                color: $DkColor;
               }
 
               &:nth-of-type(3) {
@@ -234,7 +234,7 @@ header {
       i {
         font-size: 30px;
         padding-top: 25px;
-        color: $BkColor;
+        color: $BgColor;
       }
 
       h3 {
@@ -273,7 +273,7 @@ header {
         width: 50%;
         height: 75%;
         margin-top: 5%;
-        background: $BkColor;
+        background: $BgColor;
         position: absolute;
         right: 0px;
         top: 0px;
@@ -310,7 +310,7 @@ header {
       }
 
       .txt {
-        background: $BkColor;
+        background: $BgColor;
         width: 50%;
         height: 75%;
         margin-top: 5%;
@@ -461,7 +461,7 @@ header {
             width: 100%;
           }
           &:hover {
-            background: $BkColor;
+            background: $BgColor;
           }
         }
       }
