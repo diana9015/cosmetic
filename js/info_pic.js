@@ -5,7 +5,7 @@ const pictures = frame.querySelector(".pictures");
 const base = "https://www.flickr.com/services/rest/?";
 const method_interest = "flickr.interestingness.getList";
 const key_pic = "cb146055654724fd0c43e0adccf73ba0";
-const per_page = 50;
+const per_page = 15;
 const url_pic = `${base}method=${method_interest}&api_key=${key_pic}&per_page=${per_page}&format=json&nojsoncallback=1`;
 const loading = document.querySelector(".loading");
 
