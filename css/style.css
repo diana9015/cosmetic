@@ -370,168 +370,8 @@ font-family: 'Voces', cursive;
     text-align: center;
   }
 }
-.community .inner table {
-  width: 100%;
-  border-top: 5px solid #e9e8e8;
-  padding-top: 2px;
-}
-.community .inner table tr {
-  border: 1px solid gray;
-}
-.community .inner table tr th {
-  background: #f3f3f3;
-  padding: 20px 0;
-}
-.community .inner table tr td {
-  text-align: center;
-  color: teal;
-  border-bottom: 1px solid #ddd;
-}
-.community .inner table tr td:nth-of-type(2) {
-  text-align: left;
-  padding: 20px 10px;
-}
-.community .inner table tr td a {
-  color: teal;
-}
-.community .inner table tr td :hover {
-  color: #d7e9ed;
-}
-.community .inner .pagination {
-  width: 100%;
-  text-align: center;
-  padding: 20px 30%;
-}
-.community .inner .pagination::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.community .inner .pagination .prev {
-  float: left;
-  display: block;
-  background: white;
-  font: 12px/30px "arial";
-  color: black;
-  text-align: center;
-}
-.community .inner .pagination .prev :hover {
-  color: #d7e9ed;
-}
-.community .inner .pagination .next {
-  float: right;
-  display: block;
-  background: white;
-  font: 12px/30px "arial";
-  color: black;
-  text-align: center;
-}
-.community .inner .pagination .next :hover {
-  color: #d7e9ed;
-}
-.community .inner .pagination .numbers {
-  display: inline-block;
-  font-size: 0;
-}
-.community .inner .pagination .numbers a {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  font: 12px/30px "arial";
-  color: black;
-  margin: 0 5px;
-  transition: 0.5s;
-}
-.community .inner .pagination .numbers a:hover {
-  border: 1px solid gray;
-}
-
-.join .sub_visual {
-  width: 100%;
-}
-.join .inner {
-  width: 1180px;
-}
-.join .inner fieldset {
-  padding: 20px;
-  width: 100%;
-  background: white;
-}
-.join .inner fieldset h2 {
-  color: #6ea3b0;
-  size: 90px;
-  font-weight: 700;
-}
-.join .inner fieldset #terms {
-  resize: none;
-  width: 100%;
-  height: 100px;
-  background: #ecf8f8;
-  color: #7f88b3;
-}
-.join .inner fieldset label[for=agree] {
-  font: bold 14px/1 "arial";
-  color: #666;
-}
-.join .inner fieldset table {
-  width: 100%;
-  border-top: #7f88b3 2px solid;
-  border-bottom: #7f88b3 2px solid;
-  /*글씨 크키가 조절이 안됨*/
-}
-.join .inner fieldset table caption .h {
-  color: #6ea3b0;
-  size: 90px;
-  font-weight: 700;
-}
-.join .inner fieldset table th {
-  background: #ecf8f8;
-  padding: 15px 20px;
-  font: bold 14px/1 "arial";
-  color: #666;
-}
-.join .inner fieldset table th input[type=submit],
-.join .inner fieldset table th input[type=reset] {
-  width: 150px;
-  height: 40px;
-  border: none;
-  background: #444;
-  font: bold 14px/1 "arial";
-  color: #fff;
-  margin: 0 10px;
-}
-.join .inner fieldset table th:last-child {
-  background: white;
-}
-.join .inner fieldset table td {
-  border-bottom: 1px solid #bbb;
-  background: #ffffff;
-  padding: 20px 20px;
-  font: bold 14px/1 "arial";
-  color: #444;
-}
-.join .inner fieldset table td input[type=text],
-.join .inner fieldset table td input[type=password] {
-  width: 90%;
-  height: 30px;
-}
-.join .inner fieldset table td input[type=password2] {
-  width: 90%;
-  height: 30px;
-}
-.join .inner fieldset table td label {
-  margin-right: 30px;
-}
-.join .inner fieldset table td input[type=checkbox],
-.join .inner fieldset table td input[type=radio] {
-  margin-right: 5px;
-  /*글씨가 조절이 안됨*/
-  font: bold 14px/1 "arial";
-  color: pink;
-}
-
 .information .inner {
-  width: 1080px;
+  width: 1180px;
   margin: 0 auto;
 }
 .information .inner .innertop {
@@ -693,7 +533,7 @@ aside .close {
   display: inline;
 }
 .aboutus .inner .division {
-  margin-top: 80px;
+  margin-top: 50px;
   background: url(../img/images.jpg) no-repeat center;
   width: 100%;
   height: 800px;
@@ -943,6 +783,246 @@ aside .close {
     transition: 3s;
   }
 }
+.community .inner table {
+  width: 100%;
+  border-top: 5px solid #e9e8e8;
+  padding-top: 2px;
+}
+.community .inner table tr {
+  border: 1px solid gray;
+}
+.community .inner table tr th {
+  background: #f3f3f3;
+  padding: 20px 0;
+}
+.community .inner table tr td {
+  text-align: center;
+  color: teal;
+  border-bottom: 1px solid #ddd;
+}
+.community .inner table tr td:nth-of-type(2) {
+  text-align: left;
+  padding: 20px 10px;
+}
+.community .inner table tr td a {
+  color: teal;
+}
+.community .inner table tr td :hover {
+  color: #d7e9ed;
+}
+.community .inner .pagination {
+  width: 100%;
+  text-align: center;
+  padding: 20px 30%;
+}
+.community .inner .pagination::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.community .inner .pagination .prev {
+  float: left;
+  display: block;
+  background: white;
+  font: 12px/30px "arial";
+  color: black;
+  text-align: center;
+}
+.community .inner .pagination .prev :hover {
+  color: #d7e9ed;
+}
+.community .inner .pagination .next {
+  float: right;
+  display: block;
+  background: white;
+  font: 12px/30px "arial";
+  color: black;
+  text-align: center;
+}
+.community .inner .pagination .next :hover {
+  color: #d7e9ed;
+}
+.community .inner .pagination .numbers {
+  display: inline-block;
+  font-size: 0;
+}
+.community .inner .pagination .numbers a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font: 12px/30px "arial";
+  color: black;
+  margin: 0 5px;
+  transition: 0.5s;
+}
+.community .inner .pagination .numbers a:hover {
+  border: 1px solid gray;
+}
+
+.contactus .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.contactus .inner .innertop {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-bottom: 1px dotted #5a5151;
+  padding-bottom: 100px;
+}
+.contactus .inner .innertop p {
+  font: normal 17px/1 "Voces", cursive;
+  text-align: center;
+  color: #383434;
+}
+.contactus .inner .innertop h1 {
+  font: normal 30px/1.2 "Voces", cursive;
+  text-align: center;
+  display: inline;
+  color: #5a5151;
+}
+.contactus .inner .innertop h2 {
+  font: normal 30px/1 "Voces", cursive;
+  text-align: center;
+  color: #383434;
+  display: inline;
+}
+.contactus .inner .contwrap {
+  width: 100%;
+  height: 100%;
+}
+.contactus .inner .contwrap article {
+  float: left;
+  width: 380px;
+  margin-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+.contactus .inner .contwrap article h3 {
+  color: #277a91;
+  margin-bottom: 22px;
+  font: bold 18px/1 "arial";
+}
+.contactus .inner .contwrap article p {
+  color: #383434;
+  margin-bottom: 5px;
+  font: bold 17px/1 "arial";
+}
+.contactus .inner .contwrap article:nth-of-type(3) {
+  margin-right: 0px;
+}
+.contactus .inner .contwrap article:nth-of-type(3) .wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contactus .inner .contwrap article:nth-of-type(3) .wrap a {
+  display: block;
+  font: bold 30px/1 "arial";
+  color: #383434;
+  margin-right: 10px;
+}
+.contactus .inner .contwrap article:nth-of-type(3) .wrap a:hover {
+  color: #277a91;
+}
+.contactus .inner .contwrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.contactus .inner .contwrap fieldset {
+  padding: 5%;
+  width: 100%;
+  height: 800px;
+  background: red;
+  border: 1px solid black;
+}
+.join .sub_visual {
+  width: 100%;
+}
+.join .inner {
+  width: 1180px;
+}
+.join .inner fieldset {
+  padding: 20px;
+  width: 100%;
+  background: white;
+}
+.join .inner fieldset h2 {
+  color: #6ea3b0;
+  size: 90px;
+  font-weight: 700;
+}
+.join .inner fieldset #terms {
+  resize: none;
+  width: 100%;
+  height: 100px;
+  background: #ecf8f8;
+  color: #7f88b3;
+}
+.join .inner fieldset label[for=agree] {
+  font: bold 14px/1 "arial";
+  color: #666;
+}
+.join .inner fieldset table {
+  width: 100%;
+  border-top: #7f88b3 2px solid;
+  border-bottom: #7f88b3 2px solid;
+  /*글씨 크키가 조절이 안됨*/
+}
+.join .inner fieldset table caption .h {
+  color: #6ea3b0;
+  size: 90px;
+  font-weight: 700;
+}
+.join .inner fieldset table th {
+  background: #ecf8f8;
+  padding: 15px 20px;
+  font: bold 14px/1 "arial";
+  color: #666;
+}
+.join .inner fieldset table th input[type=submit],
+.join .inner fieldset table th input[type=reset] {
+  width: 150px;
+  height: 40px;
+  border: none;
+  background: #444;
+  font: bold 14px/1 "arial";
+  color: #fff;
+  margin: 0 10px;
+}
+.join .inner fieldset table th:last-child {
+  background: white;
+}
+.join .inner fieldset table td {
+  border-bottom: 1px solid #bbb;
+  background: #ffffff;
+  padding: 20px 20px;
+  font: bold 14px/1 "arial";
+  color: #444;
+}
+.join .inner fieldset table td input[type=text],
+.join .inner fieldset table td input[type=password] {
+  width: 90%;
+  height: 30px;
+}
+.join .inner fieldset table td input[type=password2] {
+  width: 90%;
+  height: 30px;
+}
+.join .inner fieldset table td label {
+  margin-right: 30px;
+}
+.join .inner fieldset table td input[type=checkbox],
+.join .inner fieldset table td input[type=radio] {
+  margin-right: 5px;
+  /*글씨가 조절이 안됨*/
+  font: bold 14px/1 "arial";
+  color: pink;
+}
+
 header {
   width: 100%;
   height: 100%;
