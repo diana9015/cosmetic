@@ -5,7 +5,6 @@
 //.then(응답받은 데이터)
 //.then(응답받은 후의 로직)
 
-const body = document.querySelector("body");
 const content = body.querySelector(".content");
 const vid = content.querySelector(".vidinner");
 const key = "AIzaSyAe6OhSffw-vmxuH8EI06jlMQPu0gCV7xs";
