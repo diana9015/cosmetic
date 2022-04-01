@@ -1234,7 +1234,7 @@ header .popup {
   height: 180px;
   width: 360px;
 }
-header .popup i {
+header .popup a {
   position: absolute;
   color: white;
   right: 10px;
@@ -1257,7 +1257,7 @@ header .popup .inner p {
   font: normal 15px/1.1 "arial";
   color: white;
 }
-header .popup .inner > a {
+header .popup .inner a {
   display: block;
   color: white;
   width: 100%;

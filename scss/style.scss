@@ -224,7 +224,7 @@ header {
     height: 180px;
     width: 360px;
 
-    i {
+    a {
       position: absolute;
       color: white;
       right: 10px;
@@ -248,7 +248,7 @@ header {
         font: normal 15px/1.1 "arial";
         color: white;
       }
-      > a {
+      a {
         display: block;
         color: white;
         width: 100%;
