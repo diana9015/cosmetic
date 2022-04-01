@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>subpage layout</title>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f6a7a92468c6aa7b4ff183008e3efe08"></script>
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://kit.fontawesome.com/ec40d5cb2f.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="js/contactus.js"></script>
+  
   </head>
   <body>
     <header id="header_sub">
@@ -40,7 +43,7 @@
                 <ul>
                   <li><a href="#">Product</a></li>
                   <li><a href="community.html">Community</a></li>
-                  <li><a href="">Contact us</a></li>
+                  <li><a href="contactus.html">Contact us</a></li>
                 </ul>
               </div>
     
@@ -91,21 +94,22 @@
             <a href="#"><i class="fab fa-instagram-square"></i></a>
           </div>
         </article>
-    
+
+
       <fieldset>
+ 
         <form action="http://www.naver.com">
          <input type="text" class="name" name="name" placeholder="name">
          <input type="email" class="email"  name="email" placeholder="email">
-         <input type="textarea" class="message" name="message" placeholder="message">
+         <textarea width="100%" placeholder="comment here"></textarea>
          <input type="submit" class="submit" value="submit">
         </form>
-        
+        <div id="map"></div>
       </fieldset>
 
       </div>
     </div>
     </section>
-
 
 
     <footer id="footer_sub">
