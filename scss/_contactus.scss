@@ -35,45 +35,36 @@
     .contwrap {
       width: 100%;
       height: 100%;
+      margin-top: 100px;
 
       article {
         float: left;
         width: 380px;
+        height: 300px;
         margin-right: 20px;
-        padding-top: 50px;
-        padding-bottom: 120px;
+        padding: 5%;
         text-align: center;
+        background-color: $Strongcolor;
+        margin-bottom: 5%;
+
+        i {
+          color: $DkColor;
+          font-size: 40px;
+          padding: 10px 0;
+        }
         h3 {
-          color: $OrColor;
+          color: $DkColor;
           margin-bottom: 22px;
-          font: bold 18px/1 "arial";
+          font: bold 20px/1 "arial";
         }
         p {
           color: $DkColor;
-          margin-bottom: 5px;
-          font: bold 17px/1 "arial";
+          padding: 5px;
+          font: normal 17px/1 "arial";
         }
 
         &:nth-of-type(3) {
           margin-right: 0px;
-
-          .wrap {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-
-            a {
-              display: block;
-              font: bold 30px/1 "arial";
-              color: $DkColor;
-              margin-right: 10px;
-            }
-
-            a:hover {
-              color: $OrColor;
-            }
-          }
         }
       }
 
@@ -82,39 +73,84 @@
         display: block;
         clear: both;
       }
+    }
+
+    #map {
+      width: 100%;
+      height: 300px;
+      position: relative;
+      margin-bottom: 5%;
+    }
+
+    .contactform {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .txt {
+        width: 580px;
+        height: 100%;
+        padding: 7%;
+        .wrap {
+          width: 100%;
+          height: 100%;
+          i {
+            margin-right: 10px;
+            font-size: 32px;
+            color: $OrColor;
+          }
+        }
+        h3 {
+          font: bold 20px/1 "arial";
+          margin: 10px 0;
+        }
+        p {
+          font: normal 17px/1.2 "arial";
+        }
+      }
 
       fieldset {
-        padding: 8%;
-        width: 100%;
-        height: 100%;
-        box-shadow: 3px 2px 2px 2px lightgray;
-        border: 1px solid lightgray;
+        width: 580px;
+        background: white;
+        border-left: 1px solid $DkColor;
+        padding: 7%;
 
         input {
-          margin-bottom: 30px;
           width: 100%;
-          height: 50px;
+          height: 40px;
+          margin-bottom: 10px;
+          background: $Strongcolor;
+
+          border: none;
+
+          &:nth-of-type(3) {
+            background: $OrColor;
+            color: #fff;
+            width: 100px;
+            float: right;
+          }
+
           &::placeholder {
-            color: $DkColor;
-            font: normal 17px/1 "arial";
+            font: normal 15px/1 "arial";
+            color: $BkColor;
+            padding-left: 5px;
           }
         }
+
         textarea {
           width: 100%;
-          resize: none;
-          height: 120px;
-          padding-top: 13px;
+          height: 100%;
+          margin-bottom: 10px;
+          background: $Strongcolor;
+          left: 0px;
+          padding-top: 15px;
+          border: none;
 
           &::placeholder {
-            color: $DkColor;
-
-            font: normal 17px/1 "arial";
+            font: normal 15px/1 "arial";
+            color: $BkColor;
+            padding-left: 5px;
           }
-        }
-
-        #map {
-          width: 100%;
-          height: 300px;
         }
       }
     }

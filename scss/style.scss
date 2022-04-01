@@ -221,20 +221,19 @@ header {
     background: $OrColor;
     opacity: 0.8;
     padding: 10px;
-    height: 180px;
+    height: 200px;
     width: 360px;
 
-    a {
+    > a {
       position: absolute;
       color: white;
       right: 10px;
-      top: 8px;
+      top: 2px;
       font-size: 25px;
       font-style: normal;
     }
 
     .inner {
-      margin: 0 auto;
       padding: 8px;
       border: 1px solid white;
 
@@ -255,7 +254,10 @@ header {
         background: $BgColor;
         border: 1px solid #fff;
         text-align: center;
-        padding-bottom: 5px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 7px;
+        font: normal 14px "arial";
       }
 
       input[type="checkbox"] {
