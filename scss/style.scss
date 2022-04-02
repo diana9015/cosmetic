@@ -273,8 +273,8 @@ header {
 
   .boxwrap {
     width: 1180px;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 130px;
+    padding-bottom: 130px;
     margin: 0 auto;
     height: 100%;
 
@@ -362,6 +362,7 @@ header {
       padding-top: 100px;
       width: 1180px;
       height: 100%;
+      margin: 0 auto;
       p {
         font: normal 18px/1 "arial";
         color: #fff;
@@ -423,6 +424,7 @@ header {
       padding-top: 400px;
       width: 1180px;
       height: 100%;
+      margin: 0 auto;
 
       p {
         font: normal 18px/1 "arial";
@@ -475,6 +477,7 @@ header {
       padding-top: 100px;
       width: 1180px;
       height: 100%;
+      margin: 0 auto;
 
       p {
         font: normal 18px/1 "arial";
@@ -544,7 +547,26 @@ header {
         article {
           height: 100px;
           width: 100%;
+          padding-top: 40px;
+          text-align: center;
+          color: $BkColor;
           border: 1px solid $LGColor;
+
+          &:nth-of-type(1) {
+            font: normal 25px/1 "Fugaz One", cursive;
+          }
+          &:nth-of-type(2) {
+            font: normal 25px/1 "Lalezar", cursive;
+          }
+          &:nth-of-type(3) {
+            font: normal 25px/1 "Passion One", cursive;
+          }
+          &:nth-of-type(4) {
+            font: bold 25px/1 "Pompiere", cursive;
+          }
+          &:nth-of-type(5) {
+            font: normal 25px/1 "Prosto One", cursive;
+          }
         }
       }
     }
@@ -555,7 +577,6 @@ header {
   width: 100%;
   padding: 100px 0;
   background: $DkColor;
-  margin-top: 10%;
 
   .inner {
     width: 100%;

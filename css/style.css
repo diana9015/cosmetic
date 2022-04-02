@@ -189,31 +189,31 @@ font-family: 'Voces', cursive;
   margin-right: 0px;
 }
 
-.content {
+.content_sub {
   width: 100%;
   padding: 0 0 150px;
 }
-.content .sub_visual {
+.content_sub .sub_visual {
   width: 100%;
   height: 300px;
   margin-bottom: 100px;
   background: #383434;
 }
-.content .inner {
+.content_sub .inner {
   width: 1180px;
   margin: 0 auto;
   min-height: 500px;
 }
-.content .inner h1 {
+.content_sub .inner h1 {
   font: normal 50px/1 "arial";
   color: #000;
   margin: 100px 0;
 }
-.content .inner h1 span {
+.content_sub .inner h1 span {
   font: normal 20px/1 "맑은 고딕";
   color: #aaa;
 }
-.content .inner h1 span::before {
+.content_sub .inner h1 span::before {
   content: "";
   margin-right: 20px;
   margin-left: 10px;
@@ -1340,8 +1340,8 @@ header .popup .inner input[type=checkbox] {
 }
 .content .boxwrap {
   width: 1180px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 130px;
+  padding-bottom: 130px;
   margin: 0 auto;
   height: 100%;
 }
@@ -1421,6 +1421,7 @@ header .popup .inner input[type=checkbox] {
   padding-top: 100px;
   width: 1180px;
   height: 100%;
+  margin: 0 auto;
 }
 .content .servicelist .inner p {
   font: normal 18px/1 "arial";
@@ -1475,6 +1476,7 @@ header .popup .inner input[type=checkbox] {
   padding-top: 400px;
   width: 1180px;
   height: 100%;
+  margin: 0 auto;
 }
 .content .award .inner p {
   font: normal 18px/1 "arial";
@@ -1521,6 +1523,7 @@ header .popup .inner input[type=checkbox] {
   padding-top: 100px;
   width: 1180px;
   height: 100%;
+  margin: 0 auto;
 }
 .content .recommend .inner p {
   font: normal 18px/1 "arial";
@@ -1583,14 +1586,31 @@ header .popup .inner input[type=checkbox] {
 .content .recommend .inner .line article {
   height: 100px;
   width: 100%;
-  border: 1px solid #eeecec;
+  padding-top: 40px;
+  text-align: center;
+  color: #5a5151;
+  border: 1px solid #dddbdb;
+}
+.content .recommend .inner .line article:nth-of-type(1) {
+  font: normal 25px/1 "Fugaz One", cursive;
+}
+.content .recommend .inner .line article:nth-of-type(2) {
+  font: normal 25px/1 "Lalezar", cursive;
+}
+.content .recommend .inner .line article:nth-of-type(3) {
+  font: normal 25px/1 "Passion One", cursive;
+}
+.content .recommend .inner .line article:nth-of-type(4) {
+  font: bold 25px/1 "Pompiere", cursive;
+}
+.content .recommend .inner .line article:nth-of-type(5) {
+  font: normal 25px/1 "Prosto One", cursive;
 }
 
 #footer {
   width: 100%;
   padding: 100px 0;
   background: #383434;
-  margin-top: 10%;
 }
 #footer .inner {
   width: 100%;
