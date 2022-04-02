@@ -7,7 +7,7 @@
   .mobilenav {
     display: none;
     position: absolute;
-    top: 5%;
+    top: 3%;
     right: 7%;
 
     .btnCall {
@@ -69,12 +69,13 @@
 
     .wrap {
       width: 100%;
+
       nav {
         .webnav {
-          width: 1080px;
+          width: 100%;
           height: 100%;
           margin: 0 auto;
-          padding-top: 29px;
+          padding-top: 30px;
           position: relative;
           .top_nav {
             width: 100%;
@@ -96,7 +97,7 @@
 
               a {
                 color: white;
-                font: bold 17px/1 "arial";
+                font: bold 18px/1 "arial";
                 transition: 0.5s;
               }
               a:hover {
@@ -110,7 +111,7 @@
 
             h1 {
               margin: 0 auto;
-              padding-top: 10px;
+              padding-top: 9px;
               padding-right: 15px;
               a {
                 font: bold 50px/1px "arial";
@@ -148,7 +149,7 @@
                 a {
                   color: white;
                   transition: 0.5s;
-                  font: bold 17px/1 "arial";
+                  font: bold 18px/1 "arial";
                 }
 
                 a:hover {
@@ -211,13 +212,13 @@
     margin: 0 auto;
 
     h1 {
-      font: bold 24px/1 "arial";
+      font: bold 25px/1 "arial";
       color: $Strongcolor;
       text-align: center;
     }
 
     p {
-      font: 12px/1 "arial";
+      font: 13px/1 "arial";
       color: #777;
       padding-top: 10px;
       text-align: center;
@@ -244,6 +245,7 @@
               }
 
               h1 {
+                padding-top: 0px;
                 a {
                   font: bold 40px/1 "aria";
                 }
@@ -340,7 +342,7 @@
 
           .webnav {
             width: 100%;
-            padding-top: 20px;
+            // padding-top: 20px;
             .top_nav {
               ul li {
                 display: none;
@@ -359,7 +361,7 @@
             .centernav {
               width: 100%;
               padding-left: 0px;
-              padding-top: 10px;
+
               ul {
                 li {
                   a {

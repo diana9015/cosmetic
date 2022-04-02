@@ -53,7 +53,7 @@ font-family: 'Voces', cursive;
 #header_sub .mobilenav {
   display: none;
   position: absolute;
-  top: 5%;
+  top: 3%;
   right: 7%;
 }
 #header_sub .mobilenav .btnCall {
@@ -110,10 +110,10 @@ font-family: 'Voces', cursive;
   width: 100%;
 }
 #header_sub .inner .wrap nav .webnav {
-  width: 1080px;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding-top: 29px;
+  padding-top: 30px;
   position: relative;
 }
 #header_sub .inner .wrap nav .webnav .top_nav {
@@ -134,7 +134,7 @@ font-family: 'Voces', cursive;
 }
 #header_sub .inner .wrap nav .webnav .top_nav ul li a {
   color: white;
-  font: bold 17px/1 "arial";
+  font: bold 18px/1 "arial";
   transition: 0.5s;
 }
 #header_sub .inner .wrap nav .webnav .top_nav ul li a:hover {
@@ -145,7 +145,7 @@ font-family: 'Voces', cursive;
 }
 #header_sub .inner .wrap nav .webnav .top_nav h1 {
   margin: 0 auto;
-  padding-top: 10px;
+  padding-top: 9px;
   padding-right: 15px;
 }
 #header_sub .inner .wrap nav .webnav .top_nav h1 a {
@@ -180,7 +180,7 @@ font-family: 'Voces', cursive;
 #header_sub .inner .wrap nav .webnav .centernav ul li a {
   color: white;
   transition: 0.5s;
-  font: bold 17px/1 "arial";
+  font: bold 18px/1 "arial";
 }
 #header_sub .inner .wrap nav .webnav .centernav ul li a:hover {
   color: #5a5151;
@@ -229,12 +229,12 @@ font-family: 'Voces', cursive;
   margin: 0 auto;
 }
 #footer_sub .inner h1 {
-  font: bold 24px/1 "arial";
+  font: bold 25px/1 "arial";
   color: #d7e9ed;
   text-align: center;
 }
 #footer_sub .inner p {
-  font: 12px/1 "arial";
+  font: 13px/1 "arial";
   color: #777;
   padding-top: 10px;
   text-align: center;
@@ -253,6 +253,9 @@ font-family: 'Voces', cursive;
   }
   #header_sub .inner .wrap nav .webnav .top_nav ul li a {
     font: normal 15px/1 "arial";
+  }
+  #header_sub .inner .wrap nav .webnav .top_nav h1 {
+    padding-top: 0px;
   }
   #header_sub .inner .wrap nav .webnav .top_nav h1 a {
     font: bold 40px/1 "aria";
@@ -329,7 +332,6 @@ font-family: 'Voces', cursive;
   }
   #header_sub .inner .wrap nav .webnav {
     width: 100%;
-    padding-top: 20px;
   }
   #header_sub .inner .wrap nav .webnav .top_nav ul li {
     display: none;
@@ -343,7 +345,6 @@ font-family: 'Voces', cursive;
   #header_sub .inner .wrap nav .webnav .centernav {
     width: 100%;
     padding-left: 0px;
-    padding-top: 10px;
   }
   #header_sub .inner .wrap nav .webnav .centernav ul li a {
     font: normal 14px/1 "arial";
@@ -419,7 +420,7 @@ font-family: 'Voces', cursive;
   float: left;
   padding: 5px;
   margin: 3px;
-  border: 1px solid #e9ecec;
+  border: 1px solid #e5ebeb;
 }
 .information .inner .contwrap .pictures .item a {
   width: 100%;
@@ -531,6 +532,34 @@ aside .close {
   text-align: center;
   color: #383434;
   display: inline;
+}
+.aboutus .inner h3 {
+  font: bold 22px/1.2 "arial";
+  color: #fff;
+}
+.aboutus .inner .wrap {
+  width: 100%;
+  padding-top: 3%;
+}
+.aboutus .inner .wrap article {
+  width: 380px;
+  height: 400px;
+  margin-right: 20px;
+  float: left;
+  background: #fff;
+}
+.aboutus .inner .wrap article:nth-of-type(3) {
+  margin-right: 0px;
+}
+.aboutus .inner .wrap article i {
+  font-size: 30px;
+  padding-top: 16px;
+  color: #277a91;
+}
+.aboutus .inner .wrap article h3 {
+  padding-top: 10px;
+  font: bold 14px/1 "Voces", cursive;
+  color: #383434;
 }
 .aboutus .inner .division {
   margin-top: 50px;
@@ -1094,7 +1123,7 @@ header .visual {
 header .visual .mobilenav {
   display: none;
   position: absolute;
-  top: 3.5%;
+  top: 3.3%;
   right: 7%;
 }
 header .visual .mobilenav .btnCall {
@@ -1179,7 +1208,7 @@ header .visual .top_header .webnav .top_nav ul li {
 }
 header .visual .top_header .webnav .top_nav ul li a {
   color: white;
-  font: bold 17px/1 "arial";
+  font: bold 18px/1 "arial";
   transition: 0.5s;
 }
 header .visual .top_header .webnav .top_nav ul li a:hover {
@@ -1224,7 +1253,7 @@ header .visual .top_header .webnav .centernav ul li {
 header .visual .top_header .webnav .centernav ul li a {
   color: white;
   transition: 0.5s;
-  font: bold 17px/1 "arial";
+  font: bold 18px/1 "arial";
 }
 header .visual .top_header .webnav .centernav ul li a:hover {
   color: #383434;
@@ -1244,7 +1273,7 @@ header .visual .inner h2 {
 }
 header .visual .inner p {
   padding-top: 1%;
-  font: normal 17px/1.2 "arial";
+  font: normal 18px/1.2 "arial";
   margin-bottom: 30px;
   color: white;
 }
@@ -1304,36 +1333,6 @@ header .popup .inner a {
 header .popup .inner input[type=checkbox] {
   margin-right: 5px;
 }
-header .top {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-}
-header .top article {
-  background: white;
-  box-sizing: border-box;
-  width: 240px;
-  height: 100px;
-  text-align: center;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-150%, -130%);
-  margin-right: 7px;
-  border: 8px solid #d7e9ed;
-  float: left;
-  box-shadow: 1px 3px 5px #2c2c2c;
-}
-header .top article i {
-  font-size: 30px;
-  padding-top: 16px;
-  color: #277a91;
-}
-header .top article h3 {
-  padding-top: 10px;
-  font: bold 14px/1 "Voces", cursive;
-  color: #383434;
-}
 
 .content {
   width: 100%;
@@ -1341,8 +1340,9 @@ header .top article h3 {
 }
 .content .boxwrap {
   width: 1180px;
-  margin: 10% auto;
-  border: 1px solid red;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin: 0 auto;
   height: 100%;
 }
 .content .boxwrap .box1 {
@@ -1362,19 +1362,19 @@ header .top article h3 {
   width: 50%;
   height: 75%;
   margin-top: 5%;
-  background: #a4c8c9;
+  background: #e5ebeb;
   position: absolute;
   right: 0px;
   top: 0px;
   padding: 7%;
 }
 .content .boxwrap .box1 .txt h4 {
-  font: normal 30px/1 "arial";
+  font: bold 27px/1 "arial";
   color: black;
 }
 .content .boxwrap .box1 .txt p {
-  padding-top: 5%;
-  font: normal 17px/1.2 "arial";
+  padding-top: 30px;
+  font: normal 18px/1.3 "arial";
   color: black;
 }
 .content .boxwrap .box2 {
@@ -1383,7 +1383,7 @@ header .top article h3 {
   margin: 0 auto;
   position: relative;
   padding-top: 8%;
-  margin-bottom: 8%;
+  margin-bottom: 100px;
 }
 .content .boxwrap .box2 .pic {
   width: 55%;
@@ -1396,7 +1396,7 @@ header .top article h3 {
   background-image: url(../img/set2.jpg);
 }
 .content .boxwrap .box2 .txt {
-  background: #a4c8c9;
+  background: #e5ebeb;
   width: 50%;
   height: 75%;
   margin-top: 5%;
@@ -1404,12 +1404,12 @@ header .top article h3 {
   padding: 7%;
 }
 .content .boxwrap .box2 .txt h4 {
-  font: normal 30px/1 "arial";
+  font: bold 27px/1 "arial";
   color: black;
 }
 .content .boxwrap .box2 .txt p {
-  padding-top: 5%;
-  font: normal 17px/1.2 "arial";
+  padding-top: 30px;
+  font: normal 18px/1.3 "arial";
   color: black;
 }
 .content .servicelist {
@@ -1418,37 +1418,172 @@ header .top article h3 {
   height: 300px;
 }
 .content .servicelist .inner {
-  padding-top: 80px;
+  padding-top: 100px;
   width: 1180px;
   height: 100%;
 }
-.content .servicelist .inner h2 {
-  font: normal 17px/1 "arial";
+.content .servicelist .inner p {
+  font: normal 18px/1 "arial";
   color: #fff;
-  padding-bottom: 5px;
+  padding-bottom: 12px;
 }
 .content .servicelist .inner h3 {
-  font: bold 22px/1.2 "arial";
+  font: bold 27px/1 "arial";
   color: #fff;
 }
 .content .servicelist .inner .wrap {
   width: 100%;
-  padding-top: 3%;
+  margin-top: 50px;
 }
 .content .servicelist .inner .wrap article {
-  width: 380px;
-  height: 400px;
-  margin-right: 20px;
   float: left;
+  width: 380px;
+  height: 380px;
   background: #fff;
+  margin-right: 20px;
+  text-align: center;
+  padding: 8% 3%;
 }
 .content .servicelist .inner .wrap article:nth-of-type(3) {
   margin-right: 0px;
 }
+.content .servicelist .inner .wrap article i {
+  font-size: 50px;
+  padding-bottom: 40px;
+}
+.content .servicelist .inner .wrap article h3 {
+  color: black;
+  font: bold 22px/1 "arial";
+  padding-bottom: 20px;
+}
+.content .servicelist .inner .wrap article p {
+  font: normal 18px/1.3 "arial";
+  color: black;
+}
+.content .servicelist .inner .wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .content .award {
   width: 100%;
   height: 100%;
-  background: #a4c8c9;
+  background: #e5ebeb;
+  padding-bottom: 120px;
+}
+.content .award .inner {
+  padding-top: 400px;
+  width: 1180px;
+  height: 100%;
+}
+.content .award .inner p {
+  font: normal 18px/1 "arial";
+  color: black;
+  padding-bottom: 12px;
+}
+.content .award .inner h3 {
+  font: bold 27px/1 "arial";
+  color: black;
+}
+.content .award .inner .wrap {
+  width: 100%;
+  margin-top: 50px;
+}
+.content .award .inner .wrap table {
+  margin-bottom: 20px;
+  width: 100%;
+  background: #fff;
+}
+.content .award .inner .wrap table tr {
+  height: 90px;
+}
+.content .award .inner .wrap table tr th {
+  width: 50%;
+  text-align: left;
+  padding-left: 5%;
+  font: bold 17px/1 "arial";
+}
+.content .award .inner .wrap table tr td {
+  width: 30%;
+  font: normal 17px/1 "arial";
+  padding-left: 5%;
+}
+.content .award .inner .wrap table tr td:nth-of-type(2) {
+  width: 20%;
+}
+.content .recommend {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 120px;
+  overflow: hidden;
+}
+.content .recommend .inner {
+  padding-top: 100px;
+  width: 1180px;
+  height: 100%;
+}
+.content .recommend .inner p {
+  font: normal 18px/1 "arial";
+  color: black;
+  padding-bottom: 12px;
+}
+.content .recommend .inner h3 {
+  font: bold 27px/1 "arial";
+  color: black;
+}
+.content .recommend .inner .control {
+  text-align: right;
+  width: 100%;
+  right: 20px;
+  padding-bottom: 20px;
+}
+.content .recommend .inner .control .prev i {
+  color: black;
+  font-size: 30px;
+  margin-right: 10px;
+}
+.content .recommend .inner .control .next i {
+  color: black;
+  font-size: 30px;
+}
+.content .recommend .inner .slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.content .recommend .inner .slider ul {
+  width: 300%;
+}
+.content .recommend .inner .slider ul li {
+  width: 33.3333333333%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.content .recommend .inner .slider ul li article {
+  width: 580px;
+  height: 300px;
+  background: #e5ebeb;
+  margin-right: 20px;
+}
+.content .recommend .inner .slider ul li article:nth-of-type(2) {
+  margin-right: 0px;
+}
+.content .recommend .inner .line {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+.content .recommend .inner .line article {
+  height: 100px;
+  width: 100%;
+  border: 1px solid #eeecec;
 }
 
 #footer {
@@ -1462,13 +1597,13 @@ header .top article h3 {
   margin: 0 auto;
 }
 #footer .inner h1 {
-  font: bold 24px/1 "arial";
-  color: #d7e9ed;
+  font: bold 25px/1 "arial";
+  color: #e5ebeb;
   text-align: center;
 }
 #footer .inner p {
-  font: 12px/1 "arial";
-  color: #d7e9ed;
+  font: 13px/1 "arial";
+  color: #e5ebeb;
   padding-top: 10px;
   text-align: center;
 }

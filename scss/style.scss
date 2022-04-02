@@ -25,7 +25,7 @@ header {
     .mobilenav {
       display: none;
       position: absolute;
-      top: 3.5%;
+      top: 3.3%;
       right: 7%;
 
       .btnCall {
@@ -118,7 +118,7 @@ header {
 
             a {
               color: white;
-              font: bold 17px/1 "arial";
+              font: bold 18px/1 "arial";
               transition: 0.5s;
             }
             a:hover {
@@ -170,7 +170,7 @@ header {
               a {
                 color: white;
                 transition: 0.5s;
-                font: bold 17px/1 "arial";
+                font: bold 18px/1 "arial";
               }
 
               a:hover {
@@ -198,7 +198,7 @@ header {
 
       p {
         padding-top: 1%;
-        font: normal 17px/1.2 "arial";
+        font: normal 18px/1.2 "arial";
         margin-bottom: 30px;
         color: white;
       }
@@ -265,39 +265,6 @@ header {
       }
     }
   }
-  .top {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-
-    article {
-      background: white;
-      box-sizing: border-box;
-      width: 240px;
-      height: 100px;
-      text-align: center;
-      position: relative;
-      left: 50%;
-      top: 50%;
-      transform: translate(-150%, -130%);
-      margin-right: 7px;
-      border: 8px solid $Strongcolor;
-      float: left;
-      box-shadow: 1px 3px 5px rgb(44, 44, 44);
-
-      i {
-        font-size: 30px;
-        padding-top: 16px;
-        color: $OrColor;
-      }
-
-      h3 {
-        padding-top: 10px;
-        font: bold 14px/1 "Voces", cursive;
-        color: $DkColor;
-      }
-    }
-  }
 }
 
 .content {
@@ -306,8 +273,9 @@ header {
 
   .boxwrap {
     width: 1180px;
-    margin: 10% auto;
-    border: 1px solid red;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin: 0 auto;
     height: 100%;
 
     .box1 {
@@ -328,20 +296,19 @@ header {
         width: 50%;
         height: 75%;
         margin-top: 5%;
-        background: $Hovercolor;
+        background: $GrColor;
         position: absolute;
         right: 0px;
         top: 0px;
-
         padding: 7%;
 
         h4 {
-          font: normal 30px/1 "arial";
+          font: bold 27px/1 "arial";
           color: black;
         }
         p {
-          padding-top: 5%;
-          font: normal 17px/1.2 "arial";
+          padding-top: 30px;
+          font: normal 18px/1.3 "arial";
           color: black;
         }
       }
@@ -352,7 +319,7 @@ header {
       margin: 0 auto;
       position: relative;
       padding-top: 8%;
-      margin-bottom: 8%;
+      margin-bottom: 100px;
 
       .pic {
         width: 55%;
@@ -366,21 +333,20 @@ header {
       }
 
       .txt {
-        background: $Hovercolor;
+        background: $GrColor;
         width: 50%;
         height: 75%;
         margin-top: 5%;
         position: absolute;
-
         padding: 7%;
 
         h4 {
-          font: normal 30px/1 "arial";
+          font: bold 27px/1 "arial";
           color: black;
         }
         p {
-          padding-top: 5%;
-          font: normal 17px/1.2 "arial";
+          padding-top: 30px;
+          font: normal 18px/1.3 "arial";
           color: black;
         }
       }
@@ -391,33 +357,58 @@ header {
     background: $DkColor;
     width: 100%;
     height: 300px;
+
     .inner {
-      padding-top: 80px;
+      padding-top: 100px;
       width: 1180px;
       height: 100%;
-      h2 {
-        font: normal 17px/1 "arial";
+      p {
+        font: normal 18px/1 "arial";
         color: #fff;
-        padding-bottom: 5px;
+        padding-bottom: 12px;
       }
       h3 {
-        font: bold 22px/1.2 "arial";
+        font: bold 27px/1 "arial";
         color: #fff;
       }
 
       .wrap {
         width: 100%;
-        padding-top: 3%;
+        margin-top: 50px;
+
         article {
-          width: 380px;
-          height: 400px;
-          margin-right: 20px;
           float: left;
+          width: 380px;
+          height: 380px;
           background: #fff;
+          margin-right: 20px;
+          text-align: center;
+          padding: 8% 3%;
 
           &:nth-of-type(3) {
             margin-right: 0px;
           }
+
+          i {
+            font-size: 50px;
+            padding-bottom: 40px;
+          }
+
+          h3 {
+            color: black;
+            font: bold 22px/1 "arial";
+            padding-bottom: 20px;
+          }
+          p {
+            font: normal 18px/1.3 "arial";
+            color: black;
+          }
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          clear: both;
         }
       }
     }
@@ -425,7 +416,138 @@ header {
   .award {
     width: 100%;
     height: 100%;
-    background: $Hovercolor;
+    background: $GrColor;
+    padding-bottom: 120px;
+
+    .inner {
+      padding-top: 400px;
+      width: 1180px;
+      height: 100%;
+
+      p {
+        font: normal 18px/1 "arial";
+        color: black;
+        padding-bottom: 12px;
+      }
+      h3 {
+        font: bold 27px/1 "arial";
+        color: black;
+      }
+
+      .wrap {
+        width: 100%;
+        margin-top: 50px;
+
+        table {
+          margin-bottom: 20px;
+          width: 100%;
+          background: #fff;
+
+          tr {
+            height: 90px;
+
+            th {
+              width: 50%;
+              text-align: left;
+              padding-left: 5%;
+              font: bold 17px/1 "arial";
+            }
+            td {
+              width: 30%;
+              font: normal 17px/1 "arial";
+              padding-left: 5%;
+              &:nth-of-type(2) {
+                width: 20%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .recommend {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 120px;
+    overflow: hidden;
+
+    .inner {
+      padding-top: 100px;
+      width: 1180px;
+      height: 100%;
+
+      p {
+        font: normal 18px/1 "arial";
+        color: black;
+        padding-bottom: 12px;
+      }
+      h3 {
+        font: bold 27px/1 "arial";
+        color: black;
+      }
+
+      .control {
+        text-align: right;
+        width: 100%;
+        right: 20px;
+        padding-bottom: 20px;
+        .prev {
+          i {
+            color: black;
+            font-size: 30px;
+            margin-right: 10px;
+          }
+        }
+        .next {
+          i {
+            color: black;
+            font-size: 30px;
+          }
+        }
+      }
+
+      .slider {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        ul {
+          width: calc(100% * 3);
+
+          li {
+            width: calc(100% / 3);
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+
+            article {
+              width: 580px;
+              height: 300px;
+              background: $GrColor;
+              margin-right: 20px;
+              &:nth-of-type(2) {
+                margin-right: 0px;
+              }
+            }
+          }
+        }
+      }
+      .line {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin-top: 50px;
+        article {
+          height: 100px;
+          width: 100%;
+          border: 1px solid $LGColor;
+        }
+      }
+    }
   }
 }
 
@@ -440,14 +562,14 @@ header {
     margin: 0 auto;
 
     h1 {
-      font: bold 24px/1 "arial";
-      color: $Strongcolor;
+      font: bold 25px/1 "arial";
+      color: $GrColor;
       text-align: center;
     }
 
     p {
-      font: 12px/1 "arial";
-      color: $Strongcolor;
+      font: 13px/1 "arial";
+      color: $GrColor;
       padding-top: 10px;
       text-align: center;
     }

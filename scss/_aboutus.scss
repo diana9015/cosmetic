@@ -30,6 +30,38 @@
         display: inline;
       }
     }
+    h3 {
+      font: bold 22px/1.2 "arial";
+      color: #fff;
+    }
+
+    .wrap {
+      width: 100%;
+      padding-top: 3%;
+      article {
+        width: 380px;
+        height: 400px;
+        margin-right: 20px;
+        float: left;
+        background: #fff;
+
+        &:nth-of-type(3) {
+          margin-right: 0px;
+        }
+
+        i {
+          font-size: 30px;
+          padding-top: 16px;
+          color: $OrColor;
+        }
+
+        h3 {
+          padding-top: 10px;
+          font: bold 14px/1 "Voces", cursive;
+          color: $DkColor;
+        }
+      }
+    }
 
     .division {
       margin-top: 50px;
