@@ -48,7 +48,7 @@ font-family: 'Voces', cursive;
 #header_sub {
   width: 100%;
   height: 140px;
-  background: #727171;
+  background: #777676;
 }
 #header_sub .mobilenav {
   display: none;
@@ -138,7 +138,7 @@ font-family: 'Voces', cursive;
   transition: 0.5s;
 }
 #header_sub .inner .wrap nav .webnav .top_nav ul li a:hover {
-  color: #b3dee0;
+  color: #e0dfdf;
 }
 #header_sub .inner .wrap nav .webnav .top_nav ul li:nth-of-type(2) {
   margin-right: 0;
@@ -154,7 +154,7 @@ font-family: 'Voces', cursive;
   transition: 0.5s;
 }
 #header_sub .inner .wrap nav .webnav .top_nav h1 a:hover {
-  color: #b3dee0;
+  color: #e0dfdf;
 }
 #header_sub .inner .wrap nav .webnav .centernav {
   height: 100%;
@@ -183,7 +183,7 @@ font-family: 'Voces', cursive;
   font: bold 18px/1 "arial";
 }
 #header_sub .inner .wrap nav .webnav .centernav ul li a:hover {
-  color: #b3dee0;
+  color: #e0dfdf;
 }
 #header_sub .inner .wrap nav .webnav .centernav ul li:nth-of-type(3) {
   margin-right: 0px;
@@ -230,7 +230,7 @@ font-family: 'Voces', cursive;
 }
 #footer_sub .inner h1 {
   font: bold 25px/1 "arial";
-  color: #c7dfe3;
+  color: #f5ebeb;
   text-align: center;
 }
 #footer_sub .inner p {
@@ -308,7 +308,7 @@ font-family: 'Voces', cursive;
   }
   #footer_sub .inner h1 {
     font: bold 24px/1 "arial";
-    color: #c7dfe3;
+    color: #f5ebeb;
     text-align: center;
   }
   #footer_sub .inner p {
@@ -379,7 +379,7 @@ font-family: 'Voces', cursive;
   width: 100%;
   height: 100%;
   text-align: center;
-  border-bottom: 1px dotted #727171;
+  border-bottom: 1px dotted #777676;
   padding-bottom: 100px;
 }
 .information .inner .innertop p {
@@ -391,7 +391,7 @@ font-family: 'Voces', cursive;
   font: normal 30px/1.2 "Voces", cursive;
   text-align: center;
   display: inline;
-  color: #727171;
+  color: #777676;
 }
 .information .inner .innertop h2 {
   font: normal 30px/1 "Voces", cursive;
@@ -420,7 +420,7 @@ font-family: 'Voces', cursive;
   float: left;
   padding: 5px;
   margin: 3px;
-  border: 1px solid #f2f6f6;
+  border: 1px solid #f4f0f0;
 }
 .information .inner .contwrap .pictures .item a {
   width: 100%;
@@ -513,7 +513,7 @@ aside .close {
   width: 100%;
   height: 100%;
   text-align: center;
-  border-bottom: 1px dotted #727171;
+  border-bottom: 1px dotted #777676;
   padding-bottom: 100px;
 }
 .aboutus .inner .innertop p {
@@ -525,7 +525,7 @@ aside .close {
   font: normal 30px/1.2 "Voces", cursive;
   text-align: center;
   display: inline;
-  color: #727171;
+  color: #777676;
 }
 .aboutus .inner .innertop h2 {
   font: normal 30px/1 "Voces", cursive;
@@ -554,7 +554,7 @@ aside .close {
 .aboutus .inner .wrap article i {
   font-size: 30px;
   padding-top: 16px;
-  color: #277a91;
+  color: #f4eeee;
 }
 .aboutus .inner .wrap article h3 {
   padding-top: 10px;
@@ -704,9 +704,9 @@ aside .close {
   position: relative;
 }
 .product .innertop h1 {
-  padding: 10% 5%;
   font: normal 75px/1.2 "arial";
   z-index: 2;
+  padding: 10% 5%;
 }
 .product .innertop .topright {
   width: 920px;
@@ -820,6 +820,41 @@ aside .close {
   font: normal 22px/1 "arial";
   color: black;
 }
+.product .contbottom {
+  margin: 10% auto 0 auto;
+  width: 1180px;
+  padding-bottom: 140px;
+  height: 600px;
+  position: relative;
+}
+.product .contbottom .txt {
+  width: 600px;
+  height: 600px;
+  padding: 13% 10%;
+  margin-right: 20px;
+  background: #f5ebeb;
+}
+.product .contbottom .txt h2 {
+  font: bold 27px/1 "arial";
+  color: black;
+  margin-bottom: 20px;
+}
+.product .contbottom .txt h2 {
+  font: bold 27px/1 "arial";
+  color: black;
+  margin-bottom: 20px;
+}
+.product .contbottom .pic {
+  height: 450px;
+  width: 650px;
+  top: 12%;
+  right: 10px;
+  position: absolute;
+}
+.product .contbottom .pic img {
+  width: 100%;
+  height: 100%;
+}
 
 .community .inner table {
   width: 100%;
@@ -846,7 +881,7 @@ aside .close {
   color: teal;
 }
 .community .inner table tr td :hover {
-  color: #c7dfe3;
+  color: #f5ebeb;
 }
 .community .inner .pagination {
   width: 100%;
@@ -867,7 +902,7 @@ aside .close {
   text-align: center;
 }
 .community .inner .pagination .prev :hover {
-  color: #c7dfe3;
+  color: #f5ebeb;
 }
 .community .inner .pagination .next {
   float: right;
@@ -878,7 +913,7 @@ aside .close {
   text-align: center;
 }
 .community .inner .pagination .next :hover {
-  color: #c7dfe3;
+  color: #f5ebeb;
 }
 .community .inner .pagination .numbers {
   display: inline-block;
@@ -905,7 +940,7 @@ aside .close {
   width: 100%;
   height: 100%;
   text-align: center;
-  border-bottom: 1px dotted #727171;
+  border-bottom: 1px dotted #777676;
   padding-bottom: 100px;
 }
 .contactus .inner .innertop p {
@@ -917,7 +952,7 @@ aside .close {
   font: normal 30px/1.2 "Voces", cursive;
   text-align: center;
   display: inline;
-  color: #727171;
+  color: #777676;
 }
 .contactus .inner .innertop h2 {
   font: normal 30px/1 "Voces", cursive;
@@ -937,7 +972,7 @@ aside .close {
   margin-right: 20px;
   padding: 5%;
   text-align: center;
-  background-color: #f2f6f6;
+  background-color: #f1e9e9;
   margin-bottom: 5%;
 }
 .contactus .inner .contwrap article i {
@@ -986,7 +1021,7 @@ aside .close {
 .contactus .inner .contactform .txt .wrap i {
   margin-right: 10px;
   font-size: 32px;
-  color: #6ea3b0;
+  color: #e1dede;
 }
 .contactus .inner .contactform .txt h3 {
   font: bold 20px/1 "arial";
@@ -1005,32 +1040,32 @@ aside .close {
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
-  background: #f2f6f6;
+  background: #f4f0f0;
   border: none;
 }
 .contactus .inner .contactform fieldset input:nth-of-type(3) {
-  background: #6ea3b0;
+  background: #e1dede;
   color: #fff;
   width: 100px;
   float: right;
 }
 .contactus .inner .contactform fieldset input::placeholder {
   font: normal 15px/1 "arial";
-  color: #727171;
+  color: #777676;
   padding-left: 5px;
 }
 .contactus .inner .contactform fieldset textarea {
   width: 100%;
   height: 100%;
   margin-bottom: 10px;
-  background: #f2f6f6;
+  background: #f4f0f0;
   left: 0px;
   padding-top: 15px;
   border: none;
 }
 .contactus .inner .contactform fieldset textarea::placeholder {
   font: normal 15px/1 "arial";
-  color: #727171;
+  color: #777676;
   padding-left: 5px;
 }
 
@@ -1039,47 +1074,87 @@ aside .close {
 }
 .join .inner {
   width: 1180px;
+  height: 100%;
 }
-.join .inner fieldset {
+.join .inner .wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #383434;
+}
+.join .inner .wrap .visual {
+  height: 100%;
+  width: 50%;
+  padding: 27% 5%;
+  background: url(../img/nati-melnychuk-dFBhXJHKNeo-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+.join .inner .wrap .visual .txt {
+  width: 100%;
+  height: 220px;
+  padding: 5%;
+  opacity: 1;
+  border: 1px solid black;
+}
+.join .inner .wrap .visual .txt h2 {
+  font: bold 40px/1 "arial";
+  color: black;
+  margin-bottom: 30px;
+  opacity: 1;
+}
+.join .inner .wrap .visual .txt p {
+  margin-bottom: 20px;
+  color: black;
+  font: normal 18px/1 "arial";
+}
+.join .inner .wrap form {
+  width: 50%;
+  height: 100%;
+  background: white;
+  border: 1px solid #777676;
+}
+.join .inner .wrap form fieldset {
   padding: 20px;
   width: 100%;
-  background: white;
 }
-.join .inner fieldset h2 {
-  color: #6ea3b0;
+.join .inner .wrap form fieldset h2 {
+  color: #383434;
   size: 90px;
   font-weight: 700;
 }
-.join .inner fieldset #terms {
+.join .inner .wrap form fieldset #terms {
   resize: none;
   width: 100%;
   height: 100px;
-  background: #ecf8f8;
   color: #7f88b3;
 }
-.join .inner fieldset label[for=agree] {
+.join .inner .wrap form fieldset label[for=agree] {
   font: bold 14px/1 "arial";
   color: #666;
 }
-.join .inner fieldset table {
+.join .inner .wrap form fieldset table {
   width: 100%;
-  border-top: #7f88b3 2px solid;
-  border-bottom: #7f88b3 2px solid;
+  border-top: #383434 2px solid;
+  border-bottom: #383434 2px solid;
   /*글씨 크키가 조절이 안됨*/
 }
-.join .inner fieldset table caption .h {
-  color: #6ea3b0;
-  size: 90px;
+.join .inner .wrap form fieldset table caption .h {
+  color: #e1dede;
+  size: 80px;
   font-weight: 700;
 }
-.join .inner fieldset table th {
-  background: #ecf8f8;
+.join .inner .wrap form fieldset table th {
+  background: #777676;
   padding: 15px 20px;
-  font: bold 14px/1 "arial";
-  color: #666;
+  font: normal 14px/1 "arial";
+  color: white;
+  opacity: 0.9;
 }
-.join .inner fieldset table th input[type=submit],
-.join .inner fieldset table th input[type=reset] {
+.join .inner .wrap form fieldset table th input[type=submit],
+.join .inner .wrap form fieldset table th input[type=reset] {
   width: 150px;
   height: 40px;
   border: none;
@@ -1088,30 +1163,29 @@ aside .close {
   color: #fff;
   margin: 0 10px;
 }
-.join .inner fieldset table th:last-child {
+.join .inner .wrap form fieldset table th:last-child {
   background: white;
 }
-.join .inner fieldset table td {
+.join .inner .wrap form fieldset table td {
   border-bottom: 1px solid #bbb;
-  background: #ffffff;
   padding: 20px 20px;
-  font: bold 14px/1 "arial";
+  font: normal 14px/1 "arial";
   color: #444;
 }
-.join .inner fieldset table td input[type=text],
-.join .inner fieldset table td input[type=password] {
+.join .inner .wrap form fieldset table td input[type=text],
+.join .inner .wrap form fieldset table td input[type=password] {
   width: 90%;
   height: 30px;
 }
-.join .inner fieldset table td input[type=password2] {
+.join .inner .wrap form fieldset table td input[type=password2] {
   width: 90%;
   height: 30px;
 }
-.join .inner fieldset table td label {
+.join .inner .wrap form fieldset table td label {
   margin-right: 30px;
 }
-.join .inner fieldset table td input[type=checkbox],
-.join .inner fieldset table td input[type=radio] {
+.join .inner .wrap form fieldset table td input[type=checkbox],
+.join .inner .wrap form fieldset table td input[type=radio] {
   margin-right: 5px;
   /*글씨가 조절이 안됨*/
   font: bold 14px/1 "arial";
@@ -1299,7 +1373,7 @@ header .popup {
   left: 50%;
   transform: translate(-50%, -70%);
   z-index: 5;
-  background: #277a91;
+  background: #383434;
   opacity: 0.8;
   padding: 10px;
   height: 200px;
@@ -1331,7 +1405,7 @@ header .popup .inner a {
   display: block;
   color: white;
   width: 100%;
-  background: #6ea3b0;
+  background: #777676;
   border: 1px solid #fff;
   text-align: center;
   margin-bottom: 10px;
@@ -1371,7 +1445,7 @@ header .popup .inner input[type=checkbox] {
   width: 50%;
   height: 75%;
   margin-top: 5%;
-  background: #c7dfe3;
+  background: #f4f0f0;
   position: absolute;
   right: 0px;
   top: 0px;
@@ -1406,7 +1480,7 @@ header .popup .inner input[type=checkbox] {
   background-image: url(../img/set2.jpg);
 }
 .content .boxwrap .box2 .txt {
-  background: #c7dfe3;
+  background: #f4f0f0;
   width: 50%;
   height: 75%;
   margin-top: 5%;
@@ -1480,7 +1554,7 @@ header .popup .inner input[type=checkbox] {
 .content .award {
   width: 100%;
   height: 100%;
-  background: #f2f6f6;
+  background: #f4f0f0;
   padding-bottom: 120px;
 }
 .content .award .inner {
@@ -1583,11 +1657,16 @@ header .popup .inner input[type=checkbox] {
 .content .recommend .inner #slider ul li article {
   width: 580px;
   height: 300px;
-  background: #f2f6f6;
+  background: #f1e9e9;
   margin-right: 20px;
+  padding: 7% 5%;
 }
 .content .recommend .inner #slider ul li article:nth-of-type(2) {
   margin-right: 0px;
+}
+.content .recommend .inner #slider ul li article p:nth-of-type(2) {
+  padding-top: 10px;
+  font: bold 20px/1 "arial";
 }
 .content .recommend .inner .line {
   width: 100%;
@@ -1600,8 +1679,8 @@ header .popup .inner input[type=checkbox] {
   width: 100%;
   padding-top: 40px;
   text-align: center;
-  color: #727171;
-  border: 1px solid #dddbdb;
+  color: #777676;
+  border: 1px solid #f1e9e9;
 }
 .content .recommend .inner .line article:nth-of-type(1) {
   font: normal 25px/1 "Fugaz One", cursive;
@@ -1618,6 +1697,64 @@ header .popup .inner input[type=checkbox] {
 .content .recommend .inner .line article:nth-of-type(5) {
   font: normal 25px/1 "Prosto One", cursive;
 }
+.content .contact {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 120px;
+  overflow: hidden;
+}
+.content .contact .inner {
+  padding-top: 50px;
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+}
+.content .contact .inner p {
+  font: normal 18px/1 "arial";
+  color: black;
+  padding-bottom: 12px;
+}
+.content .contact .inner h3 {
+  font: bold 27px/1 "arial";
+  color: black;
+}
+.content .contact .inner .contwrap {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+.content .contact .inner .contwrap article {
+  float: left;
+  width: 380px;
+  height: 200px;
+  margin-right: 20px;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+.content .contact .inner .contwrap article i {
+  color: #383434;
+  font-size: 32px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+.content .contact .inner .contwrap article h3 {
+  color: #383434;
+  margin-bottom: 22px;
+  font: bold 20px/1 "arial";
+}
+.content .contact .inner .contwrap article p {
+  color: #383434;
+  padding: 2px;
+  font: normal 17px/1 "arial";
+}
+.content .contact .inner .contwrap article:nth-of-type(3) {
+  margin-right: 0px;
+}
+.content .contact .inner .contwrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
 #footer {
   width: 100%;
@@ -1630,12 +1767,12 @@ header .popup .inner input[type=checkbox] {
 }
 #footer .inner h1 {
   font: bold 25px/1 "arial";
-  color: #f2f6f6;
+  color: #f4f0f0;
   text-align: center;
 }
 #footer .inner p {
   font: 13px/1 "arial";
-  color: #f2f6f6;
+  color: #f4f0f0;
   padding-top: 10px;
   text-align: center;
 }
