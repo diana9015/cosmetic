@@ -44,7 +44,7 @@
         margin-right: 20px;
         padding: 5%;
         text-align: center;
-        background-color: $Strongcolor;
+        background-color: $GrColor;
         margin-bottom: 5%;
 
         i {
@@ -97,7 +97,7 @@
           i {
             margin-right: 10px;
             font-size: 32px;
-            color: $OrColor;
+            color: $BgColor;
           }
         }
         h3 {
@@ -119,12 +119,12 @@
           width: 100%;
           height: 40px;
           margin-bottom: 10px;
-          background: $Strongcolor;
+          background: $GrColor;
 
           border: none;
 
           &:nth-of-type(3) {
-            background: $OrColor;
+            background: $BgColor;
             color: #fff;
             width: 100px;
             float: right;
@@ -141,7 +141,7 @@
           width: 100%;
           height: 100%;
           margin-bottom: 10px;
-          background: $Strongcolor;
+          background: $GrColor;
           left: 0px;
           padding-top: 15px;
           border: none;

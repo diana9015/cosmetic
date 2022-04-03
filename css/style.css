@@ -47,8 +47,8 @@ font-family: 'Voces', cursive;
 */
 #header_sub {
   width: 100%;
-  background: #a4c8c9;
   height: 140px;
+  background: #727171;
 }
 #header_sub .mobilenav {
   display: none;
@@ -138,7 +138,7 @@ font-family: 'Voces', cursive;
   transition: 0.5s;
 }
 #header_sub .inner .wrap nav .webnav .top_nav ul li a:hover {
-  color: #5a5151;
+  color: #b3dee0;
 }
 #header_sub .inner .wrap nav .webnav .top_nav ul li:nth-of-type(2) {
   margin-right: 0;
@@ -154,7 +154,7 @@ font-family: 'Voces', cursive;
   transition: 0.5s;
 }
 #header_sub .inner .wrap nav .webnav .top_nav h1 a:hover {
-  color: #5a5151;
+  color: #b3dee0;
 }
 #header_sub .inner .wrap nav .webnav .centernav {
   height: 100%;
@@ -183,7 +183,7 @@ font-family: 'Voces', cursive;
   font: bold 18px/1 "arial";
 }
 #header_sub .inner .wrap nav .webnav .centernav ul li a:hover {
-  color: #5a5151;
+  color: #b3dee0;
 }
 #header_sub .inner .wrap nav .webnav .centernav ul li:nth-of-type(3) {
   margin-right: 0px;
@@ -230,7 +230,7 @@ font-family: 'Voces', cursive;
 }
 #footer_sub .inner h1 {
   font: bold 25px/1 "arial";
-  color: #d7e9ed;
+  color: #c7dfe3;
   text-align: center;
 }
 #footer_sub .inner p {
@@ -308,7 +308,7 @@ font-family: 'Voces', cursive;
   }
   #footer_sub .inner h1 {
     font: bold 24px/1 "arial";
-    color: #d7e9ed;
+    color: #c7dfe3;
     text-align: center;
   }
   #footer_sub .inner p {
@@ -379,7 +379,7 @@ font-family: 'Voces', cursive;
   width: 100%;
   height: 100%;
   text-align: center;
-  border-bottom: 1px dotted #5a5151;
+  border-bottom: 1px dotted #727171;
   padding-bottom: 100px;
 }
 .information .inner .innertop p {
@@ -391,7 +391,7 @@ font-family: 'Voces', cursive;
   font: normal 30px/1.2 "Voces", cursive;
   text-align: center;
   display: inline;
-  color: #5a5151;
+  color: #727171;
 }
 .information .inner .innertop h2 {
   font: normal 30px/1 "Voces", cursive;
@@ -420,7 +420,7 @@ font-family: 'Voces', cursive;
   float: left;
   padding: 5px;
   margin: 3px;
-  border: 1px solid #e5ebeb;
+  border: 1px solid #f2f6f6;
 }
 .information .inner .contwrap .pictures .item a {
   width: 100%;
@@ -513,7 +513,7 @@ aside .close {
   width: 100%;
   height: 100%;
   text-align: center;
-  border-bottom: 1px dotted #5a5151;
+  border-bottom: 1px dotted #727171;
   padding-bottom: 100px;
 }
 .aboutus .inner .innertop p {
@@ -525,7 +525,7 @@ aside .close {
   font: normal 30px/1.2 "Voces", cursive;
   text-align: center;
   display: inline;
-  color: #5a5151;
+  color: #727171;
 }
 .aboutus .inner .innertop h2 {
   font: normal 30px/1 "Voces", cursive;
@@ -660,128 +660,6 @@ aside .close {
 .aboutus .inner .div_tree li ul li ul li ul li span::after {
   display: none;
 }
-.aboutus .inner .member {
-  width: 100%;
-  height: 100%;
-  padding: 20px 0 50px 0;
-  background: #383434;
-  position: relative;
-}
-.aboutus .inner .member .slider {
-  width: 1080px;
-  margin: 0 auto;
-  height: 350px;
-  overflow: hidden;
-}
-.aboutus .inner .member .slider h1 {
-  text-align: center;
-  color: #ffffff;
-  font: normal 40px/1 "arial";
-}
-.aboutus .inner .member .slider .panel {
-  width: 6480px;
-  height: 100%;
-  display: flex;
-  padding-top: 5px;
-}
-.aboutus .inner .member .slider .panel li {
-  width: 1080px;
-  height: 100%;
-  box-sizing: border-box;
-  display: flex;
-  margin: 0 auto;
-}
-.aboutus .inner .member .slider .panel li .txt {
-  height: 100%;
-  width: 650px;
-  position: relative;
-  left: 0;
-  top: 0;
-  text-align: right;
-  padding: 6% 5%;
-}
-.aboutus .inner .member .slider .panel li .txt h3 {
-  font: bold 30px/1 "arial";
-  color: white;
-}
-.aboutus .inner .member .slider .panel li .txt h4 {
-  font: normal 17px/1 "arial";
-  color: white;
-  padding-top: 5px;
-}
-.aboutus .inner .member .slider .panel li .txt p {
-  padding-top: 20px;
-  font: normal 17px/1.3 "arial";
-  color: white;
-}
-.aboutus .inner .member .slider .panel li .img {
-  width: 300px;
-  height: 300px;
-  position: relative;
-  border-radius: 50%;
-}
-.aboutus .inner .member .slider .panel li:nth-of-type(1) .img {
-  background-image: url(../img/profile7.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.aboutus .inner .member .slider .panel li:nth-of-type(2) .img {
-  background-image: url(../img/profile1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.aboutus .inner .member .slider .panel li:nth-of-type(3) .img {
-  background-image: url(../img/profile2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.aboutus .inner .member .slider .panel li:nth-of-type(4) .img {
-  background-image: url(../img/profile3.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.aboutus .inner .member .slider .panel li:nth-of-type(5) .img {
-  background-image: url(../img/profile5.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.aboutus .inner .member .slider .panel li:nth-of-type(6) .img {
-  background-image: url(../img/profile6.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.aboutus .inner .member .slider .btns {
-  position: absolute;
-  justify-content: center;
-  width: 100%;
-  display: flex;
-  left: 0;
-  bottom: 0;
-}
-.aboutus .inner .member .slider .btns li {
-  height: 12px;
-  width: 12px;
-  box-sizing: border-box;
-  background: white;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  margin-right: 30px;
-  transition: 1s;
-}
-.aboutus .inner .member .slider .btns li a {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-.aboutus .inner .member .slider .btns li:hover {
-  background: #6ea3b0;
-}
 
 @media screen and (max-width: 1179px) {
   .department .inner {
@@ -812,6 +690,137 @@ aside .close {
     transition: 3s;
   }
 }
+.product {
+  width: 100%;
+  height: 100%;
+}
+.product .innertop {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  background: url(../img/back.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.product .innertop h1 {
+  padding: 10% 5%;
+  font: normal 75px/1.2 "arial";
+  z-index: 2;
+}
+.product .innertop .topright {
+  width: 920px;
+  height: 600px;
+  position: absolute;
+  right: 0px;
+}
+.product .innertop .topright img {
+  height: 100%;
+  width: 100%;
+}
+.product .contmid {
+  margin: 0 auto;
+  width: 1180px;
+  padding-top: 130px;
+  padding-bottom: 140px;
+  height: 600px;
+}
+.product .contmid .best {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.product .contmid .best .txt {
+  width: 380px;
+  height: 100%;
+  padding: 8% 5% 0 20px;
+  margin-right: 20px;
+}
+.product .contmid .best .txt h2 {
+  font: bold 27px/1 "arial";
+  color: black;
+  margin-bottom: 20px;
+}
+.product .contmid .best .pduc {
+  width: 780px;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+.product .contmid .best .pduc .panel1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.product .contmid .best .pduc .panel1 article {
+  width: 380px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+.product .contmid .best .pduc .panel1 article:nth-of-type(1) {
+  background: url(../img/miniset1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.product .contmid .best .pduc .panel1 article:nth-of-type(2) {
+  background: url(../img/miniset2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 0px;
+}
+.product .contmid .control {
+  float: right;
+  right: 10px;
+  top: 10px;
+  position: relative;
+}
+.product .contmid .control i {
+  color: black;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.product .midbanner {
+  width: 100%;
+  height: 500px;
+  background: url(../img/back2.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+.product .midbanner .pic {
+  width: 750px;
+  height: 500px;
+  position: absolute;
+  left: 0px;
+}
+.product .midbanner .pic img {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.product .midbanner .txt {
+  height: 500px;
+  width: 700px;
+  position: absolute;
+  right: 10px;
+  z-index: 2;
+  padding-top: 150px;
+}
+.product .midbanner .txt h2 {
+  font: normal 60px/1.2 "arial";
+  padding-bottom: 15px;
+}
+.product .midbanner .txt p {
+  font: normal 22px/1 "arial";
+  color: black;
+}
+
 .community .inner table {
   width: 100%;
   border-top: 5px solid #e9e8e8;
@@ -837,7 +846,7 @@ aside .close {
   color: teal;
 }
 .community .inner table tr td :hover {
-  color: #d7e9ed;
+  color: #c7dfe3;
 }
 .community .inner .pagination {
   width: 100%;
@@ -858,7 +867,7 @@ aside .close {
   text-align: center;
 }
 .community .inner .pagination .prev :hover {
-  color: #d7e9ed;
+  color: #c7dfe3;
 }
 .community .inner .pagination .next {
   float: right;
@@ -869,7 +878,7 @@ aside .close {
   text-align: center;
 }
 .community .inner .pagination .next :hover {
-  color: #d7e9ed;
+  color: #c7dfe3;
 }
 .community .inner .pagination .numbers {
   display: inline-block;
@@ -896,7 +905,7 @@ aside .close {
   width: 100%;
   height: 100%;
   text-align: center;
-  border-bottom: 1px dotted #5a5151;
+  border-bottom: 1px dotted #727171;
   padding-bottom: 100px;
 }
 .contactus .inner .innertop p {
@@ -908,7 +917,7 @@ aside .close {
   font: normal 30px/1.2 "Voces", cursive;
   text-align: center;
   display: inline;
-  color: #5a5151;
+  color: #727171;
 }
 .contactus .inner .innertop h2 {
   font: normal 30px/1 "Voces", cursive;
@@ -928,7 +937,7 @@ aside .close {
   margin-right: 20px;
   padding: 5%;
   text-align: center;
-  background-color: #d7e9ed;
+  background-color: #f2f6f6;
   margin-bottom: 5%;
 }
 .contactus .inner .contwrap article i {
@@ -977,7 +986,7 @@ aside .close {
 .contactus .inner .contactform .txt .wrap i {
   margin-right: 10px;
   font-size: 32px;
-  color: #277a91;
+  color: #6ea3b0;
 }
 .contactus .inner .contactform .txt h3 {
   font: bold 20px/1 "arial";
@@ -996,32 +1005,32 @@ aside .close {
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
-  background: #d7e9ed;
+  background: #f2f6f6;
   border: none;
 }
 .contactus .inner .contactform fieldset input:nth-of-type(3) {
-  background: #277a91;
+  background: #6ea3b0;
   color: #fff;
   width: 100px;
   float: right;
 }
 .contactus .inner .contactform fieldset input::placeholder {
   font: normal 15px/1 "arial";
-  color: #5a5151;
+  color: #727171;
   padding-left: 5px;
 }
 .contactus .inner .contactform fieldset textarea {
   width: 100%;
   height: 100%;
   margin-bottom: 10px;
-  background: #d7e9ed;
+  background: #f2f6f6;
   left: 0px;
   padding-top: 15px;
   border: none;
 }
 .contactus .inner .contactform fieldset textarea::placeholder {
   font: normal 15px/1 "arial";
-  color: #5a5151;
+  color: #727171;
   padding-left: 5px;
 }
 
@@ -1362,11 +1371,12 @@ header .popup .inner input[type=checkbox] {
   width: 50%;
   height: 75%;
   margin-top: 5%;
-  background: #e5ebeb;
+  background: #c7dfe3;
   position: absolute;
   right: 0px;
   top: 0px;
   padding: 7%;
+  opacity: 0.9;
 }
 .content .boxwrap .box1 .txt h4 {
   font: bold 27px/1 "arial";
@@ -1396,12 +1406,13 @@ header .popup .inner input[type=checkbox] {
   background-image: url(../img/set2.jpg);
 }
 .content .boxwrap .box2 .txt {
-  background: #e5ebeb;
+  background: #c7dfe3;
   width: 50%;
   height: 75%;
   margin-top: 5%;
   position: absolute;
   padding: 7%;
+  opacity: 0.9;
 }
 .content .boxwrap .box2 .txt h4 {
   font: bold 27px/1 "arial";
@@ -1469,7 +1480,7 @@ header .popup .inner input[type=checkbox] {
 .content .award {
   width: 100%;
   height: 100%;
-  background: #e5ebeb;
+  background: #f2f6f6;
   padding-bottom: 120px;
 }
 .content .award .inner {
@@ -1542,23 +1553,24 @@ header .popup .inner input[type=checkbox] {
 }
 .content .recommend .inner .control .prev i {
   color: black;
-  font-size: 30px;
+  font-size: 25px;
   margin-right: 10px;
 }
 .content .recommend .inner .control .next i {
   color: black;
-  font-size: 30px;
+  font-size: 25px;
 }
-.content .recommend .inner .slider {
+.content .recommend .inner #slider {
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
 }
-.content .recommend .inner .slider ul {
+.content .recommend .inner #slider ul {
   width: 300%;
+  height: 100%;
 }
-.content .recommend .inner .slider ul li {
+.content .recommend .inner #slider ul li {
   width: 33.3333333333%;
   height: 100%;
   justify-content: center;
@@ -1568,13 +1580,13 @@ header .popup .inner input[type=checkbox] {
   display: flex;
   align-items: center;
 }
-.content .recommend .inner .slider ul li article {
+.content .recommend .inner #slider ul li article {
   width: 580px;
   height: 300px;
-  background: #e5ebeb;
+  background: #f2f6f6;
   margin-right: 20px;
 }
-.content .recommend .inner .slider ul li article:nth-of-type(2) {
+.content .recommend .inner #slider ul li article:nth-of-type(2) {
   margin-right: 0px;
 }
 .content .recommend .inner .line {
@@ -1588,7 +1600,7 @@ header .popup .inner input[type=checkbox] {
   width: 100%;
   padding-top: 40px;
   text-align: center;
-  color: #5a5151;
+  color: #727171;
   border: 1px solid #dddbdb;
 }
 .content .recommend .inner .line article:nth-of-type(1) {
@@ -1618,12 +1630,12 @@ header .popup .inner input[type=checkbox] {
 }
 #footer .inner h1 {
   font: bold 25px/1 "arial";
-  color: #e5ebeb;
+  color: #f2f6f6;
   text-align: center;
 }
 #footer .inner p {
   font: 13px/1 "arial";
-  color: #e5ebeb;
+  color: #f2f6f6;
   padding-top: 10px;
   text-align: center;
 }
