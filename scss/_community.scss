@@ -11,27 +11,34 @@
       tr {
         border: 1px solid gray;
 
+        &:hover {
+          background: lightcyan;
+        }
+
         th {
-          background: rgb(243, 243, 243);
+          background: $DkColor;
 
           padding: 20px 0;
         }
 
         td {
           text-align: center;
-          color: teal;
-          border-bottom: 1px solid #ddd;
+          color: black;
+          border-bottom: 5px solid white;
+          background: $LGColor;
+
+          &:hover {
+            background-color: white;
+          }
+
           &:nth-of-type(2) {
             text-align: left;
             padding: 20px 10px;
           }
 
           a {
-            color: teal;
-          }
-
-          :hover {
-            color: $Strongcolor;
+            color: black;
+            font: bold 18px/1 "arial";
           }
         }
       }

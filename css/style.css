@@ -543,10 +543,13 @@ aside .close {
 }
 .aboutus .inner .wrap article {
   width: 380px;
-  height: 400px;
+  height: 150px;
   margin-right: 20px;
   float: left;
   background: #fff;
+  padding: 2%;
+  text-align: center;
+  border: 10px solid #e1dede;
 }
 .aboutus .inner .wrap article:nth-of-type(3) {
   margin-right: 0px;
@@ -554,12 +557,12 @@ aside .close {
 .aboutus .inner .wrap article i {
   font-size: 30px;
   padding-top: 16px;
-  color: #f4eeee;
+  color: #383434;
 }
 .aboutus .inner .wrap article h3 {
   padding-top: 10px;
   font: bold 14px/1 "Voces", cursive;
-  color: #383434;
+  color: #777676;
 }
 .aboutus .inner .division {
   margin-top: 50px;
@@ -864,24 +867,29 @@ aside .close {
 .community .inner table tr {
   border: 1px solid gray;
 }
+.community .inner table tr:hover {
+  background: lightcyan;
+}
 .community .inner table tr th {
-  background: #f3f3f3;
+  background: #383434;
   padding: 20px 0;
 }
 .community .inner table tr td {
   text-align: center;
-  color: teal;
-  border-bottom: 1px solid #ddd;
+  color: black;
+  border-bottom: 5px solid white;
+  background: #f1e9e9;
+}
+.community .inner table tr td:hover {
+  background-color: white;
 }
 .community .inner table tr td:nth-of-type(2) {
   text-align: left;
   padding: 20px 10px;
 }
 .community .inner table tr td a {
-  color: teal;
-}
-.community .inner table tr td :hover {
-  color: #f5ebeb;
+  color: black;
+  font: bold 18px/1 "arial";
 }
 .community .inner .pagination {
   width: 100%;
@@ -1021,7 +1029,7 @@ aside .close {
 .contactus .inner .contactform .txt .wrap i {
   margin-right: 10px;
   font-size: 32px;
-  color: #e1dede;
+  color: #777676;
 }
 .contactus .inner .contactform .txt h3 {
   font: bold 20px/1 "arial";
@@ -1044,7 +1052,7 @@ aside .close {
   border: none;
 }
 .contactus .inner .contactform fieldset input:nth-of-type(3) {
-  background: #e1dede;
+  background: #777676;
   color: #fff;
   width: 100px;
   float: right;
@@ -1636,13 +1644,14 @@ header .popup .inner input[type=checkbox] {
 }
 .content .recommend .inner #slider {
   width: 100%;
-  height: 100%;
+  height: 300px;
   position: relative;
   overflow: hidden;
 }
 .content .recommend .inner #slider ul {
   width: 300%;
-  height: 100%;
+  left: 100%;
+  position: absolute;
 }
 .content .recommend .inner #slider ul li {
   width: 33.3333333333%;
@@ -1650,8 +1659,8 @@ header .popup .inner input[type=checkbox] {
   justify-content: center;
   align-items: center;
   float: left;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .content .recommend .inner #slider ul li article {
@@ -1659,7 +1668,8 @@ header .popup .inner input[type=checkbox] {
   height: 300px;
   background: #f1e9e9;
   margin-right: 20px;
-  padding: 7% 5%;
+  text-align: center;
+  padding: 5% 5%;
 }
 .content .recommend .inner #slider ul li article:nth-of-type(2) {
   margin-right: 0px;

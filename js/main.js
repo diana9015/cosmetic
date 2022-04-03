@@ -26,59 +26,81 @@ function setCookie(name, val, due) {
   document.cookie = `${name}=${val}; path=/; expires=${duedate}`;
 }
 
-//슬라이드
-const slider = document.querySelector("#slider");
-const recommend = document.querySelector(".recommend");
-const prev = recommend.querySelector(".prev");
-const next = recommend.querySelector(".next");
+//슬라이드const slider = document.querySelector("#slider");
+const ul = slider.querySelector("ul");
+const prev = slider.querySelector(".prev");
+const next = slider.querySelector(".next");
 const speed = 1000;
 let enableClick = true;
 
-init(slider);
+//페이지가 로딩되었을때 ul의 초기값 -100%로 설정
+ul.style.left = "-100%";
+//왜 셀렉트올이 아닌가..?
 
+//next버튼을 클릭했을때
 next.addEventListener("click", (e) => {
   e.preventDefault();
 
   if (enableClick) {
     enableClick = false;
+    nextSlide();
   }
-  nextSlide(frame);
+  //   //ul의 left값을 변경해야함. -100%
+
+  //   //new Anim(우리가 움직여야할 요소,anim)
+
+  //   new Anim(ul, {
+  //     prop: "left",
+  //     value: "-200%",
+  //     duration: 1000,
+  //     //callback은 다시 하는거
+  //     callback: () => {
+  //       ul.style.left = "-100%";
+  //       ul.append(ul.firstElementChild);
+  //     },
+  //   });
 });
 
 prev.addEventListener("click", (e) => {
   e.preventDefault();
 
   if (enableClick) {
+    prevSlide();
     enableClick = false;
   }
-  prevSlide(frame);
+  //   new Anim(ul, {
+  //     prop: "left",
+  //     value: "0%",
+  //     duration: 1000,
+
+  //     callback: () => {
+  //       ul.style.left = "-100%";
+  //       ul.prepend(ul.lastElementChild);
+  //     },
+  //   });
 });
 
-//페이지가 로딩되었을때 ul의 초기값 -100%로 설정
-function init(frame) {
-  const ul = frame.querySelector("ul");
-  const lis = ul.querySelectorAll("li");
-  const len = lis.length;
-  //페이지가 로딩되었을 때 ul의 초기 left값을 -100%로 설정
-  ul.style.left = "-100%";
-  ul.prepend(ul.lastElementChild); //ul의 마지막li를 맨앞으로 배치
-  ul.style.width = `${100 * len}%`; //ul의 너비값 설정
-  lis.forEach((li) => {
-    li.style.width = `${100 / len}%`;
+//---------------------------함수로 변환--
+function nextSlide() {
+  new Anime(ul, {
+    prop: "left",
+    value: "-200%",
+    duration: 1000,
+
+    callback: () => {
+      ul.style.left = "-100%";
+      ul.append(ul.firstElementChild);
+      enableClick = true;
+    },
   });
 }
 
-//왜 셀렉트올이 아닌가..?
-
-//next버튼을 클릭했을때
-
-function prevSlide(frame) {
-  const ul = frame.querySelector("ul");
-
+function prevSlide() {
   new Anime(ul, {
     prop: "left",
     value: "0%",
-    duration: speed,
+    duration: 1000,
+
     callback: () => {
       ul.style.left = "-100%";
       ul.prepend(ul.lastElementChild);
@@ -86,95 +108,3 @@ function prevSlide(frame) {
     },
   });
 }
-
-function nextSlide(frame) {
-  const ul = frame.querySelector("ul");
-
-  new Anime(ul, {
-    prop: "left",
-    value: "-200%",
-    duration: speed,
-    callback: () => {
-      ul.append(ul.firstElementChild);
-      ul.style.left = "-100%";
-      enableClick = true;
-    },
-  });
-}
-
-// const slider1 = document.querySelector("#slider1");
-// const slider2 = document.querySelector("#slider2");
-// const prev = document.querySelector(".prev");
-// const next = document.querySelector(".next");
-// const speed = 1000;
-// let enableClick = true;
-
-// //초기화 함수 호출
-// init(slider1);
-// init(slider2);
-
-// //next버튼을 클릭했을 때
-// next.addEventListener("click", e=>{
-//     e.preventDefault();
-
-//     if(enableClick){
-//         enableClick = false;
-//         nextSlide(slider1);
-//         nextSlide(slider2);
-//     }
-// });
-
-// prev.addEventListener("click", e=>{
-//     e.preventDefault();
-
-//     if(enableClick){
-//         prevSlide(slider1);
-//         prevSlide(slider2);
-//         enableClick = false;
-//     }
-
-// });
-
-// //화면로딩시 패널의 위치와 크기 초기화하는 함수 정의
-// function init(frame){
-//     const ul = frame.querySelector("ul");
-//     const lis = ul.querySelectorAll("li");
-//     const len = lis.length;
-//     //페이지가 로딩되었을 때 ul의 초기 left값을 -100%로 설정
-//     ul.style.left = "-100%";
-//     ul.prepend(ul.lastElementChild); //ul의 마지막li를 맨앞으로 배치
-//     ul.style.width = `${100 * len}%`; //ul의 너비값 설정
-//     lis.forEach((li)=>{
-//         li.style.width = `${100 / len}%`
-//     })
-// }
-
-// function prevSlide(frame){
-//     const ul = frame.querySelector("ul");
-
-//     new Anim(ul,{
-//         prop:"left",
-//         value :"0%",
-//         duration:speed,
-//         callback :()=>{
-//             ul.style.left = "-100%";
-//             ul.prepend(ul.lastElementChild);
-//             enableClick = true;
-//         }
-//     })
-// }
-
-// function nextSlide(frame){
-//     const ul = frame.querySelector("ul");
-
-//     new Anim(ul, {
-//         prop:"left",
-//         value : "-200%",
-//         duration: speed,
-//         callback :()=>{
-//             ul.append(ul.firstElementChild);
-//             ul.style.left = "-100%";
-//             enableClick = true;
-//         }
-//     })
-// }

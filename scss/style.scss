@@ -514,12 +514,13 @@ header {
 
       #slider {
         width: 100%;
-        height: 100%;
+        height: 300px;
         position: relative;
         overflow: hidden;
         ul {
           width: calc(100% * 3);
-          height: 100%;
+          left: 100%;
+          position: absolute;
 
           li {
             width: calc(100% / 3);
@@ -527,8 +528,8 @@ header {
             justify-content: center;
             align-items: center;
             float: left;
-            justify-content: center;
             display: flex;
+            justify-content: center;
             align-items: center;
 
             article {
@@ -536,7 +537,9 @@ header {
               height: 300px;
               background: $LGColor;
               margin-right: 20px;
-              padding: 7% 5%;
+              text-align: center;
+              padding: 5% 5%;
+
               &:nth-of-type(2) {
                 margin-right: 0px;
               }

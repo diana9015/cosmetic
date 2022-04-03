@@ -40,10 +40,13 @@
       padding-top: 3%;
       article {
         width: 380px;
-        height: 400px;
+        height: 150px;
         margin-right: 20px;
         float: left;
         background: #fff;
+        padding: 2%;
+        text-align: center;
+        border: 10px solid $BgColor;
 
         &:nth-of-type(3) {
           margin-right: 0px;
@@ -52,13 +55,13 @@
         i {
           font-size: 30px;
           padding-top: 16px;
-          color: $OrColor;
+          color: $DkColor;
         }
 
         h3 {
           padding-top: 10px;
           font: bold 14px/1 "Voces", cursive;
-          color: $DkColor;
+          color: $BkColor;
         }
       }
     }
