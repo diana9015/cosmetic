@@ -1093,7 +1093,7 @@ aside .close {
 .join .inner .wrap .visual {
   height: 100%;
   width: 50%;
-  padding: 27% 5%;
+  padding: 25% 5%;
   background: url(../img/nati-melnychuk-dFBhXJHKNeo-unsplash.jpg);
   background-position: center;
   background-size: cover;
@@ -1125,7 +1125,7 @@ aside .close {
   border: 1px solid #777676;
 }
 .join .inner .wrap form fieldset {
-  padding: 20px;
+  padding: 19px;
   width: 100%;
 }
 .join .inner .wrap form fieldset h2 {
