@@ -26,7 +26,7 @@ function setCookie(name, val, due) {
   document.cookie = `${name}=${val}; path=/; expires=${duedate}`;
 }
 
-//슬라이드const slider = document.querySelector("#slider");
+const slider = document.querySelector("#slider");
 const ul = slider.querySelector("ul");
 const prev = slider.querySelector(".prev");
 const next = slider.querySelector(".next");

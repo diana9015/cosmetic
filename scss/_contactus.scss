@@ -44,7 +44,7 @@
         margin-right: 20px;
         padding: 5%;
         text-align: center;
-        background-color: $LGColor;
+        background-color: $Strongcolor;
         margin-bottom: 5%;
 
         i {
@@ -86,7 +86,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
       .txt {
         width: 580px;
         height: 100%;
@@ -97,7 +96,12 @@
           i {
             margin-right: 10px;
             font-size: 32px;
-            color: $BkColor;
+            color: $DbgColor;
+            transition: 0.5s;
+
+            &:hover {
+              transform: scale(1.2);
+            }
           }
         }
         h3 {
@@ -121,18 +125,23 @@
           margin-bottom: 10px;
           background: $GrColor;
           border: none;
+          padding-left: 10px;
+          font: normal 15px/1 "arial";
 
           &:nth-of-type(3) {
-            background: $BkColor;
+            background: $DbgColor;
             color: #fff;
             width: 100px;
+            font: normal 18px/1 "arial";
             float: right;
+            cursor: pointer;
+            padding-left: 0px;
           }
 
           &::placeholder {
             font: normal 15px/1 "arial";
             color: $BkColor;
-            padding-left: 5px;
+            padding-left: 2px;
           }
         }
 
@@ -144,11 +153,14 @@
           left: 0px;
           padding-top: 15px;
           border: none;
+          resize: none;
+          padding-left: 10px;
+          font: normal 15px/1 "arial";
 
           &::placeholder {
             font: normal 15px/1 "arial";
             color: $BkColor;
-            padding-left: 5px;
+            padding-left: 2px;
           }
         }
       }
