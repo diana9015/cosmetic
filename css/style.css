@@ -48,7 +48,115 @@ font-family: 'Voces', cursive;
 #header_sub {
   width: 100%;
   height: 140px;
-  background: #777676;
+  background: #969494;
+}
+#header_sub .loginpop {
+  display: none;
+  background: #de897c;
+  width: 400px;
+  height: 400px;
+  padding: 50px;
+  border: 1px solid white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  opacity: 0.9;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+}
+#header_sub .loginpop > a {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+#header_sub .loginpop h1 {
+  font: normal 40px/1 "arial";
+  text-align: center;
+  margin-bottom: 25px;
+}
+#header_sub .loginpop form {
+  width: 100%;
+  opacity: 1;
+}
+#header_sub .loginpop form input {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 7px;
+  background: #f0d4c8;
+  padding-left: 10px;
+}
+#header_sub .loginpop form input[type=checkbox] {
+  width: 12px;
+  height: 12px;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+#header_sub .loginpop form p {
+  display: inline-block;
+}
+#header_sub .loginpop form input[type=submit] {
+  background: #de897c;
+  color: black;
+  font: normal 20px/1px "arial";
+  margin-top: 10px;
+  cursor: pointer;
+  opacity: 2;
+}
+#header_sub .loginpop form a {
+  color: black;
+}
+#header_sub .login {
+  display: none;
+  background: #de897c;
+  width: 400px;
+  height: 400px;
+  padding: 50px;
+  border: 1px solid white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  opacity: 0.9;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+#header_sub .login h1 {
+  font: normal 40px/1 "arial";
+  text-align: center;
+  margin-bottom: 20px;
+}
+#header_sub .login form {
+  width: 100%;
+  opacity: 1;
+}
+#header_sub .login form input {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 7px;
+  background: #f0d4c8;
+  padding-left: 10px;
+}
+#header_sub .login form input[type=checkbox] {
+  width: 12px;
+  height: 12px;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+#header_sub .login form p {
+  display: inline-block;
+}
+#header_sub .login form input[type=submit] {
+  background: #de897c;
+  color: black;
+  font: normal 20px/1px "arial";
+  margin-top: 10px;
+  cursor: pointer;
+  opacity: 2;
+}
+#header_sub .login a {
+  color: black;
 }
 #header_sub .mobilenav {
   display: none;
@@ -138,7 +246,7 @@ font-family: 'Voces', cursive;
   transition: 0.5s;
 }
 #header_sub .inner .wrap nav .webnav .top_nav ul li a:hover {
-  color: #e0dfdf;
+  color: #d2caca;
 }
 #header_sub .inner .wrap nav .webnav .top_nav ul li:nth-of-type(2) {
   margin-right: 0;
@@ -154,7 +262,7 @@ font-family: 'Voces', cursive;
   transition: 0.5s;
 }
 #header_sub .inner .wrap nav .webnav .top_nav h1 a:hover {
-  color: #e0dfdf;
+  color: #d2caca;
 }
 #header_sub .inner .wrap nav .webnav .centernav {
   height: 100%;
@@ -183,7 +291,7 @@ font-family: 'Voces', cursive;
   font: bold 18px/1 "arial";
 }
 #header_sub .inner .wrap nav .webnav .centernav ul li a:hover {
-  color: #e0dfdf;
+  color: #d2caca;
 }
 #header_sub .inner .wrap nav .webnav .centernav ul li:nth-of-type(3) {
   margin-right: 0px;
@@ -230,12 +338,12 @@ font-family: 'Voces', cursive;
 }
 #footer_sub .inner h1 {
   font: bold 25px/1 "arial";
-  color: #faf4ec;
+  color: white;
   text-align: center;
 }
 #footer_sub .inner p {
   font: 13px/1 "arial";
-  color: #777;
+  color: white;
   padding-top: 10px;
   text-align: center;
 }
@@ -307,13 +415,13 @@ font-family: 'Voces', cursive;
     margin: 0 auto;
   }
   #footer_sub .inner h1 {
-    font: bold 24px/1 "arial";
-    color: #faf4ec;
+    font: bold 28px/1 "arial";
+    color: white;
     text-align: center;
   }
   #footer_sub .inner p {
-    font: 12px/1 "arial";
-    color: #777;
+    font: 13px/1 "arial";
+    color: white;
     padding-top: 10px;
     text-align: center;
   }
@@ -379,7 +487,7 @@ font-family: 'Voces', cursive;
   width: 100%;
   height: 100%;
   text-align: center;
-  border-bottom: 1px dotted #777676;
+  border-bottom: 1px dotted #969494;
   padding-bottom: 100px;
 }
 .information .inner .innertop p {
@@ -391,7 +499,7 @@ font-family: 'Voces', cursive;
   font: normal 30px/1.2 "Voces", cursive;
   text-align: center;
   display: inline;
-  color: #777676;
+  color: #969494;
 }
 .information .inner .innertop h2 {
   font: normal 30px/1 "Voces", cursive;
@@ -420,7 +528,7 @@ font-family: 'Voces', cursive;
   float: left;
   padding: 5px;
   margin: 3px;
-  border: 1px solid #f9e3e3;
+  border: 1px solid #fbeee8;
 }
 .information .inner .contwrap .pictures .item a {
   width: 100%;
@@ -509,66 +617,149 @@ aside .close {
   width: 1180px;
   margin: 0 auto;
 }
-.aboutus .inner .innertop {
+.aboutus .inner .boxwrap {
   width: 100%;
   height: 100%;
-  text-align: center;
-  border-bottom: 1px dotted #777676;
-  padding-bottom: 100px;
+  margin-bottom: 250px;
 }
-.aboutus .inner .innertop p {
-  font: normal 17px/1 "Voces", cursive;
-  text-align: center;
-  color: #383434;
+.aboutus .inner .boxwrap .line {
+  width: 1px;
+  height: 280px;
+  background: #969494;
+  float: left;
 }
-.aboutus .inner .innertop h1 {
-  font: normal 30px/1.2 "Voces", cursive;
-  text-align: center;
-  display: inline;
-  color: #777676;
-}
-.aboutus .inner .innertop h2 {
-  font: normal 30px/1 "Voces", cursive;
-  text-align: center;
-  color: #383434;
-  display: inline;
-}
-.aboutus .inner h3 {
-  font: bold 22px/1.2 "arial";
-  color: #fff;
-}
-.aboutus .inner .wrap {
-  width: 100%;
-  padding-top: 3%;
-}
-.aboutus .inner .wrap article {
-  width: 380px;
-  height: 150px;
-  margin-right: 20px;
+.aboutus .inner .boxwrap article {
+  width: calc(33.3333333333% - 1px);
+  height: 300px;
   float: left;
   background: #fff;
-  padding: 2%;
   text-align: center;
-  border: 10px solid #eecece;
+  padding: 2%;
 }
-.aboutus .inner .wrap article:nth-of-type(3) {
+.aboutus .inner .boxwrap article::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 350px;
+  background: #faf4ec;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  z-index: -3;
+}
+.aboutus .inner .boxwrap article:nth-of-type(3) {
   margin-right: 0px;
 }
-.aboutus .inner .wrap article i {
+.aboutus .inner .boxwrap article i {
   font-size: 30px;
   padding-top: 16px;
+  color: #de897c;
+}
+.aboutus .inner .boxwrap article h3 {
+  padding: 20px 0;
+  font: bold 18px/1 "Voces", cursive;
   color: #383434;
 }
-.aboutus .inner .wrap article h3 {
-  padding-top: 10px;
-  font: bold 14px/1 "Voces", cursive;
-  color: #777676;
+.aboutus .inner .boxwrap article p {
+  font: normal 16px/1.2 "arial";
 }
-.aboutus .inner .division {
-  margin-top: 50px;
-  background: url(../img/images.jpg) no-repeat center;
+.aboutus .inner .boxwrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.aboutus .inner .intro {
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+.aboutus .inner .intro h1 {
+  font: normal 40px/1 "arial";
+  margin-bottom: 50px;
+}
+.aboutus .inner .intro p {
+  font: normal 18px/1.2 "arial";
+  margin-bottom: 150px;
+}
+.aboutus .inner .puzzle {
   width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+.aboutus .inner .puzzle .wrap {
+  width: 380px;
+  height: 1180px;
+  margin-right: 20px;
+  text-align: center;
+}
+.aboutus .inner .puzzle .wrap:nth-of-type(3) {
+  margin-right: 0px;
+}
+.aboutus .inner .puzzle .wrap .banner1 {
+  height: 380px;
+  background: url(../img/pexels-jill-burrow-6387848.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.aboutus .inner .puzzle .wrap .banner2 {
+  height: 380px;
+  background: #969494;
+  margin-bottom: 20px;
+}
+.aboutus .inner .puzzle .wrap .banner2 h2 {
+  padding-top: 40%;
+  font: bold 60px/1 "Pompiere", cursive;
+}
+.aboutus .inner .puzzle .wrap .banner3 {
+  height: 380px;
+  background: #f0d4c8;
+}
+.aboutus .inner .puzzle .wrap .banner3 h2 {
+  padding-top: 40%;
+  font: normal 50px/1 "Lalezar", cursive;
+}
+.aboutus .inner .puzzle .wrap .banner4 {
+  height: 360px;
+  background: #d2caca;
+  margin-bottom: 20px;
+}
+.aboutus .inner .puzzle .wrap .banner4 h2 {
+  padding-top: 40%;
+  font: normal 60px/1 "Passion One", cursive;
+}
+.aboutus .inner .puzzle .wrap .banner5 {
   height: 800px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/pexels-marina-leonova-7486107.jpg);
+}
+.aboutus .inner .puzzle .wrap .banner6 {
+  height: 580px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+  background-image: url(../img/pexels-linda-prebreza-286951.jpg);
+}
+.aboutus .inner .puzzle .wrap .banner7 {
+  height: 280px;
+  background: #de897c;
+  margin-bottom: 20px;
+}
+.aboutus .inner .puzzle .wrap .banner7 h2 {
+  padding-top: 28%;
+  font: normal 50px/1 "Fugaz One", cursive;
+}
+.aboutus .inner .puzzle .wrap .banner8 {
+  height: 280px;
+  background: #383434;
+}
+.aboutus .inner .puzzle .wrap .banner8 h2 {
+  padding-top: 28%;
+  font: normal 50px/1 "Prosto One", cursive;
 }
 .aboutus .inner .div_tree {
   position: absolute;
@@ -877,14 +1068,14 @@ aside .close {
   background: lightcyan;
 }
 .community .inner table tr th {
-  background: #777676;
+  background: #969494;
   padding: 10px 0;
 }
 .community .inner table tr td {
   text-align: center;
   color: black;
   border-bottom: 5px solid white;
-  background: #f9e3e3;
+  background: #fbeee8;
 }
 .community .inner table tr td:hover {
   background-color: white;
@@ -954,7 +1145,7 @@ aside .close {
   width: 100%;
   height: 100%;
   text-align: center;
-  border-bottom: 1px dotted #777676;
+  border-bottom: 1px dotted #969494;
   padding-bottom: 100px;
 }
 .contactus .inner .innertop p {
@@ -966,7 +1157,7 @@ aside .close {
   font: normal 30px/1.2 "Voces", cursive;
   text-align: center;
   display: inline;
-  color: #777676;
+  color: #969494;
 }
 .contactus .inner .innertop h2 {
   font: normal 30px/1 "Voces", cursive;
@@ -1035,7 +1226,7 @@ aside .close {
 .contactus .inner .contactform .txt .wrap i {
   margin-right: 10px;
   font-size: 32px;
-  color: #d27676;
+  color: #de897c;
   transition: 0.5s;
 }
 .contactus .inner .contactform .txt .wrap i:hover {
@@ -1058,13 +1249,13 @@ aside .close {
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
-  background: #f9e3e3;
+  background: #fbeee8;
   border: none;
   padding-left: 10px;
   font: normal 15px/1 "arial";
 }
 .contactus .inner .contactform fieldset input:nth-of-type(3) {
-  background: #d27676;
+  background: #de897c;
   color: #fff;
   width: 100px;
   font: normal 18px/1 "arial";
@@ -1074,14 +1265,14 @@ aside .close {
 }
 .contactus .inner .contactform fieldset input::placeholder {
   font: normal 15px/1 "arial";
-  color: #777676;
+  color: #969494;
   padding-left: 2px;
 }
 .contactus .inner .contactform fieldset textarea {
   width: 100%;
   height: 100%;
   margin-bottom: 10px;
-  background: #f9e3e3;
+  background: #fbeee8;
   left: 0px;
   padding-top: 15px;
   border: none;
@@ -1091,7 +1282,7 @@ aside .close {
 }
 .contactus .inner .contactform fieldset textarea::placeholder {
   font: normal 15px/1 "arial";
-  color: #777676;
+  color: #969494;
   padding-left: 2px;
 }
 
@@ -1140,7 +1331,7 @@ aside .close {
   width: 50%;
   height: 100%;
   background: white;
-  border: 1px solid #777676;
+  border: 1px solid #969494;
 }
 .join .inner .wrap form fieldset {
   padding: 19px;
@@ -1168,12 +1359,12 @@ aside .close {
   /*글씨 크키가 조절이 안됨*/
 }
 .join .inner .wrap form fieldset table caption .h {
-  color: #eecece;
+  color: #f0d4c8;
   size: 80px;
   font-weight: 700;
 }
 .join .inner .wrap form fieldset table th {
-  background: #777676;
+  background: #969494;
   padding: 15px 20px;
   font: normal 14px/1 "arial";
   color: white;
@@ -1431,7 +1622,7 @@ header .popup .inner a {
   display: block;
   color: white;
   width: 100%;
-  background: #777676;
+  background: #969494;
   border: 1px solid #fff;
   text-align: center;
   margin-bottom: 10px;
@@ -1441,6 +1632,63 @@ header .popup .inner a {
 }
 header .popup .inner input[type=checkbox] {
   margin-right: 5px;
+}
+header .loginpop {
+  display: none;
+  background: #de897c;
+  width: 400px;
+  height: 400px;
+  padding: 50px;
+  border: 1px solid white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  opacity: 0.9;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+}
+header .loginpop > a {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+header .loginpop h1 {
+  font: normal 40px/1 "arial";
+  text-align: center;
+  margin-bottom: 25px;
+}
+header .loginpop form {
+  width: 100%;
+  opacity: 1;
+}
+header .loginpop form input {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 7px;
+  background: #f0d4c8;
+  padding-left: 10px;
+}
+header .loginpop form input[type=checkbox] {
+  width: 12px;
+  height: 12px;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+header .loginpop form p {
+  display: inline-block;
+}
+header .loginpop form input[type=submit] {
+  background: #de897c;
+  color: black;
+  font: normal 20px/1px "arial";
+  margin-top: 10px;
+  cursor: pointer;
+  opacity: 2;
+}
+header .loginpop form a {
+  color: black;
 }
 
 .content {
@@ -1471,7 +1719,7 @@ header .popup .inner input[type=checkbox] {
   width: 50%;
   height: 75%;
   margin-top: 5%;
-  background: #eecece;
+  background: #de897c;
   position: absolute;
   right: 0px;
   top: 0px;
@@ -1506,7 +1754,7 @@ header .popup .inner input[type=checkbox] {
   background-image: url(../img/set2.jpg);
 }
 .content .boxwrap .box2 .txt {
-  background: #eecece;
+  background: #969494;
   width: 50%;
   height: 75%;
   margin-top: 5%;
@@ -1580,7 +1828,7 @@ header .popup .inner input[type=checkbox] {
 .content .award {
   width: 100%;
   height: 100%;
-  background: #faf4ec;
+  background: #f9f5f5;
   padding-bottom: 120px;
 }
 .content .award .inner {
@@ -1688,7 +1936,7 @@ header .popup .inner input[type=checkbox] {
   height: 300px;
   display: flex;
   flex-direction: column;
-  background: #faf4ec;
+  background: #f9f5f5;
   margin-right: 20px;
   align-items: center;
   padding: 3%;
@@ -1721,8 +1969,8 @@ header .popup .inner input[type=checkbox] {
   width: 100%;
   padding-top: 40px;
   text-align: center;
-  color: #777676;
-  border: 1px solid #777676;
+  color: #969494;
+  border: 1px solid #d2caca;
 }
 .content .recommend .inner .line article:nth-of-type(1) {
   font: normal 25px/1 "Fugaz One", cursive;
@@ -1808,13 +2056,13 @@ header .popup .inner input[type=checkbox] {
   margin: 0 auto;
 }
 #footer .inner h1 {
-  font: bold 25px/1 "arial";
-  color: #f9e3e3;
+  font: bold 28px/1 "arial";
+  color: white;
   text-align: center;
 }
 #footer .inner p {
   font: 13px/1 "arial";
-  color: #f9e3e3;
+  color: white;
   padding-top: 10px;
   text-align: center;
 }
