@@ -67,10 +67,10 @@
     }
   }
 
-  .mobilenav {
+  .mobbtn {
     display: none;
     position: absolute;
-    top: 3%;
+    top: 3.3%;
     right: 7%;
 
     .btnCall {
@@ -110,17 +110,17 @@
       text-indent: -9999px;
     }
 
-    .btnCall:hover::after {
+    .btnCall.on::after {
       transform: rotate(-45deg);
       bottom: calc(50% - 1px);
     }
 
-    .btnCall:hover::before {
+    .btnCall.on::before {
       transform: rotate(45deg);
       top: calc(50% - 1px);
     }
 
-    .btnCall:hover span {
+    .btnCall.on span {
       transform: translateX(100%);
       opacity: 0;
     }
@@ -391,7 +391,7 @@
 
 @media screen and (max-width: $mobile) {
   #header_sub {
-    .mobilenav {
+    .mobbtn {
       display: block;
       z-index: 10;
     }

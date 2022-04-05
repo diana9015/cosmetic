@@ -24,7 +24,7 @@ header {
     background: #000;
     height: 100vh;
 
-    .mobilenav {
+    .mobbtn {
       display: none;
       position: absolute;
       top: 3.3%;
@@ -67,17 +67,17 @@ header {
         text-indent: -9999px;
       }
 
-      .btnCall:hover::after {
+      .btnCall.on::after {
         transform: rotate(-45deg);
         bottom: calc(50% - 1px);
       }
 
-      .btnCall:hover::before {
+      .btnCall.on::before {
         transform: rotate(45deg);
         top: calc(50% - 1px);
       }
 
-      .btnCall:hover span {
+      .btnCall.on span {
         transform: translateX(100%);
         opacity: 0;
       }
@@ -191,7 +191,7 @@ header {
     .inner {
       position: absolute;
       width: 90%;
-      bottom: 20%;
+      bottom: 15%;
       padding-left: 5%;
       h2 {
         color: white;
@@ -758,7 +758,7 @@ header {
       width: 100%;
       margin: 0 auto;
 
-      .mobilenav {
+      .mobbtn {
         display: none;
       }
 
@@ -825,7 +825,7 @@ header {
       background-image: url(../img/pexels-olia-danilevich-5120894.jpg);
       background-size: cover;
 
-      .mobilenav {
+      .mobbtn {
         display: block;
         z-index: 5;
       }

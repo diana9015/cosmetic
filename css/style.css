@@ -110,19 +110,19 @@ font-family: 'Voces', cursive;
 #header_sub .loginpop form a {
   color: white;
 }
-#header_sub .mobilenav {
+#header_sub .mobbtn {
   display: none;
   position: absolute;
-  top: 3%;
+  top: 3.3%;
   right: 7%;
 }
-#header_sub .mobilenav .btnCall {
+#header_sub .mobbtn .btnCall {
   position: absolute;
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
 }
-#header_sub .mobilenav .btnCall::before {
+#header_sub .mobbtn .btnCall::before {
   content: "";
   width: 100%;
   height: 2px;
@@ -132,7 +132,7 @@ font-family: 'Voces', cursive;
   top: 0px;
   transition: 0.5s 0s, transform 0.5s 0.5s;
 }
-#header_sub .mobilenav .btnCall::after {
+#header_sub .mobbtn .btnCall::after {
   content: "";
   width: 100%;
   height: 2px;
@@ -142,7 +142,7 @@ font-family: 'Voces', cursive;
   bottom: 0px;
   transition: 0.5s 0s, transform 0.5s 0.5s;
 }
-#header_sub .mobilenav .btnCall span {
+#header_sub .mobbtn .btnCall span {
   background: white;
   height: 2px;
   position: absolute;
@@ -150,15 +150,15 @@ font-family: 'Voces', cursive;
   top: calc(50% - 1px);
   text-indent: -9999px;
 }
-#header_sub .mobilenav .btnCall:hover::after {
+#header_sub .mobbtn .btnCall.on::after {
   transform: rotate(-45deg);
   bottom: calc(50% - 1px);
 }
-#header_sub .mobilenav .btnCall:hover::before {
+#header_sub .mobbtn .btnCall.on::before {
   transform: rotate(45deg);
   top: calc(50% - 1px);
 }
-#header_sub .mobilenav .btnCall:hover span {
+#header_sub .mobbtn .btnCall.on span {
   transform: translateX(100%);
   opacity: 0;
 }
@@ -379,7 +379,7 @@ font-family: 'Voces', cursive;
   }
 }
 @media screen and (max-width: 539px) {
-  #header_sub .mobilenav {
+  #header_sub .mobbtn {
     display: block;
     z-index: 10;
   }
@@ -1529,19 +1529,19 @@ header .visual {
   background: #000;
   height: 100vh;
 }
-header .visual .mobilenav {
+header .visual .mobbtn {
   display: none;
   position: absolute;
   top: 3.3%;
   right: 7%;
 }
-header .visual .mobilenav .btnCall {
+header .visual .mobbtn .btnCall {
   position: absolute;
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
 }
-header .visual .mobilenav .btnCall::before {
+header .visual .mobbtn .btnCall::before {
   content: "";
   width: 100%;
   height: 2px;
@@ -1551,7 +1551,7 @@ header .visual .mobilenav .btnCall::before {
   top: 0px;
   transition: 0.5s 0s, transform 0.5s 0.5s;
 }
-header .visual .mobilenav .btnCall::after {
+header .visual .mobbtn .btnCall::after {
   content: "";
   width: 100%;
   height: 2px;
@@ -1561,7 +1561,7 @@ header .visual .mobilenav .btnCall::after {
   bottom: 0px;
   transition: 0.5s 0s, transform 0.5s 0.5s;
 }
-header .visual .mobilenav .btnCall span {
+header .visual .mobbtn .btnCall span {
   background: white;
   height: 2px;
   position: absolute;
@@ -1569,15 +1569,15 @@ header .visual .mobilenav .btnCall span {
   top: calc(50% - 1px);
   text-indent: -9999px;
 }
-header .visual .mobilenav .btnCall:hover::after {
+header .visual .mobbtn .btnCall.on::after {
   transform: rotate(-45deg);
   bottom: calc(50% - 1px);
 }
-header .visual .mobilenav .btnCall:hover::before {
+header .visual .mobbtn .btnCall.on::before {
   transform: rotate(45deg);
   top: calc(50% - 1px);
 }
-header .visual .mobilenav .btnCall:hover span {
+header .visual .mobbtn .btnCall.on span {
   transform: translateX(100%);
   opacity: 0;
 }
@@ -1673,7 +1673,7 @@ header .visual .top_header .webnav .centernav ul li:nth-of-type(3) {
 header .visual .inner {
   position: absolute;
   width: 90%;
-  bottom: 20%;
+  bottom: 15%;
   padding-left: 5%;
 }
 header .visual .inner h2 {
@@ -2185,7 +2185,7 @@ header .loginpop form a {
     width: 100%;
     margin: 0 auto;
   }
-  header .visual .mobilenav {
+  header .visual .mobbtn {
     display: none;
   }
   header .visual .top_header {
@@ -2232,7 +2232,7 @@ header .loginpop form a {
     background-image: url(../img/pexels-olia-danilevich-5120894.jpg);
     background-size: cover;
   }
-  header .visual .mobilenav {
+  header .visual .mobbtn {
     display: block;
     z-index: 5;
   }
