@@ -116,11 +116,11 @@ const logClose = header.querySelector(".logclose");
 logBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
-  logPop.style.display = "block";
+  logPop.style.opacity = 0.8;
 });
 
 logClose.addEventListener("click", (e) => {
   e.preventDefault();
 
-  logPop.style.display = "none";
+  logPop.style.opacity = 0;
 });

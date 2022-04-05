@@ -1,181 +1,39 @@
-.aboutus {
-  .sub_visual {
-  }
-
+.department {
   .inner {
     width: 1180px;
     margin: 0 auto;
-
-    .boxwrap {
+    .innertop {
       width: 100%;
-      height: 100%;
-      margin-bottom: 250px;
-
-      .line {
-        width: 1px;
-        height: 280px;
-        background: $BkColor;
-        float: left;
-      }
-
-      article {
-        width: calc((100% / 3) - 1px);
-        height: 300px;
-        float: left;
-        background: #fff;
-        text-align: center;
-        padding: 2%;
-
-        &::before {
-          content: "";
-          display: block;
-          width: 100%;
-          height: 320px;
-          background: $Strongcolor;
-          position: absolute;
-          right: 0;
-          bottom: 5px;
-          z-index: -3;
-        }
-
-        &:nth-of-type(3) {
-          margin-right: 0px;
-        }
-
-        i {
-          font-size: 30px;
-          padding-top: 16px;
-          color: $DbgColor;
-        }
-
-        h3 {
-          padding: 20px 0;
-          font: bold 18px/1 "Voces", cursive;
-          color: $DkColor;
-        }
-
-        p {
-          font: normal 16px/1.2 "arial";
-        }
-      }
-
-      &::after {
-        content: "";
-        display: block;
-        clear: both;
-      }
-    }
-
-    .intro {
       height: 100%;
       text-align: center;
-      margin: 0 auto;
-      width: 80%;
-      h1 {
-        font: normal 40px/1 "arial";
-        margin-bottom: 50px;
-      }
+      border-bottom: 1px dotted $BkColor;
+      padding-bottom: 100px;
       p {
-        font: normal 18px/1.2 "arial";
-        margin-bottom: 150px;
-      }
-    }
-
-    .puzzle {
-      width: 100%;
-      height: 100%;
-      position: relative;
-      display: flex;
-
-      .wrap {
-        width: 380px;
-        height: 1180px;
-        margin-right: 20px;
+        font: bold 20px/1 "Voces", cursive;
         text-align: center;
+        color: $BkColor;
+      }
+      h1 {
+        font: normal 25px/1.2 "Voces", cursive;
+        text-align: center;
+        color: $BkColor;
+        display: inline;
+      }
 
-        &:nth-of-type(3) {
-          margin-right: 0px;
-        }
-        .banner1 {
-          height: 380px;
-          background: url(../img/pexels-jill-burrow-6387848.jpg);
-          background-position: center;
-          background-size: cover;
-          margin-bottom: 20px;
-        }
-
-        .banner2 {
-          height: 380px;
-          background: $BkColor;
-          margin-bottom: 20px;
-          h2 {
-            padding-top: 40%;
-            font: bold 60px/1 "Pompiere", cursive;
-          }
-        }
-
-        .banner3 {
-          height: 380px;
-          background: $BgColor;
-          h2 {
-            padding-top: 40%;
-            font: normal 50px/1 "Lalezar", cursive;
-          }
-        }
-
-        .banner4 {
-          height: 360px;
-          background: $Hovercolor;
-          margin-bottom: 20px;
-          h2 {
-            padding-top: 40%;
-            font: normal 60px/1 "Passion One", cursive;
-          }
-        }
-
-        .banner5 {
-          height: 800px;
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-image: url(../img/pexels-marina-leonova-7486107.jpg);
-        }
-
-        .banner6 {
-          height: 580px;
-          background-position: center;
-          background-size: cover;
-          margin-bottom: 20px;
-          background-image: url(../img/pexels-linda-prebreza-286951.jpg);
-        }
-
-        .banner7 {
-          height: 280px;
-          background: $DbgColor;
-          margin-bottom: 20px;
-          h2 {
-            padding-top: 28%;
-            font: normal 50px/1 "Fugaz One", cursive;
-          }
-        }
-
-        .banner8 {
-          height: 280px;
-          background: $DkColor;
-          h2 {
-            padding-top: 28%;
-            font: normal 50px/1 "Prosto One", cursive;
-          }
-        }
+      h2 {
+        font: normal 25px/1 "Voces", cursive;
+        text-align: center;
+        color: $BkColor;
+        display: inline;
       }
     }
 
-    // .division {
-    //   margin-top: 50px;
-    //   background: url(../img/images.jpg) no-repeat center;
-    //   width: 100%;
-    //   height: 800px;
-    // }
+    .division {
+      margin-top: 80px;
+      background: url(../img/images.jpg) no-repeat center;
+      width: 100%;
+      height: 800px;
+    }
 
     .div_tree {
       position: absolute;

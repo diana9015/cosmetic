@@ -10,41 +10,55 @@
       src="https://kit.fontawesome.com/ec40d5cb2f.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="js/sub.js"></script>
   </head>
   <body>
-    <header id="header_sub">     
+    <header id="header_sub">
+      <div class="loginpop">
+        <h1>Sign in</h1>
+        <a href="#" class="logclose">close</a>
+        <form action="resul.html" id="login">
+          <input type="text" id="userid" name="userid" placeholder="id" />
+          <input type="password" id="psw" name="psw" placeholder="password" />
+          <input type="checkbox" />
+          <p>remember me</p>
+          <input type="submit" id="loginbtn" value="Login" />
+          <a href="join.html">dont you have account?</a>
+        </form>
+      </div>
+
       <div class="mobilenav">
-         <a href="#" class="btnCall">
-           <span>메뉴호출</span>
-         </a>
-     </div>
+        <a href="#" class="btnCall">
+          <span>메뉴호출</span>
+        </a>
+      </div>
       <div class="inner">
-         <div class="wrap">
-             <nav>
-                 <div class="webnav">
-                     <div class="top_nav">
-                         <ul>
-                           <li><a href="aboutus.html">About us</a></li>
-                           <li><a href="information.html">information</a></li>
-                         </ul>
-                         <h1><a href="index.html">Cosmetic</a></h1>
-                         <ul>
-                           <li><a href="join.html">Join</a></li>
-                           <li><a href="#">Log in</a></li>
-                         </ul>
-                     </div>
-                     <div class="centernav">
-                       <ul>
-                         <li><a href="product.html">Product</a></li>
-                         <li><a href="community.html">Community</a></li>
-                         <li><a href="contactus.html">Contact us</a></li>
-                       </ul>
-                     </div>
-                 </div> 
-             </nav>
-           </div>
-       </div>
-   </header>
+        <div class="wrap">
+          <nav>
+            <div class="webnav">
+              <div class="top_nav">
+                <ul>
+                  <li><a href="aboutus.html">About us</a></li>
+                  <li><a href="department.html">Department</a></li>
+                </ul>
+                <h1><a href="index.html">Cosmetic</a></h1>
+                <ul>
+                  <li><a href="join.html">Join</a></li>
+                  <li><a href="#" class="logopen">Log in</a></li>
+                </ul>
+              </div>
+              <div class="centernav">
+                <ul>
+                  <li><a href="product.html">Product</a></li>
+                  <li><a href="community.html">Community</a></li>
+                  <li><a href="contactus.html">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
 
     <section class="content_sub community">
 

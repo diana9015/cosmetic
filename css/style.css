@@ -51,8 +51,7 @@ font-family: 'Voces', cursive;
   background: #969494;
 }
 #header_sub .loginpop {
-  display: none;
-  background: #de897c;
+  background: #383434;
   width: 400px;
   height: 400px;
   padding: 50px;
@@ -60,17 +59,20 @@ font-family: 'Voces', cursive;
   position: fixed;
   top: 50%;
   left: 50%;
-  opacity: 0.9;
+  opacity: 0;
   border-radius: 10px;
   transform: translate(-50%, -50%);
   z-index: 6;
+  transition: 0.5s;
 }
 #header_sub .loginpop > a {
   position: absolute;
   right: 10px;
   top: 10px;
+  color: white;
 }
 #header_sub .loginpop h1 {
+  color: white;
   font: normal 40px/1 "arial";
   text-align: center;
   margin-bottom: 25px;
@@ -84,7 +86,7 @@ font-family: 'Voces', cursive;
   width: 100%;
   height: 50px;
   border-radius: 7px;
-  background: #f0d4c8;
+  background: #f9f5f5;
   padding-left: 10px;
 }
 #header_sub .loginpop form input[type=checkbox] {
@@ -95,68 +97,18 @@ font-family: 'Voces', cursive;
 }
 #header_sub .loginpop form p {
   display: inline-block;
+  color: white;
 }
 #header_sub .loginpop form input[type=submit] {
-  background: #de897c;
-  color: black;
+  background: #383434;
+  color: white;
   font: normal 20px/1px "arial";
   margin-top: 10px;
   cursor: pointer;
   opacity: 2;
 }
 #header_sub .loginpop form a {
-  color: black;
-}
-#header_sub .login {
-  display: none;
-  background: #de897c;
-  width: 400px;
-  height: 400px;
-  padding: 50px;
-  border: 1px solid white;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  opacity: 0.9;
-  border-radius: 10px;
-  transform: translate(-50%, -50%);
-}
-#header_sub .login h1 {
-  font: normal 40px/1 "arial";
-  text-align: center;
-  margin-bottom: 20px;
-}
-#header_sub .login form {
-  width: 100%;
-  opacity: 1;
-}
-#header_sub .login form input {
-  margin-bottom: 10px;
-  width: 100%;
-  height: 50px;
-  border-radius: 7px;
-  background: #f0d4c8;
-  padding-left: 10px;
-}
-#header_sub .login form input[type=checkbox] {
-  width: 12px;
-  height: 12px;
-  border-radius: 0px;
-  margin-bottom: 0px;
-}
-#header_sub .login form p {
-  display: inline-block;
-}
-#header_sub .login form input[type=submit] {
-  background: #de897c;
-  color: black;
-  font: normal 20px/1px "arial";
-  margin-top: 10px;
-  cursor: pointer;
-  opacity: 2;
-}
-#header_sub .login a {
-  color: black;
+  color: white;
 }
 #header_sub .mobilenav {
   display: none;
@@ -479,6 +431,163 @@ font-family: 'Voces', cursive;
     text-align: center;
   }
 }
+.department .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.department .inner .innertop {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-bottom: 1px dotted #969494;
+  padding-bottom: 100px;
+}
+.department .inner .innertop p {
+  font: bold 20px/1 "Voces", cursive;
+  text-align: center;
+  color: #969494;
+}
+.department .inner .innertop h1 {
+  font: normal 25px/1.2 "Voces", cursive;
+  text-align: center;
+  color: #969494;
+  display: inline;
+}
+.department .inner .innertop h2 {
+  font: normal 25px/1 "Voces", cursive;
+  text-align: center;
+  color: #969494;
+  display: inline;
+}
+.department .inner .division {
+  margin-top: 80px;
+  background: url(../img/images.jpg) no-repeat center;
+  width: 100%;
+  height: 800px;
+}
+.department .inner .div_tree {
+  position: absolute;
+  top: -9999px;
+  opacity: 0;
+}
+.department .inner .div_tree li span {
+  margin-left: 50px;
+  display: block;
+  width: 25%;
+  height: 50px;
+  background: #0588fb;
+  /*폰트정렬 유심히 보기*/
+  font: bold 13px/50px "arial";
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+.department .inner .div_tree li span:hover {
+  background: #474747;
+  transition: 0.8s;
+}
+.department .inner .div_tree li span::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 115px;
+  background: #aaa;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.department .inner .div_tree li ul li span {
+  transform: translateX(70px);
+  background: #64b5fc;
+}
+.department .inner .div_tree li ul li span:hover {
+  background: #474747;
+  transition: 0.8s;
+  color: white;
+}
+.department .inner .div_tree li ul li span::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 16%;
+  background: gray;
+  position: absolute;
+  top: 50%;
+  left: -20px;
+}
+.department .inner .div_tree li ul li:nth-of-type(1) span::after {
+  height: 0;
+}
+.department .inner .div_tree li ul li:nth-of-type(2) span::after {
+  height: 955px;
+  background: gray;
+}
+.department .inner .div_tree li ul li ul li span {
+  transform: translateX(140px);
+  background: #baddfc;
+  font: bold 13px/50px "arial";
+  color: #0371f8;
+}
+.department .inner .div_tree li ul li ul li:nth-of-type(1) span::after {
+  height: 115px;
+  background: gray;
+}
+.department .inner .div_tree li ul li ul li:nth-of-type(2) span::after {
+  height: 115px;
+  background: gray;
+}
+.department .inner .div_tree li ul li ul li:nth-of-type(3) span::after {
+  height: 115px;
+  background: gray;
+}
+.department .inner .div_tree li ul li ul li:nth-of-type(4) span::after {
+  height: 185px;
+  background: gray;
+}
+.department .inner .div_tree li ul li ul li:nth-of-type(5) span::after {
+  height: 45px;
+  background: gray;
+}
+.department .inner .div_tree li ul li ul li ul li span {
+  transform: translateX(210px);
+  background: #edf3f8;
+  color: #0371f8;
+}
+.department .inner .div_tree li ul li ul li ul li span::after {
+  display: none;
+}
+
+@media screen and (max-width: 1179px) {
+  .department .inner {
+    width: 100%;
+  }
+  .department .inner .division {
+    background: url(../img/images.jpg) no-repeat center;
+    width: 100%;
+    height: 800px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .department .inner {
+    width: 100%;
+    /*호버가 안걸리는 이유?*/
+  }
+  .department .inner h1 {
+    font-size: 40px;
+  }
+  .department .inner .division {
+    height: auto;
+    background: none;
+  }
+  .department .inner .division .div_tree {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+    transition: 3s;
+  }
+}
 .information .inner {
   width: 1180px;
   margin: 0 auto;
@@ -640,11 +749,11 @@ aside .close {
   content: "";
   display: block;
   width: 100%;
-  height: 350px;
+  height: 320px;
   background: #faf4ec;
   position: absolute;
   right: 0;
-  bottom: 20px;
+  bottom: 5px;
   z-index: -3;
 }
 .aboutus .inner .boxwrap article:nth-of-type(3) {
@@ -1585,11 +1694,12 @@ header .visual .inner a {
   border: 1px solid #fff;
 }
 header .popup {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -70%);
-  z-index: 5;
+  z-index: 7;
   background: #383434;
   opacity: 0.8;
   padding: 10px;
@@ -1634,8 +1744,7 @@ header .popup .inner input[type=checkbox] {
   margin-right: 5px;
 }
 header .loginpop {
-  display: none;
-  background: #de897c;
+  background: #383434;
   width: 400px;
   height: 400px;
   padding: 50px;
@@ -1643,20 +1752,23 @@ header .loginpop {
   position: fixed;
   top: 50%;
   left: 50%;
-  opacity: 0.9;
+  opacity: 0;
   border-radius: 10px;
   transform: translate(-50%, -50%);
   z-index: 6;
+  transition: 0.5s;
 }
 header .loginpop > a {
   position: absolute;
   right: 10px;
   top: 10px;
+  color: white;
 }
 header .loginpop h1 {
   font: normal 40px/1 "arial";
   text-align: center;
   margin-bottom: 25px;
+  color: white;
 }
 header .loginpop form {
   width: 100%;
@@ -1667,7 +1779,7 @@ header .loginpop form input {
   width: 100%;
   height: 50px;
   border-radius: 7px;
-  background: #f0d4c8;
+  background: #f9f5f5;
   padding-left: 10px;
 }
 header .loginpop form input[type=checkbox] {
@@ -1678,17 +1790,18 @@ header .loginpop form input[type=checkbox] {
 }
 header .loginpop form p {
   display: inline-block;
+  color: white;
 }
 header .loginpop form input[type=submit] {
-  background: #de897c;
-  color: black;
+  background: #383434;
+  color: white;
   font: normal 20px/1px "arial";
   margin-top: 10px;
   cursor: pointer;
   opacity: 2;
 }
 header .loginpop form a {
-  color: black;
+  color: white;
 }
 
 .content {
