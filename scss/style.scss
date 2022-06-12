@@ -1,867 +1,1688 @@
 @charset "UFT-8";
-@import "reset.scss";
-@import "decoration.scss";
+@import 'reset.scss';
+@import 'decoration.scss';
 
-@import "sub_layout.scss";
-@import "department.scss";
-@import "information.scss";
-@import "aboutus.scss";
-@import "product.scss";
-@import "community.scss";
-@import "contactus.scss";
-@import "join.scss";
+@import 'sub_layout.scss';
+@import 'department.scss';
+@import 'information.scss';
+@import 'aboutus.scss';
+@import 'product.scss';
+@import 'community.scss';
+@import 'contactus.scss';
+@import 'join.scss';
 
 //미디어쿼리 설정
 
 header {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 
-  .visual {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    background: #000;
-    height: 100vh;
+	.visual {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		background: #000;
+		height: 100vh;
 
-    .mobbtn {
-      display: none;
-      position: absolute;
-      top: 3.3%;
-      right: 7%;
+		.mobbtn {
+			display: none;
+			position: absolute;
+			top: 3.3%;
+			right: 7%;
 
-      .btnCall {
-        position: absolute;
-        transform: translateY(-50%);
-        width: 20px;
-        height: 20px;
-      }
-      .btnCall::before {
-        content: "";
-        width: 100%;
-        height: 2px;
-        background: white;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        transition: 0.5s 0s, transform 0.5s 0.5s;
-      }
+			.btnCall {
+				position: absolute;
+				transform: translateY(-50%);
+				width: 20px;
+				height: 20px;
+			}
+			.btnCall::before {
+				content: '';
+				width: 100%;
+				height: 2px;
+				background: white;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				transition: 0.5s 0s, transform 0.5s 0.5s;
+			}
 
-      .btnCall::after {
-        content: "";
-        width: 100%;
-        height: 2px;
-        background: white;
-        position: absolute;
-        left: 0px;
-        bottom: 0px;
-        transition: 0.5s 0s, transform 0.5s 0.5s;
-      }
+			.btnCall::after {
+				content: '';
+				width: 100%;
+				height: 2px;
+				background: white;
+				position: absolute;
+				left: 0px;
+				bottom: 0px;
+				transition: 0.5s 0s, transform 0.5s 0.5s;
+			}
 
-      .btnCall span {
-        background: white;
-        height: 2px;
-        position: absolute;
-        width: 100%;
-        top: calc(50% - 1px);
-        text-indent: -9999px;
-      }
+			.btnCall span {
+				background: white;
+				height: 2px;
+				position: absolute;
+				width: 100%;
+				top: calc(50% - 1px);
+				text-indent: -9999px;
+			}
 
-      .btnCall.on::after {
-        transform: rotate(-45deg);
-        bottom: calc(50% - 1px);
-      }
+			.btnCall.on::after {
+				transform: rotate(-45deg);
+				bottom: calc(50% - 1px);
+			}
 
-      .btnCall.on::before {
-        transform: rotate(45deg);
-        top: calc(50% - 1px);
-      }
+			.btnCall.on::before {
+				transform: rotate(45deg);
+				top: calc(50% - 1px);
+			}
 
-      .btnCall.on span {
-        transform: translateX(100%);
-        opacity: 0;
-      }
-    }
+			.btnCall.on span {
+				transform: translateX(100%);
+				opacity: 0;
+			}
+		}
+		.mob_nav {
+			display: none;
+			width: 130px;
+			height: 180px;
+			z-index: 3;
+			opacity: 0.8;
+			position: absolute;
+			right: -100%;
+			top: 50px;
+			transition: ease-in-out 0.8s;
+			ul {
+				border-radius: 50px;
+				padding: 30px 20px 20px;
+				width: 100%;
+				height: 100%;
+				background: whitesmoke;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
 
-    video {
-      width: 100%;
-      object-fit: cover;
-      opacity: 0.7;
-      height: 100%;
-      position: absolute;
-    }
-    .top_header {
-      width: 100%;
-      height: 160px;
-      position: relative;
+				li a {
+					font: normal 15px/20px 'arial', cursive;
+					color: grey;
+				}
+			}
+		}
+		video {
+			width: 100%;
+			object-fit: cover;
+			opacity: 0.7;
+			height: 100%;
+			position: absolute;
+		}
+		.top_header {
+			width: 100%;
+			height: 160px;
+			position: relative;
 
-      .webnav {
-        width: 1180px;
-        height: 100%;
-        margin: 0 auto;
-        padding-top: 30px;
+			.webnav {
+				width: 1180px;
+				height: 100%;
+				margin: 0 auto;
+				padding-top: 30px;
 
-        .top_nav {
-          width: 100%;
-          height: 50px;
+				.top_nav {
+					width: 100%;
+					height: 50px;
 
-          margin: 0 auto;
-          display: flex;
-          justify-content: space-between;
+					margin: 0 auto;
+					display: flex;
+					justify-content: space-between;
 
-          &:after {
-            content: "";
-            display: block;
-            clear: both;
-          }
-          ul li {
-            float: left;
-            margin-right: 20px;
+					&:after {
+						content: '';
+						display: block;
+						clear: both;
+					}
+					ul li {
+						float: left;
+						margin-right: 20px;
 
-            a {
-              color: white;
-              font: bold 18px/1 "arial";
-              transition: 0.5s;
-            }
-            a:hover {
-              color: $DkColor;
-            }
+						a {
+							color: white;
+							font: bold 18px/1 'arial';
+							transition: 0.5s;
+						}
+						a:hover {
+							color: $DkColor;
+						}
 
-            &:nth-of-type(2) {
-              margin-right: 0;
-            }
-          }
+						&:nth-of-type(2) {
+							margin-right: 0;
+						}
+					}
 
-          h1 {
-            padding-right: 15px;
-            margin: 0 auto;
+					h1 {
+						padding-right: 15px;
+						margin: 0 auto;
 
-            a {
-              font: bold 50px/1px "arial";
-              color: white;
-              transition: 0.5s;
+						a {
+							font: bold 50px/1px 'arial';
+							color: white;
+							transition: 0.5s;
 
-              &:hover {
-                color: $DkColor;
-              }
-            }
-          }
-        }
+							&:hover {
+								color: $DkColor;
+							}
+						}
+					}
+				}
 
-        .centernav {
-          height: 100%;
-          width: 100%;
-          margin: 0 auto;
-          position: relative;
-          padding-left: 6%;
+				.centernav {
+					height: 100%;
+					width: 100%;
+					margin: 0 auto;
+					position: relative;
+					padding-left: 6%;
 
-          &:after {
-            content: "";
-            display: block;
-            clear: both;
-          }
+					&:after {
+						content: '';
+						display: block;
+						clear: both;
+					}
 
-          ul {
-            height: 100%;
-            text-align: center;
-            li {
-              margin-right: 20px;
-              text-align: center;
-              display: inline;
+					ul {
+						height: 100%;
+						text-align: center;
+						li {
+							margin-right: 20px;
+							text-align: center;
+							display: inline;
 
-              a {
-                color: white;
-                transition: 0.5s;
-                font: bold 18px/1 "arial";
-              }
+							a {
+								color: white;
+								transition: 0.5s;
+								font: bold 18px/1 'arial';
+							}
 
-              a:hover {
-                color: $DkColor;
-              }
+							a:hover {
+								color: $DkColor;
+							}
 
-              &:nth-of-type(3) {
-                margin-right: 0px;
-              }
-            }
-          }
-        }
-      }
-    }
+							&:nth-of-type(3) {
+								margin-right: 0px;
+							}
+						}
+					}
+				}
+			}
+		}
 
-    .inner {
-      position: absolute;
-      width: 90%;
-      bottom: 15%;
-      padding-left: 5%;
-      h2 {
-        color: white;
-        font-size: 60px;
-      }
+		.inner {
+			position: absolute;
+			width: 90%;
+			bottom: 15%;
+			padding-left: 5%;
+			h2 {
+				color: white;
+				font-size: 60px;
+			}
 
-      p {
-        padding-top: 1%;
-        font: normal 18px/1.2 "arial";
-        margin-bottom: 30px;
-        color: white;
-      }
+			p {
+				padding-top: 1%;
+				font: normal 18px/1.2 'arial';
+				margin-bottom: 30px;
+				color: white;
+			}
 
-      a {
-        display: inline-block;
-        padding: 10px 40px;
-        color: white;
-        background: $DkColor;
-        border: 1px solid #fff;
-      }
-    }
-  }
-  .popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-    z-index: 7;
-    background: $DkColor;
-    opacity: 0.8;
-    padding: 10px;
-    height: 200px;
-    width: 360px;
+			a {
+				display: inline-block;
+				padding: 10px 40px;
+				color: white;
+				background: $DkColor;
+				border: 1px solid #fff;
+			}
+		}
+	}
+	.popup {
+		display: none;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -70%);
+		z-index: 7;
+		background: $DkColor;
+		opacity: 0.8;
+		padding: 10px;
+		height: 200px;
+		width: 360px;
 
-    > a {
-      position: absolute;
-      color: white;
-      right: 10px;
-      top: 2px;
-      font-size: 25px;
-      font-style: normal;
-    }
+		> a {
+			position: absolute;
+			color: white;
+			right: 10px;
+			top: 2px;
+			font-size: 25px;
+			font-style: normal;
+		}
 
-    .inner {
-      padding: 8px;
-      border: 1px solid white;
+		.inner {
+			padding: 8px;
+			border: 1px solid white;
 
-      h2 {
-        padding-top: 5px;
-        font: normal 20px/1.2 "arial";
-        color: white;
-        padding-bottom: 5px;
-      }
-      p {
-        font: normal 15px/1.1 "arial";
-        color: white;
-      }
-      a {
-        display: block;
-        color: white;
-        width: 100%;
-        background: $BkColor;
-        border: 1px solid #fff;
-        text-align: center;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        padding: 7px;
-        font: normal 14px "arial";
-      }
+			h2 {
+				padding-top: 5px;
+				font: normal 20px/1.2 'arial';
+				color: white;
+				padding-bottom: 5px;
+			}
+			p {
+				font: normal 15px/1.1 'arial';
+				color: white;
+			}
+			a {
+				display: block;
+				color: white;
+				width: 100%;
+				background: $BkColor;
+				border: 1px solid #fff;
+				text-align: center;
+				margin-bottom: 10px;
+				margin-top: 10px;
+				padding: 7px;
+				font: normal 14px 'arial';
+			}
 
-      input[type="checkbox"] {
-        margin-right: 5px;
-      }
-    }
-  }
-  .loginpop {
-    background: $DkColor;
-    width: 400px;
-    height: 400px;
-    padding: 50px;
-    border: 1px solid white;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    opacity: 0;
-    border-radius: 10px;
-    transform: translate(-50%, -50%);
-    z-index: 6;
-    transition: 0.5s;
+			input[type='checkbox'] {
+				margin-right: 5px;
+			}
+		}
+	}
+	.loginpop {
+		background: $DkColor;
+		width: 400px;
+		height: 400px;
+		padding: 50px;
+		border: 1px solid white;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		display: none;
+		border-radius: 10px;
+		transform: translate(-50%, -50%);
+		z-index: 6;
+		transition: 0.5s;
 
-    > a {
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      color: white;
-    }
-    h1 {
-      font: normal 40px/1 "arial";
-      text-align: center;
-      margin-bottom: 25px;
-      color: white;
-    }
-    form {
-      width: 100%;
-      opacity: 1;
-      input {
-        margin-bottom: 10px;
-        width: 100%;
-        height: 50px;
-        border-radius: 7px;
-        background: $OrColor;
-        padding-left: 10px;
-      }
-      input[type="checkbox"] {
-        width: 12px;
-        height: 12px;
-        border-radius: 0px;
-        margin-bottom: 0px;
-      }
-      p {
-        display: inline-block;
-        color: white;
-      }
-      input[type="submit"] {
-        background: $DkColor;
-        color: white;
-        font: normal 20px/1px "arial";
-        margin-top: 10px;
-        cursor: pointer;
+		> a {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			color: white;
+		}
+		h1 {
+			font: normal 40px/1 'arial';
+			text-align: center;
+			margin-bottom: 25px;
+			color: white;
+		}
+		form {
+			width: 100%;
+			opacity: 1;
+			input {
+				margin-bottom: 10px;
+				width: 100%;
+				height: 50px;
+				border-radius: 7px;
+				background: $OrColor;
+				padding-left: 10px;
+			}
+			input[type='checkbox'] {
+				width: 12px;
+				height: 12px;
+				border-radius: 0px;
+				margin-bottom: 0px;
+			}
+			p {
+				display: inline-block;
+				color: white;
+			}
+			input[type='submit'] {
+				background: $DkColor;
+				color: white;
+				font: normal 20px/1px 'arial';
+				margin-top: 10px;
+				cursor: pointer;
 
-        opacity: 2;
-      }
-      a {
-        color: white;
-      }
-    }
-  }
+				opacity: 2;
+			}
+			a {
+				color: white;
+			}
+		}
+	}
 }
 
 .content {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 
-  .boxwrap {
-    width: 1180px;
-    padding-top: 130px;
-    padding-bottom: 130px;
-    margin: 0 auto;
-    height: 100%;
+	.boxwrap {
+		width: 1180px;
+		padding-top: 130px;
+		padding-bottom: 130px;
+		margin: 0 auto;
+		height: 100%;
 
-    .box1 {
-      width: 100%;
-      height: 420px;
-      position: relative;
+		.box1 {
+			width: 100%;
+			height: 420px;
+			position: relative;
 
-      .pic {
-        width: 55%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: url(../img/set.jpg);
-      }
+			.pic {
+				width: 55%;
+				height: 100%;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-image: url(../img/set.jpg);
+			}
 
-      .txt {
-        width: 50%;
-        height: 75%;
-        margin-top: 5%;
-        background: $DbgColor;
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        padding: 7%;
-        opacity: 0.9;
+			.txt {
+				width: 50%;
+				height: 75%;
+				margin-top: 5%;
+				background: $DbgColor;
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				padding: 7%;
+				opacity: 0.9;
 
-        h4 {
-          font: normal 27px/1 "arial";
-          color: black;
-        }
-        p {
-          padding-top: 30px;
-          font: normal 18px/1.3 "arial";
-          color: black;
-        }
-      }
-    }
-    .box2 {
-      width: 100%;
-      height: 420px;
-      margin: 0 auto;
-      position: relative;
-      padding-top: 8%;
-      margin-bottom: 100px;
+				h4 {
+					font: normal 27px/1 'arial';
+					color: black;
+				}
+				p {
+					padding-top: 30px;
+					font: normal 18px/1.3 'arial';
+					color: black;
+				}
+			}
+		}
+		.box2 {
+			width: 100%;
+			height: 420px;
+			margin: 0 auto;
+			position: relative;
+			padding-top: 8%;
+			margin-bottom: 100px;
 
-      .pic {
-        width: 55%;
-        height: 100%;
-        right: 0px;
-        position: absolute;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: url(../img/set2.jpg);
-      }
+			.pic {
+				width: 55%;
+				height: 100%;
+				right: 0px;
+				position: absolute;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-image: url(../img/set2.jpg);
+			}
 
-      .txt {
-        background: $BkColor;
-        width: 50%;
-        height: 75%;
-        margin-top: 5%;
-        position: absolute;
-        padding: 7%;
-        opacity: 0.9;
+			.txt {
+				background: $BkColor;
+				width: 50%;
+				height: 75%;
+				margin-top: 5%;
+				position: absolute;
+				padding: 7%;
+				opacity: 0.9;
 
-        h4 {
-          font: normal 27px/1 "arial";
-          color: black;
-        }
-        p {
-          padding-top: 30px;
-          font: normal 18px/1.3 "arial";
-          color: black;
-        }
-      }
-    }
-  }
+				h4 {
+					font: normal 27px/1 'arial';
+					color: black;
+				}
+				p {
+					padding-top: 30px;
+					font: normal 18px/1.3 'arial';
+					color: black;
+				}
+			}
+		}
+	}
 
-  .servicelist {
-    background: $DkColor;
-    width: 100%;
-    height: 300px;
+	.servicelist {
+		background: $DkColor;
+		width: 100%;
+		height: 300px;
 
-    .inner {
-      padding-top: 100px;
-      width: 1180px;
-      height: 100%;
-      margin: 0 auto;
-      p {
-        font: normal 18px/1 "arial";
-        color: #fff;
-        padding-bottom: 12px;
-      }
-      h3 {
-        font: bold 27px/1 "arial";
-        color: #fff;
-      }
+		.inner {
+			padding-top: 100px;
+			width: 1180px;
+			height: 100%;
+			margin: 0 auto;
+			p {
+				font: normal 18px/1 'arial';
+				color: #fff;
+				padding-bottom: 12px;
+			}
+			h3 {
+				font: bold 27px/1 'arial';
+				color: #fff;
+			}
 
-      .wrap {
-        width: 100%;
-        margin-top: 50px;
+			.wrap {
+				width: 100%;
+				margin-top: 50px;
 
-        article {
-          float: left;
-          width: 380px;
-          height: 380px;
-          background: #fff;
-          margin-right: 20px;
-          text-align: center;
-          padding: 8% 3%;
+				article {
+					float: left;
+					width: 380px;
+					height: 380px;
+					background: #fff;
+					margin-right: 20px;
+					text-align: center;
+					padding: 8% 3%;
 
-          &:nth-of-type(3) {
-            margin-right: 0px;
-          }
+					&:nth-of-type(3) {
+						margin-right: 0px;
+					}
 
-          i {
-            font-size: 50px;
-            padding-bottom: 40px;
-          }
+					i {
+						font-size: 50px;
+						padding-bottom: 40px;
+					}
 
-          h3 {
-            color: black;
-            font: bold 22px/1 "arial";
-            padding-bottom: 20px;
-          }
-          p {
-            font: normal 18px/1.3 "arial";
-            color: black;
-          }
-        }
+					h3 {
+						color: black;
+						font: bold 22px/1 'arial';
+						padding-bottom: 20px;
+					}
+					p {
+						font: normal 18px/1.3 'arial';
+						color: black;
+					}
+				}
 
-        &::after {
-          content: "";
-          display: block;
-          clear: both;
-        }
-      }
-    }
-  }
-  .award {
-    width: 100%;
-    height: 100%;
-    background: $OrColor;
-    padding-bottom: 120px;
+				&::after {
+					content: '';
+					display: block;
+					clear: both;
+				}
+			}
+		}
+	}
+	.award {
+		width: 100%;
+		height: 100%;
+		background: $OrColor;
+		padding-bottom: 120px;
 
-    .inner {
-      padding-top: 400px;
-      width: 1180px;
-      height: 100%;
-      margin: 0 auto;
+		.inner {
+			padding-top: 400px;
+			width: 1180px;
+			height: 100%;
+			margin: 0 auto;
 
-      p {
-        font: normal 18px/1 "arial";
-        color: black;
-        padding-bottom: 12px;
-      }
-      h3 {
-        font: bold 27px/1 "arial";
-        color: black;
-      }
+			p {
+				font: normal 18px/1 'arial';
+				color: black;
+				padding-bottom: 12px;
+			}
+			h3 {
+				font: bold 27px/1 'arial';
+				color: black;
+			}
 
-      .wrap {
-        width: 100%;
-        margin-top: 50px;
+			.wrap {
+				width: 100%;
+				margin-top: 50px;
 
-        table {
-          margin-bottom: 20px;
-          width: 100%;
-          background: #fff;
+				table {
+					margin-bottom: 20px;
+					width: 100%;
+					background: #fff;
 
-          tr {
-            height: 90px;
+					tr {
+						height: 90px;
 
-            th {
-              width: 50%;
-              text-align: left;
-              padding-left: 5%;
-              font: bold 17px/1 "arial";
-            }
-            td {
-              width: 30%;
-              font: normal 17px/1 "arial";
-              padding-left: 5%;
-              &:nth-of-type(2) {
-                width: 20%;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .recommend {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 120px;
-    overflow: hidden;
+						th {
+							width: 50%;
+							text-align: left;
+							padding-left: 5%;
+							font: bold 17px/1 'arial';
+						}
+						td {
+							width: 30%;
+							font: normal 17px/1 'arial';
+							padding-left: 5%;
+							&:nth-of-type(2) {
+								width: 20%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.recommend {
+		width: 100%;
+		height: 100%;
+		padding-bottom: 120px;
+		overflow: hidden;
 
-    .inner {
-      padding-top: 100px;
-      width: 1180px;
-      height: 100%;
-      margin: 0 auto;
+		.inner {
+			padding-top: 100px;
+			width: 1180px;
+			height: 100%;
+			margin: 0 auto;
 
-      p {
-        font: normal 18px/1.2 "arial";
-        color: black;
-        padding-bottom: 12px;
-      }
-      h3 {
-        font: bold 27px/1 "arial";
-        color: black;
-      }
+			p {
+				font: normal 18px/1.2 'arial';
+				color: black;
+				padding-bottom: 12px;
+			}
+			h3 {
+				font: bold 27px/1 'arial';
+				color: black;
+			}
 
-      .control {
-        text-align: right;
-        width: 100%;
-        right: 20px;
-        padding-bottom: 20px;
-        .prev {
-          color: black;
-          font-size: 25px;
-          margin-right: 10px;
+			.control {
+				text-align: right;
+				width: 100%;
+				right: 20px;
+				padding-bottom: 20px;
+				.prev {
+					color: black;
+					font-size: 25px;
+					margin-right: 10px;
 
-          i {
-            color: black;
-            font-size: 25px;
-          }
-        }
-        .next {
-          i {
-            color: black;
-            font-size: 25px;
-          }
-        }
-      }
+					i {
+						color: black;
+						font-size: 25px;
+					}
+				}
+				.next {
+					i {
+						color: black;
+						font-size: 25px;
+					}
+				}
+			}
 
-      #slider {
-        width: 100%;
-        height: 300px;
-        position: relative;
-        overflow: hidden;
-        ul {
-          width: calc(100% * 3);
-          left: 100%;
-          position: absolute;
+			#slider {
+				width: 100%;
+				height: 300px;
+				position: relative;
+				overflow: hidden;
+				ul {
+					width: calc(100% * 3);
+					left: 100%;
+					position: absolute;
 
-          li {
-            width: calc(100% / 3);
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            float: left;
-            display: flex;
+					li {
+						width: calc(100% / 3);
+						height: 100%;
+						justify-content: center;
+						align-items: center;
+						float: left;
+						display: flex;
 
-            article {
-              width: 580px;
-              height: 300px;
-              display: flex;
-              flex-direction: column;
-              background: $OrColor;
-              margin-right: 20px;
-              align-items: center;
-              padding: 3%;
+						article {
+							width: 580px;
+							height: 300px;
+							display: flex;
+							flex-direction: column;
+							background: $OrColor;
+							margin-right: 20px;
+							align-items: center;
+							padding: 3%;
 
-              &:nth-of-type(2) {
-                margin-right: 0px;
-              }
-              & p:nth-of-type(2) {
-                padding-top: 10px;
-                font: bold 20px/1 "arial";
-              }
+							&:nth-of-type(2) {
+								margin-right: 0px;
+							}
+							& p:nth-of-type(2) {
+								padding-top: 10px;
+								font: bold 20px/1 'arial';
+							}
 
-              p {
-                font: normal 18px/1 "arial";
-                color: black;
-                padding-bottom: 50px;
-                text-align: left;
-              }
-              h2 {
-                font: bold 22px/1 "arial";
-                color: black;
-              }
-            }
-          }
-        }
-      }
-      .line {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        margin-top: 50px;
-        article {
-          height: 100px;
-          width: 100%;
-          padding-top: 40px;
-          text-align: center;
-          color: $BkColor;
-          border: 1px solid $Hovercolor;
+							p {
+								font: normal 18px/1 'arial';
+								color: black;
+								padding-bottom: 50px;
+								text-align: left;
+							}
+							h2 {
+								font: bold 22px/1 'arial';
+								color: black;
+							}
+						}
+					}
+				}
+			}
+			.line {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				margin-top: 50px;
+				article {
+					height: 100px;
+					width: 100%;
+					padding-top: 40px;
+					text-align: center;
+					color: $BkColor;
+					border: 1px solid $Hovercolor;
 
-          &:nth-of-type(1) {
-            font: normal 25px/1 "Fugaz One", cursive;
-          }
-          &:nth-of-type(2) {
-            font: normal 25px/1 "Lalezar", cursive;
-          }
-          &:nth-of-type(3) {
-            font: normal 25px/1 "Passion One", cursive;
-          }
-          &:nth-of-type(4) {
-            font: bold 25px/1 "Pompiere", cursive;
-          }
-          &:nth-of-type(5) {
-            font: normal 25px/1 "Prosto One", cursive;
-          }
-        }
-      }
-    }
-  }
+					&:nth-of-type(1) {
+						font: normal 25px/1 'Fugaz One', cursive;
+					}
+					&:nth-of-type(2) {
+						font: normal 25px/1 'Lalezar', cursive;
+					}
+					&:nth-of-type(3) {
+						font: normal 25px/1 'Passion One', cursive;
+					}
+					&:nth-of-type(4) {
+						font: bold 25px/1 'Pompiere', cursive;
+					}
+					&:nth-of-type(5) {
+						font: normal 25px/1 'Prosto One', cursive;
+					}
+				}
+			}
+		}
+	}
 
-  .contact {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 120px;
-    overflow: hidden;
+	.contact {
+		width: 100%;
+		height: 100%;
+		padding-bottom: 120px;
+		overflow: hidden;
 
-    .inner {
-      padding-top: 50px;
-      width: 1180px;
-      height: 100%;
-      margin: 0 auto;
-      p {
-        font: normal 18px/1.2 "arial";
-        color: black;
-        padding-bottom: 12px;
-      }
-      h3 {
-        font: bold 27px/1 "arial";
-        color: black;
-      }
+		.inner {
+			padding-top: 50px;
+			width: 1180px;
+			height: 100%;
+			margin: 0 auto;
+			p {
+				font: normal 18px/1.2 'arial';
+				color: black;
+				padding-bottom: 12px;
+			}
+			h3 {
+				font: bold 27px/1 'arial';
+				color: black;
+			}
 
-      .contwrap {
-        width: 100%;
-        height: 100%;
-        margin-top: 50px;
+			.contwrap {
+				width: 100%;
+				height: 100%;
+				margin-top: 50px;
 
-        article {
-          float: left;
-          width: 380px;
-          height: 200px;
-          margin-right: 20px;
-          padding: 5%;
-          margin-bottom: 5%;
+				article {
+					float: left;
+					width: 380px;
+					height: 200px;
+					margin-right: 20px;
+					padding: 5%;
+					margin-bottom: 5%;
 
-          i {
-            color: $DkColor;
-            font-size: 32px;
-            text-align: left;
-            padding-bottom: 20px;
-          }
-          h3 {
-            color: $DkColor;
-            margin-bottom: 22px;
-            font: bold 20px/1 "arial";
-          }
-          p {
-            color: $DkColor;
-            padding: 2px;
-            font: normal 17px/1.2 "arial";
-          }
+					i {
+						color: $DkColor;
+						font-size: 32px;
+						text-align: left;
+						padding-bottom: 20px;
+					}
+					h3 {
+						color: $DkColor;
+						margin-bottom: 22px;
+						font: bold 20px/1 'arial';
+					}
+					p {
+						color: $DkColor;
+						padding: 2px;
+						font: normal 17px/1.2 'arial';
+					}
 
-          &:nth-of-type(3) {
-            margin-right: 0px;
-          }
-        }
+					&:nth-of-type(3) {
+						margin-right: 0px;
+					}
+				}
 
-        &::after {
-          content: "";
-          display: block;
-          clear: both;
-        }
-      }
-    }
-  }
+				&::after {
+					content: '';
+					display: block;
+					clear: both;
+				}
+			}
+		}
+	}
 }
 
 #footer {
-  width: 100%;
-  padding: 100px 0;
-  background: $DkColor;
+	width: 100%;
+	padding: 100px 0;
+	background: $DkColor;
 
-  .inner {
-    width: 100%;
-    margin: 0 auto;
+	.inner {
+		width: 100%;
+		margin: 0 auto;
 
-    h1 {
-      font: bold 28px/1 "arial";
-      color: white;
-      text-align: center;
-    }
+		h1 {
+			font: bold 28px/1 'arial';
+			color: white;
+			text-align: center;
+		}
 
-    p {
-      font: 13px/1 "arial";
-      color: white;
-      padding-top: 10px;
-      text-align: center;
-    }
-  }
+		p {
+			font: 13px/1 'arial';
+			color: white;
+			padding-top: 10px;
+			text-align: center;
+		}
+	}
 }
 
 @media screen and (max-width: $tablet) {
-  header {
-    .visual {
-      width: 100%;
-      margin: 0 auto;
+	header {
+		.visual {
+			width: 100%;
+			margin: 0 auto;
 
-      .mobbtn {
-        display: none;
-      }
+			.mobbtn {
+				display: none;
+			}
 
-      .top_header {
-        padding-left: 4%;
-        padding-right: 4%;
-        .webnav {
-          width: 100%;
-          .top_nav {
-            ul li {
-              a {
-                font: normal 15px/1 "arial";
-              }
-            }
+			.top_header {
+				padding-left: 4%;
+				padding-right: 4%;
+				.webnav {
+					width: 100%;
+					.top_nav {
+						ul li {
+							a {
+								font: normal 15px/1 'arial';
+							}
+						}
 
-            h1 {
-              a {
-                font: bold 40px/1 "aria";
-              }
-            }
-          }
-          .centernav {
-            width: 100%;
-            ul {
-              li {
-                a {
-                  font: normal 14px/1 "arial";
-                }
-              }
-            }
-          }
-        }
-      }
+						h1 {
+							a {
+								font: bold 40px/1 'aria';
+							}
+						}
+					}
+					.centernav {
+						width: 100%;
+						ul {
+							li {
+								a {
+									font: normal 14px/1 'arial';
+								}
+							}
+						}
+					}
+				}
+			}
 
-      .inner {
-        h1 {
-          font-size: 40px;
-        }
+			.inner {
+				h1 {
+					font-size: 40px;
+				}
 
-        p {
-          font: normal 15px/1.2 "arial";
-          margin-bottom: 20px;
-        }
+				p {
+					font: normal 15px/1.2 'arial';
+					margin-bottom: 20px;
+				}
 
-        a {
-          display: inline-block;
-          padding: 6px 30px;
-          font-size: small;
-        }
-      }
-    }
-  }
+				a {
+					display: inline-block;
+					padding: 6px 30px;
+					font-size: small;
+				}
+			}
+		}
+	}
+
+	.content {
+		width: 100%;
+		height: 100%;
+
+		.boxwrap {
+			width: 1180px;
+			padding-top: 130px;
+			padding-bottom: 130px;
+			margin: 0 auto;
+			height: 100%;
+
+			.box1 {
+				width: 100%;
+				height: 420px;
+				position: relative;
+
+				.pic {
+					width: 55%;
+					height: 100%;
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-image: url(../img/set.jpg);
+				}
+
+				.txt {
+					width: 50%;
+					height: 75%;
+					margin-top: 5%;
+					background: $DbgColor;
+					position: absolute;
+					right: 0px;
+					top: 0px;
+					padding: 7%;
+					opacity: 0.9;
+
+					h4 {
+						font: normal 27px/1 'arial';
+						color: black;
+					}
+					p {
+						padding-top: 30px;
+						font: normal 18px/1.3 'arial';
+						color: black;
+					}
+				}
+			}
+			.box2 {
+				width: 100%;
+				height: 420px;
+				margin: 0 auto;
+				position: relative;
+				padding-top: 8%;
+				margin-bottom: 100px;
+
+				.pic {
+					width: 55%;
+					height: 100%;
+					right: 0px;
+					position: absolute;
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-image: url(../img/set2.jpg);
+				}
+
+				.txt {
+					background: $BkColor;
+					width: 50%;
+					height: 75%;
+					margin-top: 5%;
+					position: absolute;
+					padding: 7%;
+					opacity: 0.9;
+
+					h4 {
+						font: normal 27px/1 'arial';
+						color: black;
+					}
+					p {
+						padding-top: 30px;
+						font: normal 18px/1.3 'arial';
+						color: black;
+					}
+				}
+			}
+		}
+
+		.servicelist {
+			background: $DkColor;
+			width: 100%;
+			height: 300px;
+
+			.inner {
+				padding-top: 100px;
+				width: 1180px;
+				height: 100%;
+				margin: 0 auto;
+				p {
+					font: normal 18px/1 'arial';
+					color: #fff;
+					padding-bottom: 12px;
+				}
+				h3 {
+					font: bold 27px/1 'arial';
+					color: #fff;
+				}
+
+				.wrap {
+					width: 100%;
+					margin-top: 50px;
+
+					article {
+						float: left;
+						width: 380px;
+						height: 380px;
+						background: #fff;
+						margin-right: 20px;
+						text-align: center;
+						padding: 8% 3%;
+
+						&:nth-of-type(3) {
+							margin-right: 0px;
+						}
+
+						i {
+							font-size: 50px;
+							padding-bottom: 40px;
+						}
+
+						h3 {
+							color: black;
+							font: bold 22px/1 'arial';
+							padding-bottom: 20px;
+						}
+						p {
+							font: normal 18px/1.3 'arial';
+							color: black;
+						}
+					}
+
+					&::after {
+						content: '';
+						display: block;
+						clear: both;
+					}
+				}
+			}
+		}
+		.award {
+			width: 100%;
+			height: 100%;
+			background: $OrColor;
+			padding-bottom: 120px;
+
+			.inner {
+				padding-top: 400px;
+				width: 1180px;
+				height: 100%;
+				margin: 0 auto;
+
+				p {
+					font: normal 18px/1 'arial';
+					color: black;
+					padding-bottom: 12px;
+				}
+				h3 {
+					font: bold 27px/1 'arial';
+					color: black;
+				}
+
+				.wrap {
+					width: 100%;
+					margin-top: 50px;
+
+					table {
+						margin-bottom: 20px;
+						width: 100%;
+						background: #fff;
+
+						tr {
+							height: 90px;
+
+							th {
+								width: 50%;
+								text-align: left;
+								padding-left: 5%;
+								font: bold 17px/1 'arial';
+							}
+							td {
+								width: 30%;
+								font: normal 17px/1 'arial';
+								padding-left: 5%;
+								&:nth-of-type(2) {
+									width: 20%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.recommend {
+			width: 100%;
+			height: 100%;
+			padding-bottom: 120px;
+			overflow: hidden;
+
+			.inner {
+				padding-top: 100px;
+				width: 1180px;
+				height: 100%;
+				margin: 0 auto;
+
+				p {
+					font: normal 18px/1.2 'arial';
+					color: black;
+					padding-bottom: 12px;
+				}
+				h3 {
+					font: bold 27px/1 'arial';
+					color: black;
+				}
+
+				.control {
+					text-align: right;
+					width: 100%;
+					right: 20px;
+					padding-bottom: 20px;
+					.prev {
+						color: black;
+						font-size: 25px;
+						margin-right: 10px;
+
+						i {
+							color: black;
+							font-size: 25px;
+						}
+					}
+					.next {
+						i {
+							color: black;
+							font-size: 25px;
+						}
+					}
+				}
+
+				#slider {
+					width: 100%;
+					height: 300px;
+					position: relative;
+					overflow: hidden;
+					ul {
+						width: calc(100% * 3);
+						left: 100%;
+						position: absolute;
+
+						li {
+							width: calc(100% / 3);
+							height: 100%;
+							justify-content: center;
+							align-items: center;
+							float: left;
+							display: flex;
+
+							article {
+								width: 580px;
+								height: 300px;
+								display: flex;
+								flex-direction: column;
+								background: $OrColor;
+								margin-right: 20px;
+								align-items: center;
+								padding: 3%;
+
+								&:nth-of-type(2) {
+									margin-right: 0px;
+								}
+								& p:nth-of-type(2) {
+									padding-top: 10px;
+									font: bold 20px/1 'arial';
+								}
+
+								p {
+									font: normal 18px/1 'arial';
+									color: black;
+									padding-bottom: 50px;
+									text-align: left;
+								}
+								h2 {
+									font: bold 22px/1 'arial';
+									color: black;
+								}
+							}
+						}
+					}
+				}
+				.line {
+					width: 100%;
+					height: 100%;
+					display: flex;
+					margin-top: 50px;
+					article {
+						height: 100px;
+						width: 100%;
+						padding-top: 40px;
+						text-align: center;
+						color: $BkColor;
+						border: 1px solid $Hovercolor;
+
+						&:nth-of-type(1) {
+							font: normal 25px/1 'Fugaz One', cursive;
+						}
+						&:nth-of-type(2) {
+							font: normal 25px/1 'Lalezar', cursive;
+						}
+						&:nth-of-type(3) {
+							font: normal 25px/1 'Passion One', cursive;
+						}
+						&:nth-of-type(4) {
+							font: bold 25px/1 'Pompiere', cursive;
+						}
+						&:nth-of-type(5) {
+							font: normal 25px/1 'Prosto One', cursive;
+						}
+					}
+				}
+			}
+		}
+
+		.contact {
+			width: 100%;
+			height: 100%;
+			padding-bottom: 120px;
+			overflow: hidden;
+
+			.inner {
+				padding-top: 50px;
+				width: 1180px;
+				height: 100%;
+				margin: 0 auto;
+				p {
+					font: normal 18px/1.2 'arial';
+					color: black;
+					padding-bottom: 12px;
+				}
+				h3 {
+					font: bold 27px/1 'arial';
+					color: black;
+				}
+
+				.contwrap {
+					width: 100%;
+					height: 100%;
+					margin-top: 50px;
+
+					article {
+						float: left;
+						width: 380px;
+						height: 200px;
+						margin-right: 20px;
+						padding: 5%;
+						margin-bottom: 5%;
+
+						i {
+							color: $DkColor;
+							font-size: 32px;
+							text-align: left;
+							padding-bottom: 20px;
+						}
+						h3 {
+							color: $DkColor;
+							margin-bottom: 22px;
+							font: bold 20px/1 'arial';
+						}
+						p {
+							color: $DkColor;
+							padding: 2px;
+							font: normal 17px/1.2 'arial';
+						}
+
+						&:nth-of-type(3) {
+							margin-right: 0px;
+						}
+					}
+
+					&::after {
+						content: '';
+						display: block;
+						clear: both;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: $mobile) {
-  header {
-    width: 100%;
-    background: black;
+	header {
+		width: 100%;
+		background: black;
 
-    .visual {
-      width: 100%;
-      margin: 0 auto;
-      height: 800px;
-      background-image: url(../img/pexels-olia-danilevich-5120894.jpg);
-      background-size: cover;
+		.visual {
+			width: 100%;
+			margin: 0 auto;
+			height: 800px;
+			background-image: url(../img/pexels-olia-danilevich-5120894.jpg);
+			background-size: cover;
 
-      .mobbtn {
-        display: block;
-        z-index: 5;
-      }
+			.mobbtn {
+				display: block;
+				z-index: 5;
+			}
 
-      video {
-        display: none;
-      }
+			.mob_nav {
+				display: block;
+			}
 
-      .top_header {
-        .webnav {
-          width: 100%;
-          .top_nav {
-            ul li {
-              display: none;
-            }
+			video {
+				display: none;
+			}
 
-            h1 {
-              position: relative;
-              a {
-                font: bold 40px/1 "aria";
-              }
-            }
-          }
-          .centernav {
-            width: 100%;
-            padding-left: 0px;
-            ul {
-              li {
-                a {
-                  font: normal 14px/1 "arial";
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+			.top_header {
+				.webnav {
+					width: 100%;
+					.top_nav {
+						ul li {
+							display: none;
+						}
+
+						h1 {
+							position: relative;
+							a {
+								font: bold 40px/1 'aria';
+							}
+						}
+					}
+					.centernav {
+						width: 100%;
+						padding-left: 0px;
+						ul {
+							li {
+								a {
+									font: normal 14px/1 'arial';
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.content {
+		width: 100%;
+		height: 100%;
+
+		.boxwrap {
+			width: 1180px;
+			padding-top: 130px;
+			padding-bottom: 130px;
+			margin: 0 auto;
+			height: 100%;
+
+			.box1 {
+				width: 100%;
+				height: 420px;
+				position: relative;
+
+				.pic {
+					width: 55%;
+					height: 100%;
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-image: url(../img/set.jpg);
+				}
+
+				.txt {
+					width: 50%;
+					height: 75%;
+					margin-top: 5%;
+					background: $DbgColor;
+					position: absolute;
+					right: 0px;
+					top: 0px;
+					padding: 7%;
+					opacity: 0.9;
+
+					h4 {
+						font: normal 27px/1 'arial';
+						color: black;
+					}
+					p {
+						padding-top: 30px;
+						font: normal 18px/1.3 'arial';
+						color: black;
+					}
+				}
+			}
+			.box2 {
+				width: 100%;
+				height: 420px;
+				margin: 0 auto;
+				position: relative;
+				padding-top: 8%;
+				margin-bottom: 100px;
+
+				.pic {
+					width: 55%;
+					height: 100%;
+					right: 0px;
+					position: absolute;
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-image: url(../img/set2.jpg);
+				}
+
+				.txt {
+					background: $BkColor;
+					width: 50%;
+					height: 75%;
+					margin-top: 5%;
+					position: absolute;
+					padding: 7%;
+					opacity: 0.9;
+
+					h4 {
+						font: normal 27px/1 'arial';
+						color: black;
+					}
+					p {
+						padding-top: 30px;
+						font: normal 18px/1.3 'arial';
+						color: black;
+					}
+				}
+			}
+		}
+
+		.servicelist {
+			background: $DkColor;
+			width: 100%;
+			height: 300px;
+
+			.inner {
+				padding-top: 100px;
+				width: 1180px;
+				height: 100%;
+				margin: 0 auto;
+				p {
+					font: normal 18px/1 'arial';
+					color: #fff;
+					padding-bottom: 12px;
+				}
+				h3 {
+					font: bold 27px/1 'arial';
+					color: #fff;
+				}
+
+				.wrap {
+					width: 100%;
+					margin-top: 50px;
+
+					article {
+						float: left;
+						width: 380px;
+						height: 380px;
+						background: #fff;
+						margin-right: 20px;
+						text-align: center;
+						padding: 8% 3%;
+
+						&:nth-of-type(3) {
+							margin-right: 0px;
+						}
+
+						i {
+							font-size: 50px;
+							padding-bottom: 40px;
+						}
+
+						h3 {
+							color: black;
+							font: bold 22px/1 'arial';
+							padding-bottom: 20px;
+						}
+						p {
+							font: normal 18px/1.3 'arial';
+							color: black;
+						}
+					}
+
+					&::after {
+						content: '';
+						display: block;
+						clear: both;
+					}
+				}
+			}
+		}
+		.award {
+			width: 100%;
+			height: 100%;
+			background: $OrColor;
+			padding-bottom: 120px;
+
+			.inner {
+				padding-top: 400px;
+				width: 1180px;
+				height: 100%;
+				margin: 0 auto;
+
+				p {
+					font: normal 18px/1 'arial';
+					color: black;
+					padding-bottom: 12px;
+				}
+				h3 {
+					font: bold 27px/1 'arial';
+					color: black;
+				}
+
+				.wrap {
+					width: 100%;
+					margin-top: 50px;
+
+					table {
+						margin-bottom: 20px;
+						width: 100%;
+						background: #fff;
+
+						tr {
+							height: 90px;
+
+							th {
+								width: 50%;
+								text-align: left;
+								padding-left: 5%;
+								font: bold 17px/1 'arial';
+							}
+							td {
+								width: 30%;
+								font: normal 17px/1 'arial';
+								padding-left: 5%;
+								&:nth-of-type(2) {
+									width: 20%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.recommend {
+			width: 100%;
+			height: 100%;
+			padding-bottom: 120px;
+			overflow: hidden;
+
+			.inner {
+				padding-top: 100px;
+				width: 1180px;
+				height: 100%;
+				margin: 0 auto;
+
+				p {
+					font: normal 18px/1.2 'arial';
+					color: black;
+					padding-bottom: 12px;
+				}
+				h3 {
+					font: bold 27px/1 'arial';
+					color: black;
+				}
+
+				.control {
+					text-align: right;
+					width: 100%;
+					right: 20px;
+					padding-bottom: 20px;
+					.prev {
+						color: black;
+						font-size: 25px;
+						margin-right: 10px;
+
+						i {
+							color: black;
+							font-size: 25px;
+						}
+					}
+					.next {
+						i {
+							color: black;
+							font-size: 25px;
+						}
+					}
+				}
+
+				#slider {
+					width: 100%;
+					height: 300px;
+					position: relative;
+					overflow: hidden;
+					ul {
+						width: calc(100% * 3);
+						left: 100%;
+						position: absolute;
+
+						li {
+							width: calc(100% / 3);
+							height: 100%;
+							justify-content: center;
+							align-items: center;
+							float: left;
+							display: flex;
+
+							article {
+								width: 580px;
+								height: 300px;
+								display: flex;
+								flex-direction: column;
+								background: $OrColor;
+								margin-right: 20px;
+								align-items: center;
+								padding: 3%;
+
+								&:nth-of-type(2) {
+									margin-right: 0px;
+								}
+								& p:nth-of-type(2) {
+									padding-top: 10px;
+									font: bold 20px/1 'arial';
+								}
+
+								p {
+									font: normal 18px/1 'arial';
+									color: black;
+									padding-bottom: 50px;
+									text-align: left;
+								}
+								h2 {
+									font: bold 22px/1 'arial';
+									color: black;
+								}
+							}
+						}
+					}
+				}
+				.line {
+					width: 100%;
+					height: 100%;
+					display: flex;
+					margin-top: 50px;
+					article {
+						height: 100px;
+						width: 100%;
+						padding-top: 40px;
+						text-align: center;
+						color: $BkColor;
+						border: 1px solid $Hovercolor;
+
+						&:nth-of-type(1) {
+							font: normal 25px/1 'Fugaz One', cursive;
+						}
+						&:nth-of-type(2) {
+							font: normal 25px/1 'Lalezar', cursive;
+						}
+						&:nth-of-type(3) {
+							font: normal 25px/1 'Passion One', cursive;
+						}
+						&:nth-of-type(4) {
+							font: bold 25px/1 'Pompiere', cursive;
+						}
+						&:nth-of-type(5) {
+							font: normal 25px/1 'Prosto One', cursive;
+						}
+					}
+				}
+			}
+		}
+
+		.contact {
+			width: 100%;
+			height: 100%;
+			padding-bottom: 120px;
+			overflow: hidden;
+
+			.inner {
+				padding-top: 50px;
+				width: 1180px;
+				height: 100%;
+				margin: 0 auto;
+				p {
+					font: normal 18px/1.2 'arial';
+					color: black;
+					padding-bottom: 12px;
+				}
+				h3 {
+					font: bold 27px/1 'arial';
+					color: black;
+				}
+
+				.contwrap {
+					width: 100%;
+					height: 100%;
+					margin-top: 50px;
+
+					article {
+						float: left;
+						width: 380px;
+						height: 200px;
+						margin-right: 20px;
+						padding: 5%;
+						margin-bottom: 5%;
+
+						i {
+							color: $DkColor;
+							font-size: 32px;
+							text-align: left;
+							padding-bottom: 20px;
+						}
+						h3 {
+							color: $DkColor;
+							margin-bottom: 22px;
+							font: bold 20px/1 'arial';
+						}
+						p {
+							color: $DkColor;
+							padding: 2px;
+							font: normal 17px/1.2 'arial';
+						}
+
+						&:nth-of-type(3) {
+							margin-right: 0px;
+						}
+					}
+
+					&::after {
+						content: '';
+						display: block;
+						clear: both;
+					}
+				}
+			}
+		}
+	}
 }
