@@ -4,74 +4,11 @@
 	height: 140px;
 	background: $BkColor;
 
-	.loginpop {
-		background: $DkColor;
-		width: 400px;
-		height: 400px;
-		padding: 50px;
-		border: 1px solid white;
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		opacity: 0;
-		border-radius: 10px;
-		transform: translate(-50%, -50%);
-		z-index: 6;
-		transition: 0.5s;
-
-		> a {
-			position: absolute;
-			right: 10px;
-			top: 10px;
-			color: white;
-		}
-		h1 {
-			color: white;
-			font: normal 40px/1 'arial';
-			text-align: center;
-			margin-bottom: 25px;
-		}
-		form {
-			width: 100%;
-			opacity: 1;
-			input {
-				margin-bottom: 10px;
-				width: 100%;
-				height: 50px;
-				border-radius: 7px;
-				background: $OrColor;
-				padding-left: 10px;
-			}
-			input[type='checkbox'] {
-				width: 12px;
-				height: 12px;
-				border-radius: 0px;
-				margin-bottom: 0px;
-			}
-			p {
-				display: inline-block;
-				color: white;
-			}
-			input[type='submit'] {
-				background: $DkColor;
-				color: white;
-				font: normal 20px/1px 'arial';
-				margin-top: 10px;
-				cursor: pointer;
-
-				opacity: 2;
-			}
-			a {
-				color: white;
-			}
-		}
-	}
-
 	.mobbtn {
 		display: none;
 		position: absolute;
-		top: 3.3%;
-		right: 7%;
+		top: 20px;
+		right: 30px;
 
 		.btnCall {
 			position: absolute;
@@ -229,6 +166,96 @@
 			}
 		}
 	}
+
+	.sublog {
+		opacity: 1;
+		background: rgb(221, 224, 224);
+		width: 340px;
+		height: 350px;
+		padding: 50px;
+		border: 1px solid white;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		display: none;
+		border-radius: 10px;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+		transition: 0.5s;
+
+		.sublogclose {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			color: grey;
+		}
+		h1 {
+			font: bold 25px/1 'arial';
+			text-align: center;
+			margin-bottom: 25px;
+			color: grey;
+		}
+		form {
+			width: 100%;
+			input {
+				margin-bottom: 10px;
+				width: 100%;
+				height: 40px;
+				border-radius: 5px;
+				background: white;
+				padding-left: 10px;
+				border: 1px solid grey;
+			}
+			input[type='checkbox'] {
+				width: 12px;
+				height: 12px;
+				border-radius: 0px;
+				margin-bottom: 0px;
+			}
+			p {
+				display: inline-block;
+				color: grey;
+			}
+			input[type='submit'] {
+				border: 1px solid grey;
+				background: rgb(155, 155, 155);
+				color: white;
+				font: normal 17px/1px 'arial';
+				margin-top: 10px;
+				cursor: pointer;
+			}
+			a {
+				color: grey;
+				border-bottom: 1px solid grey;
+			}
+		}
+	}
+
+	.submob {
+		display: none;
+		width: 180px;
+		height: 280px;
+		z-index: 3;
+		opacity: 0.9;
+		position: absolute;
+		right: 10px;
+		top: 50px;
+		ul {
+			border-radius: 5px;
+			padding: 40px 20px 40px 20px;
+			width: 100%;
+			height: 100%;
+			background: rgb(237, 233, 233);
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			li a {
+				font: bold 20px/1.1px 'arial', cursive;
+				color: rgb(162, 135, 133);
+			}
+		}
+	}
 }
 
 .content_sub {
@@ -303,7 +330,7 @@
 						.top_nav {
 							ul li {
 								a {
-									font: normal 15px/1 'arial';
+									font: normal 17px/1 'arial';
 								}
 							}
 
@@ -320,7 +347,7 @@
 							ul {
 								li {
 									a {
-										font: normal 14px/1 'arial';
+										font: normal 17px/1 'arial';
 									}
 								}
 							}
@@ -329,34 +356,37 @@
 				}
 			}
 		}
+		.submob {
+			display: none;
+		}
 	}
 
-	.content {
+	.content_sub {
 		width: 100%;
-		padding: 0 0 150px;
+		padding: 0px 0px 150px 20px;
 
 		.sub_visual {
 			width: 100%;
-			height: 250px;
-			background: #bbb;
+			height: 300px;
 			margin-bottom: 100px;
+			background: $DkColor;
 		}
 		.inner {
-			width: 100%;
+			width: 1180px;
 			margin: 0 auto;
 			min-height: 500px;
 
 			h1 {
 				font: normal 50px/1 'arial';
 				color: #000;
-				margin-bottom: 60px;
+				margin: 100px 0;
 
 				span {
 					font: normal 20px/1 '맑은 고딕';
 					color: #aaa;
 
 					&::before {
-						content: '/';
+						content: '';
 						margin-right: 20px;
 						margin-left: 10px;
 					}
@@ -409,9 +439,6 @@
 						.top_nav {
 							ul li {
 								display: none;
-								a {
-									font: normal 15px/1 'arial';
-								}
 							}
 
 							h1 {
@@ -428,7 +455,7 @@
 							ul {
 								li {
 									a {
-										font: normal 14px/1 'arial';
+										font: normal 16px/1 'arial';
 									}
 								}
 							}
@@ -436,6 +463,10 @@
 					}
 				}
 			}
+		}
+
+		.submob {
+			display: none;
 		}
 	}
 

@@ -1,32 +1,46 @@
-//log-in popup
+//l<<로그인팝업>>
 
-const header = document.querySelector("#header_sub");
-const logBtn = header.querySelector(".logopen");
-const logPop = header.querySelector(".loginpop");
-const logClose = header.querySelector(".logclose");
+const header = document.querySelector('#header_sub');
+let logOpen = document.querySelector('.logopen');
+let logOpenmob = document.querySelector('.logopenmob');
+let subLog = document.querySelector('.sublog');
+let sublogClose = document.querySelector('.sublogclose');
 
-logBtn.addEventListener("click", (e) => {
-  e.preventDefault();
+console.log(subLog);
+console.log(logOpen);
+console.log(logOpenmob);
+console.log(sublogClose);
 
-  logPop.style.opacity = 0.8;
+logOpen.addEventListener('click', (e) => {
+	e.preventDefault();
+	subLog.style.display = 'block';
 });
 
-logClose.addEventListener("click", (e) => {
-  e.preventDefault();
-
-  logPop.style.opacity = "0";
+logOpenmob.addEventListener('click', (e) => {
+	e.preventDefault();
+	subLog.style.display = 'block';
 });
 
-const btnCall = document.querySelector(".btnCall");
-const menuMo = document.querySelector(".menuMo");
+sublogClose.addEventListener('click', (e) => {
+	e.preventDefault();
+	subLog.style.display = 'none';
+});
 
-//btnCall을 클릭했을 때
-btnCall.onclick = function (e) {
-  //링크이동금지
-  e.preventDefault();
+//<모바일메뉴>
+const mobBtn = document.querySelector('.btnCall');
+const subMob = document.querySelector('.submob');
 
-  //btnCall에 on이 있으면 제거, 없으면 추가
-  btnCall.classList.toggle("on");
-  //menuMo에 on이 있으면 제거, 없으면 추가
-  menuMo.classList.toggle("on");
+mobBtn.onclick = function (e) {
+	//링크이동금지
+	e.preventDefault();
+	mobBtn.classList.toggle('on');
+	subMob.classList.toggle('on');
 };
+
+mobBtn.addEventListener('click', () => {
+	if (subMob.style.display == 'block') {
+		subMob.style.display = 'none';
+	} else {
+		subMob.style.display = 'block';
+	}
+});

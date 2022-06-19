@@ -1,7 +1,6 @@
 @charset "UFT-8";
 @import 'reset.scss';
 @import 'decoration.scss';
-
 @import 'sub_layout.scss';
 @import 'department.scss';
 @import 'information.scss';
@@ -27,8 +26,8 @@ header {
 		.mobbtn {
 			display: none;
 			position: absolute;
-			top: 3.3%;
-			right: 7%;
+			top: 20px;
+			right: 30px;
 
 			.btnCall {
 				position: absolute;
@@ -84,27 +83,26 @@ header {
 		}
 		.mob_nav {
 			display: none;
-			width: 130px;
-			height: 180px;
+			width: 180px;
+			height: 280px;
 			z-index: 3;
-			opacity: 0.8;
+			opacity: 0.9;
 			position: absolute;
-			right: -100%;
+			right: 10px;
 			top: 50px;
-			transition: ease-in-out 0.8s;
 			ul {
-				border-radius: 50px;
-				padding: 30px 20px 20px;
+				border-radius: 5px;
+				padding: 40px 20px 40px 20px;
 				width: 100%;
 				height: 100%;
-				background: whitesmoke;
+				background: rgb(233, 237, 237);
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
 
 				li a {
-					font: normal 15px/20px 'arial', cursive;
-					color: grey;
+					font: bold 20px/1.1px 'arial', cursive;
+					color: rgb(138, 180, 195);
 				}
 			}
 		}
@@ -294,9 +292,10 @@ header {
 		}
 	}
 	.loginpop {
-		background: $DkColor;
-		width: 400px;
-		height: 400px;
+		opacity: 1;
+		background: rgb(221, 224, 224);
+		width: 340px;
+		height: 350px;
 		padding: 50px;
 		border: 1px solid white;
 		position: fixed;
@@ -305,31 +304,31 @@ header {
 		display: none;
 		border-radius: 10px;
 		transform: translate(-50%, -50%);
-		z-index: 6;
+		z-index: 10;
 		transition: 0.5s;
 
 		> a {
 			position: absolute;
 			right: 10px;
 			top: 10px;
-			color: white;
+			color: grey;
 		}
 		h1 {
-			font: normal 40px/1 'arial';
+			font: bold 25px/1 'arial';
 			text-align: center;
 			margin-bottom: 25px;
-			color: white;
+			color: grey;
 		}
 		form {
 			width: 100%;
-			opacity: 1;
 			input {
 				margin-bottom: 10px;
 				width: 100%;
-				height: 50px;
-				border-radius: 7px;
-				background: $OrColor;
+				height: 40px;
+				border-radius: 5px;
+				background: white;
 				padding-left: 10px;
+				border: 1px solid grey;
 			}
 			input[type='checkbox'] {
 				width: 12px;
@@ -339,19 +338,19 @@ header {
 			}
 			p {
 				display: inline-block;
-				color: white;
+				color: grey;
 			}
 			input[type='submit'] {
-				background: $DkColor;
+				border: 1px solid grey;
+				background: rgb(155, 155, 155);
 				color: white;
-				font: normal 20px/1px 'arial';
+				font: normal 17px/1px 'arial';
 				margin-top: 10px;
 				cursor: pointer;
-
-				opacity: 2;
 			}
 			a {
-				color: white;
+				color: grey;
+				border-bottom: 1px solid grey;
 			}
 		}
 	}
@@ -363,18 +362,18 @@ header {
 
 	.boxwrap {
 		width: 1180px;
-		padding-top: 130px;
-		padding-bottom: 130px;
+		padding-top: 120px;
+		padding-bottom: 120px;
 		margin: 0 auto;
 		height: 100%;
 
 		.box1 {
 			width: 100%;
-			height: 420px;
+			height: 450px;
 			position: relative;
 
 			.pic {
-				width: 55%;
+				width: 700px;
 				height: 100%;
 				background-size: cover;
 				background-position: center;
@@ -383,7 +382,7 @@ header {
 			}
 
 			.txt {
-				width: 50%;
+				width: 550px;
 				height: 75%;
 				margin-top: 5%;
 				background: $DbgColor;
@@ -406,14 +405,14 @@ header {
 		}
 		.box2 {
 			width: 100%;
-			height: 420px;
+			height: 450px;
 			margin: 0 auto;
 			position: relative;
 			padding-top: 8%;
 			margin-bottom: 100px;
 
 			.pic {
-				width: 55%;
+				width: 700px;
 				height: 100%;
 				right: 0px;
 				position: absolute;
@@ -425,7 +424,7 @@ header {
 
 			.txt {
 				background: $BkColor;
-				width: 50%;
+				width: 550px;
 				height: 75%;
 				margin-top: 5%;
 				position: absolute;
@@ -451,7 +450,7 @@ header {
 		height: 300px;
 
 		.inner {
-			padding-top: 100px;
+			padding-top: 120px;
 			width: 1180px;
 			height: 100%;
 			margin: 0 auto;
@@ -513,7 +512,7 @@ header {
 		padding-bottom: 120px;
 
 		.inner {
-			padding-top: 400px;
+			padding-top: 425px;
 			width: 1180px;
 			height: 100%;
 			margin: 0 auto;
@@ -562,11 +561,10 @@ header {
 	.recommend {
 		width: 100%;
 		height: 100%;
-		padding-bottom: 120px;
 		overflow: hidden;
 
 		.inner {
-			padding-top: 100px;
+			padding-top: 120px;
 			width: 1180px;
 			height: 100%;
 			margin: 0 auto;
@@ -588,7 +586,6 @@ header {
 				padding-bottom: 20px;
 				.prev {
 					color: black;
-					font-size: 25px;
 					margin-right: 10px;
 
 					i {
@@ -629,25 +626,27 @@ header {
 							flex-direction: column;
 							background: $OrColor;
 							margin-right: 20px;
-							align-items: center;
-							padding: 3%;
 
 							&:nth-of-type(2) {
 								margin-right: 0px;
 							}
+
+							align-items: center;
+							padding: 3%;
+
 							& p:nth-of-type(2) {
 								padding-top: 10px;
 								font: bold 20px/1 'arial';
 							}
 
 							p {
-								font: normal 18px/1 'arial';
+								font: normal 18px/1.2 'arial';
 								color: black;
 								padding-bottom: 50px;
 								text-align: left;
 							}
 							h2 {
-								font: bold 22px/1 'arial';
+								font: bold 22px/1.2 'arial';
 								color: black;
 							}
 						}
@@ -690,14 +689,15 @@ header {
 	.contact {
 		width: 100%;
 		height: 100%;
-		padding-bottom: 120px;
 		overflow: hidden;
 
 		.inner {
-			padding-top: 50px;
+			padding-bottom: 20px;
+			padding-top: 120px;
 			width: 1180px;
 			height: 100%;
 			margin: 0 auto;
+
 			p {
 				font: normal 18px/1.2 'arial';
 				color: black;
@@ -711,42 +711,32 @@ header {
 			.contwrap {
 				width: 100%;
 				height: 100%;
-				margin-top: 50px;
+				margin-top: 40px;
+				display: flex;
+				flex-direction: row;
+				justify-items: center;
 
 				article {
-					float: left;
+					text-align: center;
+					margin-right: 20px;
+					background: $OrColor;
 					width: 380px;
 					height: 200px;
-					margin-right: 20px;
-					padding: 5%;
-					margin-bottom: 5%;
-
-					i {
-						color: $DkColor;
-						font-size: 32px;
-						text-align: left;
-						padding-bottom: 20px;
-					}
-					h3 {
-						color: $DkColor;
-						margin-bottom: 22px;
-						font: bold 20px/1 'arial';
-					}
-					p {
-						color: $DkColor;
-						padding: 2px;
-						font: normal 17px/1.2 'arial';
-					}
+					padding: 50px;
 
 					&:nth-of-type(3) {
 						margin-right: 0px;
 					}
-				}
 
-				&::after {
-					content: '';
-					display: block;
-					clear: both;
+					i {
+						color: $DkColor;
+						font-size: 40px;
+						padding-bottom: 20px;
+					}
+					p {
+						color: $DkColor;
+						font: normal 17px/1.2 'arial';
+					}
 				}
 			}
 		}
@@ -756,6 +746,7 @@ header {
 #footer {
 	width: 100%;
 	padding: 100px 0;
+	margin-top: 120px;
 	background: $DkColor;
 
 	.inner {
@@ -787,6 +778,10 @@ header {
 				display: none;
 			}
 
+			.mob_nav {
+				display: none;
+			}
+
 			.top_header {
 				padding-left: 4%;
 				padding-right: 4%;
@@ -795,7 +790,7 @@ header {
 					.top_nav {
 						ul li {
 							a {
-								font: normal 15px/1 'arial';
+								font: normal 17px/1 'arial';
 							}
 						}
 
@@ -810,7 +805,7 @@ header {
 						ul {
 							li {
 								a {
-									font: normal 14px/1 'arial';
+									font: normal 17px/1 'arial';
 								}
 							}
 						}
@@ -838,201 +833,149 @@ header {
 	}
 
 	.content {
-		width: 100%;
-		height: 100%;
-
+		margin-bottom: 0px;
 		.boxwrap {
-			width: 1180px;
-			padding-top: 130px;
-			padding-bottom: 130px;
-			margin: 0 auto;
-			height: 100%;
+			width: 100%;
+			padding-top: 110px;
+			padding-bottom: 110px;
 
 			.box1 {
 				width: 100%;
 				height: 420px;
-				position: relative;
 
 				.pic {
-					width: 55%;
+					width: 100%;
 					height: 100%;
-					background-size: cover;
-					background-position: center;
-					background-repeat: no-repeat;
-					background-image: url(../img/set.jpg);
 				}
 
 				.txt {
-					width: 50%;
-					height: 75%;
-					margin-top: 5%;
-					background: $DbgColor;
-					position: absolute;
-					right: 0px;
-					top: 0px;
-					padding: 7%;
-					opacity: 0.9;
+					width: 520px;
+					height: 280px;
+					margin-top: 70px;
+					padding: 60px;
 
 					h4 {
-						font: normal 27px/1 'arial';
-						color: black;
+						font: normal 25px/1 'arial';
 					}
 					p {
-						padding-top: 30px;
-						font: normal 18px/1.3 'arial';
-						color: black;
+						padding-top: 25px;
+						font: normal 17px/1.3 'arial';
 					}
 				}
 			}
 			.box2 {
 				width: 100%;
 				height: 420px;
-				margin: 0 auto;
-				position: relative;
-				padding-top: 8%;
-				margin-bottom: 100px;
+				padding-top: 100px;
 
 				.pic {
-					width: 55%;
+					width: 100%;
 					height: 100%;
-					right: 0px;
-					position: absolute;
-					background-size: cover;
-					background-position: center;
-					background-repeat: no-repeat;
-					background-image: url(../img/set2.jpg);
 				}
 
 				.txt {
-					background: $BkColor;
-					width: 50%;
-					height: 75%;
-					margin-top: 5%;
-					position: absolute;
-					padding: 7%;
-					opacity: 0.9;
+					width: 520px;
+					height: 280px;
+					margin-top: 70px;
+					padding: 60px;
 
 					h4 {
-						font: normal 27px/1 'arial';
-						color: black;
+						font: normal 25px/1 'arial';
 					}
 					p {
-						padding-top: 30px;
-						font: normal 18px/1.3 'arial';
-						color: black;
+						padding-top: 25px;
+						font: normal 17px/1.3 'arial';
 					}
 				}
 			}
 		}
 
 		.servicelist {
-			background: $DkColor;
-			width: 100%;
-			height: 300px;
+			height: 720px;
 
 			.inner {
-				padding-top: 100px;
-				width: 1180px;
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-top: 110px;
+				width: 100%;
 				height: 100%;
-				margin: 0 auto;
 				p {
-					font: normal 18px/1 'arial';
+					font: normal 17px/1 'arial';
 					color: #fff;
 					padding-bottom: 12px;
 				}
 				h3 {
-					font: bold 27px/1 'arial';
+					font: bold 25px/1 'arial';
 					color: #fff;
 				}
 
 				.wrap {
 					width: 100%;
-					margin-top: 50px;
+					margin-top: 40px;
 
 					article {
-						float: left;
-						width: 380px;
-						height: 380px;
-						background: #fff;
-						margin-right: 20px;
-						text-align: center;
-						padding: 8% 3%;
-
+						width: 100%;
+						height: 120px;
+						padding: 20px;
+						margin-bottom: 20px;
+						text-align: left;
+						display: flex;
 						&:nth-of-type(3) {
-							margin-right: 0px;
+							margin-right: 20px;
 						}
 
 						i {
-							font-size: 50px;
-							padding-bottom: 40px;
+							font-size: 48px;
+							padding: 16px;
 						}
 
-						h3 {
-							color: black;
-							font: bold 22px/1 'arial';
-							padding-bottom: 20px;
-						}
-						p {
-							font: normal 18px/1.3 'arial';
-							color: black;
-						}
-					}
+						.innerarticle {
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							margin-left: 20px;
 
-					&::after {
-						content: '';
-						display: block;
-						clear: both;
+							h3 {
+								font: bold 22px/1 'arial';
+								padding-bottom: 7px;
+							}
+							p {
+								font: normal 16px/1.3 'arial';
+								padding-bottom: 0px;
+							}
+						}
 					}
 				}
 			}
 		}
 		.award {
-			width: 100%;
-			height: 100%;
-			background: $OrColor;
-			padding-bottom: 120px;
+			padding-bottom: 100px;
 
 			.inner {
-				padding-top: 400px;
-				width: 1180px;
-				height: 100%;
-				margin: 0 auto;
-
+				padding-left: 20px;
+				padding-top: 110px;
+				padding-right: 20px;
+				width: 100%;
 				p {
-					font: normal 18px/1 'arial';
-					color: black;
-					padding-bottom: 12px;
+					font: normal 17px/1 'arial';
 				}
 				h3 {
-					font: bold 27px/1 'arial';
-					color: black;
+					font: bold 25px/1 'arial';
 				}
 
 				.wrap {
-					width: 100%;
-					margin-top: 50px;
+					margin-top: 40px;
 
 					table {
-						margin-bottom: 20px;
-						width: 100%;
-						background: #fff;
-
 						tr {
-							height: 90px;
+							height: 80px;
 
 							th {
-								width: 50%;
-								text-align: left;
-								padding-left: 5%;
-								font: bold 17px/1 'arial';
+								font: bold 16px/1 'arial';
 							}
 							td {
-								width: 30%;
-								font: normal 17px/1 'arial';
+								font: normal 16px/1 'arial';
 								padding-left: 5%;
-								&:nth-of-type(2) {
-									width: 20%;
-								}
 							}
 						}
 					}
@@ -1040,94 +983,48 @@ header {
 			}
 		}
 		.recommend {
-			width: 100%;
-			height: 100%;
-			padding-bottom: 120px;
-			overflow: hidden;
+			padding-bottom: 0px;
 
 			.inner {
-				padding-top: 100px;
-				width: 1180px;
-				height: 100%;
-				margin: 0 auto;
+				padding-top: 110px;
+				padding-left: 20px;
+				padding-right: 20px;
+				width: 100%;
 
 				p {
-					font: normal 18px/1.2 'arial';
-					color: black;
-					padding-bottom: 12px;
+					font: normal 17px/1.2 'arial';
 				}
 				h3 {
-					font: bold 27px/1 'arial';
-					color: black;
+					font: bold 25px/1 'arial';
 				}
 
 				.control {
-					text-align: right;
-					width: 100%;
-					right: 20px;
-					padding-bottom: 20px;
-					.prev {
-						color: black;
-						font-size: 25px;
-						margin-right: 10px;
-
-						i {
-							color: black;
-							font-size: 25px;
-						}
-					}
-					.next {
-						i {
-							color: black;
-							font-size: 25px;
-						}
-					}
+					padding-bottom: 10px;
 				}
 
 				#slider {
-					width: 100%;
-					height: 300px;
-					position: relative;
-					overflow: hidden;
+					height: 350px;
 					ul {
-						width: calc(100% * 3);
-						left: 100%;
-						position: absolute;
-
+						height: 350px;
 						li {
+							height: 350px;
 							width: calc(100% / 3);
-							height: 100%;
-							justify-content: center;
-							align-items: center;
-							float: left;
-							display: flex;
 
 							article {
-								width: 580px;
-								height: 300px;
-								display: flex;
-								flex-direction: column;
-								background: $OrColor;
-								margin-right: 20px;
-								align-items: center;
-								padding: 3%;
-
-								&:nth-of-type(2) {
-									margin-right: 0px;
-								}
-								& p:nth-of-type(2) {
-									padding-top: 10px;
-									font: bold 20px/1 'arial';
-								}
+								height: 350px;
+								position: relative;
+								text-align: center;
+								padding: 2%;
+								justify-content: space-between;
 
 								p {
-									font: normal 18px/1 'arial';
-									color: black;
-									padding-bottom: 50px;
-									text-align: left;
+									font: normal 16px/1.1 'arial';
+									padding-bottom: 0px;
 								}
 								h2 {
-									font: bold 22px/1 'arial';
+									bottom: 60px;
+									position: relative;
+									font: bold 20px/1.1 'arial';
 									color: black;
 								}
 							}
@@ -1135,32 +1032,21 @@ header {
 					}
 				}
 				.line {
-					width: 100%;
-					height: 100%;
-					display: flex;
-					margin-top: 50px;
 					article {
-						height: 100px;
-						width: 100%;
-						padding-top: 40px;
-						text-align: center;
-						color: $BkColor;
-						border: 1px solid $Hovercolor;
-
 						&:nth-of-type(1) {
-							font: normal 25px/1 'Fugaz One', cursive;
+							font: normal 23px/1 'Fugaz One', cursive;
 						}
 						&:nth-of-type(2) {
-							font: normal 25px/1 'Lalezar', cursive;
+							font: normal 23px/1 'Lalezar', cursive;
 						}
 						&:nth-of-type(3) {
-							font: normal 25px/1 'Passion One', cursive;
+							font: normal 23px/1 'Passion One', cursive;
 						}
 						&:nth-of-type(4) {
-							font: bold 25px/1 'Pompiere', cursive;
+							font: bold 23px/1 'Pompiere', cursive;
 						}
 						&:nth-of-type(5) {
-							font: normal 25px/1 'Prosto One', cursive;
+							font: normal 23px/1 'Prosto One', cursive;
 						}
 					}
 				}
@@ -1168,67 +1054,75 @@ header {
 		}
 
 		.contact {
-			width: 100%;
-			height: 100%;
-			padding-bottom: 120px;
-			overflow: hidden;
-
+			padding-left: 20px;
+			padding-right: 20px;
 			.inner {
-				padding-top: 50px;
-				width: 1180px;
-				height: 100%;
-				margin: 0 auto;
+				width: 100%;
+				padding-bottom: 120px;
+				padding-top: 110px;
 				p {
-					font: normal 18px/1.2 'arial';
-					color: black;
-					padding-bottom: 12px;
+					font: normal 17px/1.2 'arial';
 				}
 				h3 {
-					font: bold 27px/1 'arial';
-					color: black;
+					font: bold 25px/1 'arial';
 				}
 
 				.contwrap {
 					width: 100%;
 					height: 100%;
-					margin-top: 50px;
+					margin-top: 40px;
 
 					article {
-						float: left;
-						width: 380px;
-						height: 200px;
+						width: (100%/3);
+						position: relative;
+						height: 250px;
 						margin-right: 20px;
-						padding: 5%;
-						margin-bottom: 5%;
+						justify-content: center;
+						display: flex;
+						flex-direction: column;
+						// justify-content: center;
+						align-items: center;
+						// flex-wrap: nowrap;
+						&:nth-of-type(3) {
+							margin-right: 20px;
+						}
 
 						i {
 							color: $DkColor;
-							font-size: 32px;
-							text-align: left;
-							padding-bottom: 20px;
+							font-size: 38px;
 						}
-						h3 {
-							color: $DkColor;
-							margin-bottom: 22px;
-							font: bold 20px/1 'arial';
-						}
+
 						p {
 							color: $DkColor;
-							padding: 2px;
 							font: normal 17px/1.2 'arial';
 						}
-
-						&:nth-of-type(3) {
-							margin-right: 0px;
-						}
-					}
-
-					&::after {
-						content: '';
-						display: block;
-						clear: both;
 					}
 				}
+			}
+		}
+	}
+
+	#footer {
+		width: 100%;
+		padding: 100px 0;
+		margin-top: 0px;
+		background: $DkColor;
+
+		.inner {
+			width: 100%;
+			margin: 0 auto;
+
+			h1 {
+				font: bold 28px/1 'arial';
+				color: white;
+				text-align: center;
+			}
+
+			p {
+				font: 13px/1 'arial';
+				color: white;
+				padding-top: 10px;
+				text-align: center;
 			}
 		}
 	}
@@ -1252,7 +1146,7 @@ header {
 			}
 
 			.mob_nav {
-				display: block;
+				display: none;
 			}
 
 			video {
@@ -1280,7 +1174,7 @@ header {
 						ul {
 							li {
 								a {
-									font: normal 14px/1 'arial';
+									font: normal 16px/1 'arial';
 								}
 							}
 						}
@@ -1291,201 +1185,120 @@ header {
 	}
 
 	.content {
-		width: 100%;
-		height: 100%;
-
 		.boxwrap {
-			width: 1180px;
-			padding-top: 130px;
-			padding-bottom: 130px;
-			margin: 0 auto;
 			height: 100%;
 
 			.box1 {
+				height: 390px;
+				margin-left: 0px;
 				width: 100%;
-				height: 420px;
 				position: relative;
 
 				.pic {
-					width: 55%;
+					width: 100%;
 					height: 100%;
-					background-size: cover;
-					background-position: center;
-					background-repeat: no-repeat;
-					background-image: url(../img/set.jpg);
 				}
 
 				.txt {
-					width: 50%;
-					height: 75%;
-					margin-top: 5%;
-					background: $DbgColor;
-					position: absolute;
-					right: 0px;
-					top: 0px;
-					padding: 7%;
-					opacity: 0.9;
+					height: 250px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					width: 100%;
+					padding: 20px;
 
 					h4 {
-						font: normal 27px/1 'arial';
-						color: black;
+						font: normal 23px/1 'arial';
 					}
 					p {
-						padding-top: 30px;
-						font: normal 18px/1.3 'arial';
-						color: black;
+						padding-top: 15px;
+						font: normal 15px/1.3 'arial';
 					}
 				}
 			}
 			.box2 {
+				padding-top: 100px;
+				margin-left: 0px;
+				height: 390px;
 				width: 100%;
-				height: 420px;
-				margin: 0 auto;
 				position: relative;
-				padding-top: 8%;
-				margin-bottom: 100px;
 
 				.pic {
-					width: 55%;
+					width: 100%;
 					height: 100%;
-					right: 0px;
-					position: absolute;
-					background-size: cover;
-					background-position: center;
-					background-repeat: no-repeat;
-					background-image: url(../img/set2.jpg);
 				}
 
 				.txt {
-					background: $BkColor;
-					width: 50%;
-					height: 75%;
-					margin-top: 5%;
-					position: absolute;
-					padding: 7%;
-					opacity: 0.9;
+					height: 250px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					width: 100%;
+					padding: 20px;
 
 					h4 {
-						font: normal 27px/1 'arial';
-						color: black;
+						font: normal 23px/1.1 'arial';
 					}
 					p {
-						padding-top: 30px;
-						font: normal 18px/1.3 'arial';
-						color: black;
+						padding-top: 15px;
+						font: normal 15px/1.3 'arial';
 					}
 				}
 			}
 		}
 
 		.servicelist {
-			background: $DkColor;
-			width: 100%;
-			height: 300px;
-
+			height: 100%;
 			.inner {
-				padding-top: 100px;
-				width: 1180px;
-				height: 100%;
-				margin: 0 auto;
+				padding-bottom: 110px;
 				p {
-					font: normal 18px/1 'arial';
-					color: #fff;
-					padding-bottom: 12px;
+					font: normal 15px/1.1 'arial';
 				}
 				h3 {
-					font: bold 27px/1 'arial';
-					color: #fff;
+					font: bold 23px/1.1 'arial';
 				}
 
 				.wrap {
-					width: 100%;
-					margin-top: 50px;
-
 					article {
-						float: left;
-						width: 380px;
-						height: 380px;
-						background: #fff;
-						margin-right: 20px;
-						text-align: center;
-						padding: 8% 3%;
-
-						&:nth-of-type(3) {
-							margin-right: 0px;
-						}
+						height: 100%;
+						padding: 12px;
 
 						i {
-							font-size: 50px;
-							padding-bottom: 40px;
+							padding: 22px;
 						}
+						.innerarticle {
+							margin-left: 0px;
 
-						h3 {
-							color: black;
-							font: bold 22px/1 'arial';
-							padding-bottom: 20px;
+							h3 {
+								font: bold 19px/1.1 'arial';
+								padding-bottom: 5px;
+							}
+							p {
+								font: normal 15px/1.1 'arial';
+								padding-bottom: 0px;
+							}
 						}
-						p {
-							font: normal 18px/1.3 'arial';
-							color: black;
-						}
-					}
-
-					&::after {
-						content: '';
-						display: block;
-						clear: both;
 					}
 				}
 			}
 		}
 		.award {
-			width: 100%;
-			height: 100%;
-			background: $OrColor;
-			padding-bottom: 120px;
-
 			.inner {
-				padding-top: 400px;
-				width: 1180px;
-				height: 100%;
-				margin: 0 auto;
-
 				p {
-					font: normal 18px/1 'arial';
-					color: black;
-					padding-bottom: 12px;
+					font: normal 15px/1 'arial';
 				}
 				h3 {
-					font: bold 27px/1 'arial';
-					color: black;
+					font: bold 23px/1.1 'arial';
 				}
-
 				.wrap {
-					width: 100%;
-					margin-top: 50px;
-
 					table {
-						margin-bottom: 20px;
-						width: 100%;
-						background: #fff;
-
 						tr {
-							height: 90px;
-
 							th {
-								width: 50%;
-								text-align: left;
-								padding-left: 5%;
-								font: bold 17px/1 'arial';
+								font: bold 15px/1.1 'arial';
 							}
 							td {
-								width: 30%;
-								font: normal 17px/1 'arial';
-								padding-left: 5%;
-								&:nth-of-type(2) {
-									width: 20%;
-								}
+								font: normal 15px/1.1 'arial';
+								padding-left: 2%;
 							}
 						}
 					}
@@ -1493,127 +1306,59 @@ header {
 			}
 		}
 		.recommend {
-			width: 100%;
-			height: 100%;
-			padding-bottom: 120px;
-			overflow: hidden;
-
 			.inner {
-				padding-top: 100px;
-				width: 1180px;
-				height: 100%;
-				margin: 0 auto;
+				padding-top: 110px;
+				padding-left: 20px;
+				padding-right: 20px;
+				width: 100%;
 
 				p {
-					font: normal 18px/1.2 'arial';
-					color: black;
-					padding-bottom: 12px;
+					font: normal 15px/1.2 'arial';
 				}
 				h3 {
-					font: bold 27px/1 'arial';
-					color: black;
-				}
-
-				.control {
-					text-align: right;
-					width: 100%;
-					right: 20px;
-					padding-bottom: 20px;
-					.prev {
-						color: black;
-						font-size: 25px;
-						margin-right: 10px;
-
-						i {
-							color: black;
-							font-size: 25px;
-						}
-					}
-					.next {
-						i {
-							color: black;
-							font-size: 25px;
-						}
-					}
+					font: bold 23px/1 'arial';
 				}
 
 				#slider {
-					width: 100%;
-					height: 300px;
-					position: relative;
-					overflow: hidden;
+					height: 370px;
 					ul {
-						width: calc(100% * 3);
-						left: 100%;
-						position: absolute;
-
+						height: 100%;
 						li {
-							width: calc(100% / 3);
-							height: 100%;
-							justify-content: center;
-							align-items: center;
-							float: left;
-							display: flex;
-
+							height: 370px;
 							article {
-								width: 580px;
-								height: 300px;
-								display: flex;
-								flex-direction: column;
-								background: $OrColor;
-								margin-right: 20px;
-								align-items: center;
-								padding: 3%;
-
-								&:nth-of-type(2) {
-									margin-right: 0px;
-								}
-								& p:nth-of-type(2) {
-									padding-top: 10px;
-									font: bold 20px/1 'arial';
-								}
+								width: 50%;
+								height: 100%;
 
 								p {
-									font: normal 18px/1 'arial';
-									color: black;
-									padding-bottom: 50px;
-									text-align: left;
+									height: 100%;
+									font: normal 15px/1.1 'arial';
+									padding-bottom: 0px;
 								}
 								h2 {
-									font: bold 22px/1 'arial';
-									color: black;
+									bottom: 40px;
+									position: relative;
+									font: bold 18px/1.1 'arial';
 								}
 							}
 						}
 					}
 				}
 				.line {
-					width: 100%;
-					height: 100%;
-					display: flex;
-					margin-top: 50px;
 					article {
-						height: 100px;
-						width: 100%;
-						padding-top: 40px;
-						text-align: center;
-						color: $BkColor;
-						border: 1px solid $Hovercolor;
-
 						&:nth-of-type(1) {
-							font: normal 25px/1 'Fugaz One', cursive;
+							font: normal 20px/1 'Fugaz One', cursive;
 						}
 						&:nth-of-type(2) {
-							font: normal 25px/1 'Lalezar', cursive;
+							font: normal 20px/1 'Lalezar', cursive;
 						}
 						&:nth-of-type(3) {
-							font: normal 25px/1 'Passion One', cursive;
+							font: normal 20px/1 'Passion One', cursive;
 						}
 						&:nth-of-type(4) {
-							font: bold 25px/1 'Pompiere', cursive;
+							font: bold 20px/1 'Pompiere', cursive;
 						}
 						&:nth-of-type(5) {
-							font: normal 25px/1 'Prosto One', cursive;
+							font: normal 20px/1 'Prosto One', cursive;
 						}
 					}
 				}
@@ -1621,65 +1366,45 @@ header {
 		}
 
 		.contact {
-			width: 100%;
-			height: 100%;
-			padding-bottom: 120px;
-			overflow: hidden;
-
+			margin-right: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
 			.inner {
-				padding-top: 50px;
-				width: 1180px;
-				height: 100%;
-				margin: 0 auto;
+				padding-bottom: 120px;
+				padding-top: 110px;
+				width: 100%;
+
 				p {
-					font: normal 18px/1.2 'arial';
-					color: black;
-					padding-bottom: 12px;
+					font: normal 15px/1.2 'arial';
 				}
 				h3 {
-					font: bold 27px/1 'arial';
-					color: black;
+					font: bold 23px/1 'arial';
 				}
 
 				.contwrap {
-					width: 100%;
+					margin-right: 20px;
 					height: 100%;
-					margin-top: 50px;
+					display: flex;
+					flex-direction: column;
 
 					article {
-						float: left;
-						width: 380px;
-						height: 200px;
 						margin-right: 20px;
-						padding: 5%;
-						margin-bottom: 5%;
+						width: 100%;
+						height: 200px;
+						padding: 20px;
+						margin-bottom: 20px;
 
 						i {
 							color: $DkColor;
-							font-size: 32px;
+							font-size: 35px;
 							text-align: left;
 							padding-bottom: 20px;
-						}
-						h3 {
-							color: $DkColor;
-							margin-bottom: 22px;
-							font: bold 20px/1 'arial';
 						}
 						p {
 							color: $DkColor;
 							padding: 2px;
-							font: normal 17px/1.2 'arial';
+							font: normal 17px/1.1 'arial';
 						}
-
-						&:nth-of-type(3) {
-							margin-right: 0px;
-						}
-					}
-
-					&::after {
-						content: '';
-						display: block;
-						clear: both;
 					}
 				}
 			}
