@@ -6,11 +6,6 @@ let logOpenmob = document.querySelector('.logopenmob');
 let subLog = document.querySelector('.sublog');
 let sublogClose = document.querySelector('.sublogclose');
 
-console.log(subLog);
-console.log(logOpen);
-console.log(logOpenmob);
-console.log(sublogClose);
-
 logOpen.addEventListener('click', (e) => {
 	e.preventDefault();
 	subLog.style.display = 'block';

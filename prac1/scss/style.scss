@@ -1,0 +1,30 @@
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+.division {
+	height: 100vh;
+	width: 100vw;
+	.divi_inner {
+		.depth1 {
+			background: yellow;
+
+			li {
+				background: skyblue;
+
+				&::before {
+					content: '';
+					position: relative;
+					right: 20px;
+					top: 14px;
+					width: 20px;
+					height: 2px;
+					display: block;
+					background: red;
+				}
+			}
+		}
+	}
+}

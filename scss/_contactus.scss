@@ -1,169 +1,163 @@
 .contactus {
-  .sub_visual {
-  }
+	.sub_visual {
+	}
 
-  .inner {
-    width: 1180px;
-    margin: 0 auto;
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
 
-    .innertop {
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      border-bottom: 1px dotted $BkColor;
-      padding-bottom: 100px;
-      p {
-        font: normal 17px/1 "Voces", cursive;
-        text-align: center;
-        color: $DkColor;
-      }
-      h1 {
-        font: normal 30px/1.2 "Voces", cursive;
-        text-align: center;
-        display: inline;
-        color: $BkColor;
-      }
+		.innertop {
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			border-bottom: 1px dotted $BkColor;
+			padding-bottom: 100px;
+			p {
+				font: normal 17px/1 'Voces', cursive;
+				text-align: center;
+				color: $DkColor;
+			}
+			h1 {
+				font: normal 30px/1.2 'Voces', cursive;
+				text-align: center;
+				display: inline;
+				color: $BkColor;
+			}
 
-      h2 {
-        font: normal 30px/1 "Voces", cursive;
-        text-align: center;
-        color: $DkColor;
-        display: inline;
-      }
-    }
+			h2 {
+				font: normal 30px/1 'Voces', cursive;
+				text-align: center;
+				color: $DkColor;
+				display: inline;
+			}
+		}
 
-    .contwrap {
-      width: 100%;
-      height: 100%;
-      margin-top: 100px;
+		.contwrap {
+			width: 100%;
+			height: 100%;
+			margin-top: 100px;
 
-      article {
-        float: left;
-        width: 380px;
-        height: 300px;
-        margin-right: 20px;
-        padding: 5%;
-        text-align: center;
-        background-color: $Strongcolor;
-        margin-bottom: 5%;
+			article {
+				float: left;
+				width: 380px;
+				height: 300px;
+				margin-right: 20px;
+				padding: 5%;
+				text-align: center;
+				background-color: $Strongcolor;
+				margin-bottom: 5%;
 
-        i {
-          color: $DkColor;
-          font-size: 40px;
-          padding: 10px 0;
-        }
-        h3 {
-          color: $DkColor;
-          margin-bottom: 22px;
-          font: bold 20px/1 "arial";
-        }
-        p {
-          color: $DkColor;
-          padding: 5px;
-          font: normal 17px/1 "arial";
-        }
+				i {
+					color: $DkColor;
+					font-size: 40px;
+					padding: 10px 0;
+				}
 
-        &:nth-of-type(3) {
-          margin-right: 0px;
-        }
-      }
+				&:hover {
+					i {
+						transition: 1s;
+						transform: scale(1.3);
+					}
+				}
 
-      &::after {
-        content: "";
-        display: block;
-        clear: both;
-      }
-    }
+				h3 {
+					color: $DkColor;
+					margin-bottom: 22px;
+					font: bold 20px/1 'arial';
+				}
+				p {
+					color: $DkColor;
+					padding: 5px;
+					font: normal 17px/1 'arial';
+				}
 
-    #map {
-      width: 100%;
-      height: 300px;
-      position: relative;
-      margin-bottom: 5%;
-    }
+				&:nth-of-type(3) {
+					margin-right: 0px;
+				}
+			}
 
-    .contactform {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      .txt {
-        width: 580px;
-        height: 100%;
-        padding: 7%;
-        .wrap {
-          width: 100%;
-          height: 100%;
-          i {
-            margin-right: 10px;
-            font-size: 32px;
-            color: $DbgColor;
-            transition: 0.5s;
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+		}
 
-            &:hover {
-              transform: scale(1.2);
-            }
-          }
-        }
-        h3 {
-          font: bold 20px/1 "arial";
-          margin: 10px 0;
-        }
-        p {
-          font: normal 17px/1.2 "arial";
-        }
-      }
+		#map {
+			width: 100%;
+			height: 300px;
+			position: relative;
+			margin-bottom: 5%;
+		}
 
-      fieldset {
-        width: 580px;
-        background: white;
-        border-left: 1px solid $DkColor;
-        padding: 7%;
+		.contactform {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.txt {
+				width: 580px;
+				height: 100%;
+				padding: 7%;
+				h3 {
+					font: bold 20px/1 'arial';
+					margin: 10px 0;
+				}
+				p {
+					font: normal 17px/1.2 'arial';
+				}
+			}
 
-        input {
-          width: 100%;
-          height: 40px;
-          margin-bottom: 10px;
-          background: $GrColor;
-          border: none;
-          padding-left: 10px;
-          font: normal 15px/1 "arial";
+			fieldset {
+				width: 580px;
+				background: white;
+				border-left: 1px solid $DkColor;
+				padding: 7%;
 
-          &:nth-of-type(3) {
-            background: $DbgColor;
-            color: #fff;
-            width: 100px;
-            font: normal 18px/1 "arial";
-            float: right;
-            cursor: pointer;
-            padding-left: 0px;
-          }
+				input {
+					width: 100%;
+					height: 40px;
+					margin-bottom: 10px;
+					background: $GrColor;
+					border: none;
+					padding-left: 10px;
+					font: normal 15px/1 'arial';
 
-          &::placeholder {
-            font: normal 15px/1 "arial";
-            color: $BkColor;
-            padding-left: 2px;
-          }
-        }
+					&:nth-of-type(3) {
+						background: $DbgColor;
+						color: #fff;
+						width: 100px;
+						font: normal 18px/1 'arial';
+						float: right;
+						cursor: pointer;
+						padding-left: 0px;
+					}
 
-        textarea {
-          width: 100%;
-          height: 100%;
-          margin-bottom: 10px;
-          background: $GrColor;
-          left: 0px;
-          padding-top: 15px;
-          border: none;
-          resize: none;
-          padding-left: 10px;
-          font: normal 15px/1 "arial";
+					&::placeholder {
+						font: normal 15px/1 'arial';
+						color: $BkColor;
+						padding-left: 2px;
+					}
+				}
 
-          &::placeholder {
-            font: normal 15px/1 "arial";
-            color: $BkColor;
-            padding-left: 2px;
-          }
-        }
-      }
-    }
-  }
+				textarea {
+					width: 100%;
+					height: 100%;
+					margin-bottom: 10px;
+					background: $GrColor;
+					left: 0px;
+					padding-top: 15px;
+					border: none;
+					resize: none;
+					padding-left: 10px;
+					font: normal 15px/1 'arial';
+
+					&::placeholder {
+						font: normal 15px/1 'arial';
+						color: $BkColor;
+						padding-left: 2px;
+					}
+				}
+			}
+		}
+	}
 }

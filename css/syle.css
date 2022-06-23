@@ -460,216 +460,33 @@ font-family: 'Voces', cursive;
     text-align: center;
   }
 }
-.department {
-  height: 100%;
-  width: 100%;
-}
 .department .inner {
   width: 1180px;
   margin: 0 auto;
-  height: 100%;
 }
-.department .inner article {
+.department .inner .innertop {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding-left: 5%;
-  padding-right: 5%;
   border-bottom: 1px dotted #969494;
   padding-bottom: 100px;
 }
-.department .inner article h1 {
-  font: normal 17px/1 "Voces", cursive;
+.department .inner .innertop p {
+  font: bold 20px/1 "Voces", cursive;
   text-align: center;
-  color: #383434;
-  margin: 0px;
+  color: #969494;
 }
-.department .inner article p {
-  padding-top: 50px;
-  font: normal 30px/1 "Voces", cursive;
+.department .inner .innertop h1 {
+  font: normal 25px/1.2 "Voces", cursive;
   text-align: center;
-  color: #383434;
+  color: #969494;
+  display: inline;
 }
-.department .inner .introloc {
-  padding-top: 130px;
-  padding-bottom: 150px;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  position: relative;
-}
-.department .inner .introloc .cubewrap {
-  padding-top: 70px;
-  position: relative;
-  left: 20px;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-}
-.department .inner .introloc .cubewrap .cube {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: ease-in-out 9s;
-  animation: rotateCube 7s linear infinite;
-  cursor: pointer;
-}
-@keyframes rotateCube {
-  100% {
-    transform: rotateX(360deg);
-  }
-}
-.department .inner .introloc .introbox {
-  position: absolute;
-  width: calc(100% - 400px);
-  height: 470px;
-  right: 0px;
-  top: 100px;
-  overflow: hidden;
-}
-.department .inner .introloc .introbox li {
-  left: 100%;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: #f9f5f5;
-}
-.department .inner .introloc .introbox li.on {
-  transition: 0.7s linear;
-  left: 0px;
-}
-.department .inner .introloc .introbox li.on .profile .profileCont {
-  transition-delay: 0.7s;
-  transition-duration: 1.5s;
-  top: 0%;
-}
-.department .inner .introloc .introbox li .profile {
-  width: 100%;
-  height: 100%;
-}
-.department .inner .introloc .introbox li .profile .profileCont {
-  padding-bottom: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  padding: 5%;
-  height: 100%;
-  top: 100%;
-}
-.department .inner .introloc .introbox li .profile .profileCont .name {
+.department .inner .innertop h2 {
+  font: normal 25px/1 "Voces", cursive;
   text-align: center;
-  width: 100%;
-}
-.department .inner .introloc .introbox li .profile .profileCont .name h2 {
-  font: normal 50px/1 "arial";
-  color: #de897c;
-}
-.department .inner .introloc .introbox li .profile .profileCont h3 {
-  font: normal 30px/1 "arial";
-  color: #de897c;
-}
-.department .inner .introloc .introbox li .profile .profileCont p {
-  font: normal 18.5px/1.1 "arial";
-  color: #383434;
-}
-.department .inner .introloc .introbox li .profile .profileCont .proicon {
-  width: 100%;
-}
-.department .inner .introloc .introbox li .profile .profileCont .proicon i {
-  margin-right: 12px;
-  font-size: 20px;
-  background: #de897c;
-  float: right;
-  color: white;
-  padding: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.department .inner .introloc .introbox li .profile .profileCont .proicon i:hover {
-  opacity: 0.5;
-  transition: 0.7s;
-}
-.department .inner .introloc .cube__face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  background: #f0d4c8;
-}
-.department .inner .introloc .cube__face .innerpro {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  top: 0px;
-}
-.department .inner .introloc .cube__face .innerpro .intro {
-  width: 100%;
-}
-.department .inner .introloc .cube__face:hover .innerpro {
-  opacity: 0.7;
-  transition: linear 0.5s;
-}
-.department .inner .introloc .cube__face--front {
-  width: 300px;
-  height: 300px;
-  transform: rotate(0deg) translateZ(150px);
-}
-.department .inner .introloc .cube__face--front .innerpro {
-  background: url(../img/profile1.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.department .inner .introloc .cube__face--right {
-  height: 300px;
-  width: 300px;
-  left: 100px;
-  transform: rotateY(-90deg) translateZ(-50px);
-}
-.department .inner .introloc .cube__face--back {
-  width: 300px;
-  height: 300px;
-  transform: rotateY(180deg) translateZ(150px);
-}
-.department .inner .introloc .cube__face--back .innerpro {
-  transform: rotate(180deg);
-  background: url(../img/profile2.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.department .inner .introloc .cube__face--left {
-  width: 300px;
-  height: 300px;
-  right: 250px;
-  transform: rotateY(-90deg) translateZ(-100px);
-}
-.department .inner .introloc .cube__face--top {
-  width: 300px;
-  height: 300px;
-  transition: center center;
-  transform: rotateX(90deg) translateZ(-150px);
-}
-.department .inner .introloc .cube__face--top .innerpro {
-  transform: rotateX(-180deg);
-  background: url(../img/profile3.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.department .inner .introloc .cube__face--bottom {
-  width: 300px;
-  height: 300px;
-  top: -100px;
-  transition: center center;
-  transform: rotateX(-360deg) rotateX(-90deg) translateZ(-50px);
-}
-.department .inner .introloc .cube__face--bottom .innerpro {
-  background: url(../img/profile5.jpg);
-  background-position: center;
-  background-size: cover;
-  transform: rotateX(-180deg);
+  color: #969494;
+  display: inline;
 }
 .department .inner .division {
   margin-top: 80px;
@@ -773,141 +590,12 @@ font-family: 'Voces', cursive;
 
 @media screen and (max-width: 1179px) {
   .department .inner {
-    padding-left: 20px;
-    padding-right: 20px;
-    position: relative;
-  }
-  .department .inner article {
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-  .department .inner .introloc {
-    padding-bottom: 70px;
-    padding-top: 190px;
-    flex-direction: column;
-  }
-  .department .inner .introloc .cubewrap {
-    margin: 0 auto;
-    padding-top: 0px;
-    left: 0px;
-  }
-  .department .inner .introloc .introbox {
-    margin-right: 20px;
-    margin: 0 auto;
-    position: relative;
     width: 100%;
-    transition: all 2s;
-  }
-  .department .inner .introloc .introbox li {
-    margin-right: 20px;
-    background: #f9f5f5;
-  }
-  .department .inner .cubeintro {
-    width: 100%;
-    position: absolute;
-    top: 500px;
-  }
-  .department .inner .cubeintro h2 {
-    font-size: 18px;
   }
   .department .inner .division {
-    margin-top: 80px;
     background: url(../img/images.jpg) no-repeat center;
     width: 100%;
     height: 800px;
-  }
-  .department .inner .div_tree {
-    position: absolute;
-    top: -9999px;
-    opacity: 0;
-  }
-  .department .inner .div_tree li span {
-    margin-left: 50px;
-    display: block;
-    width: 25%;
-    height: 50px;
-    background: #0588fb;
-    /*폰트정렬 유심히 보기*/
-    font: bold 13px/50px "arial";
-    color: white;
-    text-align: center;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    position: relative;
-  }
-  .department .inner .div_tree li span:hover {
-    background: #474747;
-    transition: 0.8s;
-  }
-  .department .inner .div_tree li span::after {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 115px;
-    background: #aaa;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-  }
-  .department .inner .div_tree li ul li span {
-    transform: translateX(70px);
-    background: #64b5fc;
-  }
-  .department .inner .div_tree li ul li span:hover {
-    background: #474747;
-    transition: 0.8s;
-    color: white;
-  }
-  .department .inner .div_tree li ul li span::before {
-    content: "";
-    display: block;
-    height: 1px;
-    width: 16%;
-    background: gray;
-    position: absolute;
-    top: 50%;
-    left: -20px;
-  }
-  .department .inner .div_tree li ul li:nth-of-type(1) span::after {
-    height: 0;
-  }
-  .department .inner .div_tree li ul li:nth-of-type(2) span::after {
-    height: 955px;
-    background: gray;
-  }
-  .department .inner .div_tree li ul li ul li span {
-    transform: translateX(140px);
-    background: #baddfc;
-    font: bold 13px/50px "arial";
-    color: #0371f8;
-  }
-  .department .inner .div_tree li ul li ul li:nth-of-type(1) span::after {
-    height: 115px;
-    background: gray;
-  }
-  .department .inner .div_tree li ul li ul li:nth-of-type(2) span::after {
-    height: 115px;
-    background: gray;
-  }
-  .department .inner .div_tree li ul li ul li:nth-of-type(3) span::after {
-    height: 115px;
-    background: gray;
-  }
-  .department .inner .div_tree li ul li ul li:nth-of-type(4) span::after {
-    height: 185px;
-    background: gray;
-  }
-  .department .inner .div_tree li ul li ul li:nth-of-type(5) span::after {
-    height: 45px;
-    background: gray;
-  }
-  .department .inner .div_tree li ul li ul li ul li span {
-    transform: translateX(210px);
-    background: #edf3f8;
-    color: #0371f8;
-  }
-  .department .inner .div_tree li ul li ul li ul li span::after {
-    display: none;
   }
 }
 @media screen and (max-width: 539px) {
@@ -1064,7 +752,7 @@ aside .close {
   }
 }
 .aboutus .inner {
-  width: 1180px;
+  width: 1080px;
 }
 .aboutus .inner .boxwrap {
   width: 100%;
@@ -1968,10 +1656,6 @@ aside .close {
   font-size: 40px;
   padding: 10px 0;
 }
-.contactus .inner .contwrap article:hover i {
-  transition: 1s;
-  transform: scale(1.3);
-}
 .contactus .inner .contwrap article h3 {
   color: #383434;
   margin-bottom: 22px;
@@ -2005,6 +1689,19 @@ aside .close {
   width: 580px;
   height: 100%;
   padding: 7%;
+}
+.contactus .inner .contactform .txt .wrap {
+  width: 100%;
+  height: 100%;
+}
+.contactus .inner .contactform .txt .wrap i {
+  margin-right: 10px;
+  font-size: 32px;
+  color: #de897c;
+  transition: 0.5s;
+}
+.contactus .inner .contactform .txt .wrap i:hover {
+  transform: scale(1.2);
 }
 .contactus .inner .contactform .txt h3 {
   font: bold 20px/1 "arial";
@@ -3435,4 +3132,4 @@ header .loginpop form a {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=syle.css.map */
