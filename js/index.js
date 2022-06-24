@@ -28,8 +28,9 @@ function setCookie(name, val, due) {
 //<슬라이드>
 const slider = document.querySelector('#slider');
 const ul = slider.querySelector('ul');
-const prev = slider.querySelector('.prev');
-const next = slider.querySelector('.next');
+const control = document.querySelector('.control');
+const prev = control.querySelector('.prev');
+const next = control.querySelector('.next');
 const speed = 1000;
 let enableClick = true;
 

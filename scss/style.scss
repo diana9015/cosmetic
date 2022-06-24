@@ -503,7 +503,7 @@ header {
 						}
 						&:nth-of-type(4) {
 							bottom: 0px;
-							right: left;
+							left: 0px;
 							background: rgb(39, 38, 38);
 							height: 0px;
 							width: 2px;
@@ -664,13 +664,13 @@ header {
 					width: calc(100% * 3);
 					left: 100%;
 					position: absolute;
+					display: flex;
 
 					li {
 						width: calc(100% / 3);
 						height: 100%;
 						justify-content: center;
 						align-items: center;
-						float: left;
 						display: flex;
 
 						article {
@@ -680,23 +680,17 @@ header {
 							flex-direction: column;
 							background: $OrColor;
 							margin-right: 20px;
+							justify-content: space-between;
+							align-items: center;
+							padding: 3%;
 
 							&:nth-of-type(2) {
 								margin-right: 0px;
 							}
 
-							align-items: center;
-							padding: 3%;
-
-							& p:nth-of-type(2) {
-								padding-top: 10px;
-								font: bold 20px/1 'arial';
-							}
-
 							p {
-								font: normal 18px/1.2 'arial';
-								color: black;
-								padding-bottom: 50px;
+								font: normal 1.15rem/1.2 'arial';
+								padding-bottom: 3%;
 								text-align: left;
 							}
 							h2 {
@@ -1042,6 +1036,7 @@ header {
 				padding-left: 20px;
 				padding-right: 20px;
 				width: 100%;
+				height: 100%;
 
 				p {
 					font: normal 17px/1.2 'arial';
@@ -1055,27 +1050,21 @@ header {
 				}
 
 				#slider {
-					height: 350px;
+					height: 370px;
 					ul {
-						height: 350px;
 						li {
-							height: 350px;
-							width: calc(100% / 3);
-
 							article {
-								height: 350px;
-								position: relative;
-								text-align: center;
-								padding: 2%;
+								width: 100%;
+								height: 50%;
+								margin-right: 20px;
 								justify-content: space-between;
+								align-items: center;
 
 								p {
-									font: normal 16px/1.1 'arial';
-									padding-bottom: 0px;
+									font: normal 1.1rem 'arial';
+									text-align: left;
 								}
 								h2 {
-									bottom: 60px;
-									position: relative;
 									font: bold 20px/1.1 'arial';
 									color: black;
 								}
@@ -1125,9 +1114,10 @@ header {
 					margin-top: 40px;
 
 					article {
+						text-align: center;
 						width: calc(100% / 3);
 						position: relative;
-						height: 250px;
+						height: 200px;
 						margin-right: 20px;
 						justify-content: center;
 						display: flex;
@@ -1136,17 +1126,17 @@ header {
 						align-items: center;
 						// flex-wrap: nowrap;
 						&:nth-of-type(3) {
-							margin-right: 20px;
+							margin-right: 0px;
 						}
 
 						i {
 							color: $DkColor;
-							font-size: 38px;
+							font-size: 35px;
 						}
 
 						p {
 							color: $DkColor;
-							font: normal 17px/1.2 'arial';
+							font: normal 1rem/1.1 'arial';
 						}
 					}
 				}
@@ -1158,8 +1148,7 @@ header {
 		width: 100%;
 		padding: 100px 0;
 		margin-top: 0px;
-		background: $DkColor;
-
+		background: #444;
 		.inner {
 			width: 100%;
 			margin: 0 auto;
@@ -1189,6 +1178,7 @@ header {
 			width: 100%;
 			margin: 0 auto;
 			height: 800px;
+			background-position: center;
 			background-image: url(../img/pexels-olia-danilevich-5120894.jpg);
 			background-size: cover;
 
@@ -1226,13 +1216,17 @@ header {
 						ul {
 							li {
 								a {
-									font: normal 16px/1 'arial';
+									font: normal 15px/1 'arial';
 								}
 							}
 						}
 					}
 				}
 			}
+		}
+
+		.popup {
+			width: 100%;
 		}
 	}
 
@@ -1264,7 +1258,7 @@ header {
 					}
 					p {
 						padding-top: 15px;
-						font: normal 15px/1.3 'arial';
+						font: normal 15px/1.2 'arial';
 					}
 				}
 			}
@@ -1303,23 +1297,30 @@ header {
 			height: 100%;
 			.inner {
 				padding-bottom: 110px;
+				width: 100%;
 				p {
 					font: normal 15px/1.1 'arial';
 				}
 				h3 {
-					font: bold 23px/1.1 'arial';
+					font: bold 22px/1.1 'arial';
 				}
 
 				.wrap {
 					article {
-						height: 105px;
+						height: 100%;
+						padding-top: 20px;
+						padding-bottom: 20px;
+						flex-direction: column;
+						align-items: center;
+						text-align: center;
 
 						i {
-							font-size: 42px;
-							padding: 32px;
+							font-size: 48px;
+							padding: 5%;
 						}
 						.innerarticle {
-							padding-left: 20px;
+							padding-left: 10px;
+							padding-right: 10px;
 
 							h3 {
 								font: bold 19px/1.1 'arial';
@@ -1345,12 +1346,25 @@ header {
 				.wrap {
 					table {
 						tr {
+							padding: 3%;
+							height: 100%;
+							display: flex;
+							flex-direction: column;
 							th {
+								padding-left: 0%;
+								text-align: center;
+								width: 100%;
 								font: bold 15px/1.1 'arial';
 							}
 							td {
+								text-align: center;
+								width: 100%;
 								font: normal 15px/1.1 'arial';
 								padding-left: 2%;
+
+								&:nth-of-type(2) {
+									width: 100%;
+								}
 							}
 						}
 					}
@@ -1363,6 +1377,7 @@ header {
 				padding-left: 20px;
 				padding-right: 20px;
 				width: 100%;
+				height: 100%;
 
 				p {
 					font: normal 15px/1.2 'arial';
@@ -1372,24 +1387,32 @@ header {
 				}
 
 				#slider {
-					height: 370px;
+					height: 580px;
 					ul {
-						height: 100%;
+						width: calc(100% * 3);
 						li {
-							height: 370px;
+							width: 100%;
+							flex-direction: column;
 							article {
-								width: 50%;
-								height: 100%;
+								margin-right: 20px;
+								width: 100%;
+								height: 280px;
+								justify-content: space-between;
+								align-items: center;
+								margin-right: 0px;
+
+								&:nth-of-type(1) {
+									margin-bottom: 20px;
+								}
 
 								p {
-									height: 100%;
-									font: normal 15px/1.1 'arial';
-									padding-bottom: 0px;
+									font: normal 15px 'arial';
+									text-align: center;
 								}
 								h2 {
-									bottom: 40px;
-									position: relative;
-									font: bold 18px/1.1 'arial';
+									text-align: center;
+									font: bold 20px/1.1 'arial';
+									color: black;
 								}
 							}
 						}
@@ -1455,10 +1478,33 @@ header {
 						p {
 							color: $DkColor;
 							padding: 2px;
-							font: normal 17px/1.1 'arial';
+							font: normal 15px/1.1 'arial';
 						}
 					}
 				}
+			}
+		}
+	}
+
+	#footer {
+		width: 100%;
+		padding: 100px 0;
+
+		.inner {
+			width: 100%;
+			margin: 0 auto;
+
+			h1 {
+				font: bold 26px/1 'arial';
+				color: white;
+				text-align: center;
+			}
+
+			p {
+				font: 11px/1 'arial';
+				color: white;
+				padding-top: 10px;
+				text-align: center;
 			}
 		}
 	}

@@ -10,17 +10,17 @@
 		background-position: center;
 		position: relative;
 		.toptxtbox {
-			height: 100%;
 			z-index: 3;
-			bottom: 0px;
+			width: 100%;
 			position: absolute;
-			left: 0px;
+			top: 50%;
+			transform: translateY(-50%);
 
 			h1 {
-				padding-top: 30%;
 				padding-left: 50px;
-				font: normal 88px/1.2 'arial';
+				font: normal 90px/1.2 'arial';
 				color: black;
+				text-shadow: 1px 1px 1px white;
 			}
 		}
 
@@ -64,6 +64,7 @@
 					color: $DkColor;
 					margin-bottom: 22px;
 					font: bold 20px/1 'arial';
+					text-shadow: 1px 1px 1px white;
 				}
 				p {
 					color: $DkColor;
@@ -135,7 +136,7 @@
 			left: 0px;
 			position: absolute;
 			.midimg {
-				width: 600px;
+				width: 1180px;
 				height: 100%;
 				background: url(../img/pro_mid.jpg);
 				background-position: center;
@@ -144,20 +145,20 @@
 			}
 		}
 		.txt {
-			height: 100%;
 			z-index: 3;
-			bottom: 0px;
+			right: 100px;
+			text-align: center;
 			position: absolute;
-			padding-top: 150px;
-			right: 20px;
-			z-index: 5;
+			top: 50%;
+			transform: translateY(-50%);
+
 			h2 {
-				font: normal 60px/1.2 'arial';
-				padding-bottom: 15px;
+				font: normal 80px/1.1 'arial';
+				text-shadow: 1px 1px 1px white;
 			}
 			p {
-				font: normal 22px/1 'arial';
-				color: black;
+				font: normal 25px/1 'arial';
+				text-shadow: 1px 1px 1px white;
 			}
 		}
 	}
@@ -169,17 +170,20 @@
 		margin: 0 auto;
 		margin-top: 130px;
 
-		.txt {
+		.bottomtxt {
 			width: 600px;
 			height: 600px;
-			padding: 180px 100px 200px 100px;
+			padding: 11%;
 			margin-right: 20px;
 			background: $Strongcolor;
 
 			h2 {
-				font: bold 27px/1 'arial';
-				color: black;
+				font: bold 29px/1 'arial';
 				margin-bottom: 20px;
+			}
+
+			p {
+				font: normal 19px/1.2 'arial';
 			}
 		}
 
@@ -208,11 +212,10 @@
 			height: 500px;
 
 			.toptxtbox {
+				width: 100%;
 				h1 {
-					padding-top: 24%;
 					padding-left: 30px;
-					font: normal 68px/1.1 'arial';
-					color: black;
+					font: normal 70px/1.1 'arial';
 				}
 			}
 
@@ -275,7 +278,16 @@
 				}
 			}
 			.txt {
-				margin-left: 20px;
+				right: 0px;
+				width: 100%;
+
+				h2 {
+					font: normal 55px/1.1 'arial';
+				}
+				p {
+					font: normal 20px/1 'arial';
+					color: black;
+				}
 			}
 		}
 
@@ -285,12 +297,11 @@
 			.bottombox {
 				width: 100%;
 
-				.txt {
-					width: 100%;
+				.bottomtxt {
+					margin: 0 auto;
+					width: 75vw;
 					height: 100%;
 					position: relative;
-					padding: 150px 60px 150px 60px;
-					margin-right: 0px;
 					opacity: 0.8;
 				}
 
@@ -310,10 +321,11 @@
 @media screen and (max-width: $mobile) {
 	.product {
 		.innertop {
-			height: 600px;
+			height: 500px;
 			.toptxtbox {
 				h1 {
-					font: normal 70px/1.2 'arial';
+					font: normal 3em 'arial';
+					padding-left: 20px;
 				}
 			}
 		}
@@ -357,6 +369,30 @@
 								}
 							}
 						}
+					}
+				}
+			}
+		}
+
+		.contbottom {
+			width: 100%;
+
+			.bottombox {
+				width: 100%;
+
+				.bottomtxt {
+					padding: 60px 20px 60px 20px;
+					width: 100vw;
+					position: relative;
+					opacity: 0.8;
+				}
+
+				.bottompic {
+					width: 100%;
+					height: 100%;
+					padding-top: 0px;
+					.bottomimg {
+						width: auto;
 					}
 				}
 			}

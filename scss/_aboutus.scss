@@ -1,7 +1,4 @@
 .aboutus {
-	.sub_visual {
-	}
-
 	.inner {
 		width: 1180px;
 
@@ -9,7 +6,7 @@
 			width: 100%;
 			height: 100%;
 			margin-top: 100px;
-			margin-bottom: 150px;
+			margin-bottom: 100px;
 			display: flex;
 
 			&::before {
@@ -24,13 +21,14 @@
 			}
 
 			article {
+				margin-top: 20px;
+				margin-right: 20px;
 				width: 33%;
 				height: 280px;
 				text-align: center;
 				padding: 1%;
 				background: white;
-				margin-right: 20px;
-				margin-top: 20px;
+				margin-bottom: 100px;
 
 				&:nth-of-type(3) {
 					margin-right: 0px;
@@ -66,7 +64,7 @@
 		}
 
 		.intro {
-			margin-bottom: 50px;
+			margin-bottom: 100px;
 			height: 100%;
 			text-align: center;
 			padding: 50px;
@@ -333,13 +331,14 @@
 			padding-left: 20px;
 
 			.boxwrap {
-				margin-bottom: 170px;
+				margin-bottom: 120px;
 
 				&::before {
 					height: 450px;
 				}
 
 				article {
+					margin-top: 20px;
 					height: 300px;
 
 					i {
@@ -449,23 +448,24 @@
 
 			.boxwrap {
 				flex-direction: column;
-				margin-bottom: 30%;
+				margin-bottom: 140px;
 
 				&::before {
-					height: 690px;
+					height: 128vh;
 				}
 
 				article {
 					width: 100%;
-					height: 100%;
+					height: 250px;
 					padding: 15px;
+					margin-bottom: 0px;
 
 					i {
 						padding-top: 20px;
 					}
 
 					h3 {
-						padding: 15px 0;
+						padding: 16px 0;
 					}
 
 					p {
@@ -474,16 +474,22 @@
 				}
 			}
 			.intro {
-				margin-bottom: 30px;
+				padding: 10px;
 				.infoinner {
 					h1 {
 						padding-top: 40px;
+						font: bold 33px/1 'arial';
 						margin-bottom: 15px;
 					}
 					p {
-						padding: 0px 50px 40px 50px;
-						font: normal 16px/1.2 'arial';
+						padding: 0px 20px 40px 20px;
+						font: normal 15px/1.2 'arial';
 					}
+				}
+
+				&::before {
+					height: 100%;
+					padding-top: 0px;
 				}
 			}
 
@@ -512,7 +518,7 @@
 						height: 230px;
 						h2 {
 							padding-top: 75px;
-							font: bold 72px/1 'Pompiere', cursive;
+							font: bold 70px/1 'Pompiere', cursive;
 						}
 					}
 
@@ -521,7 +527,7 @@
 						margin-bottom: 20px;
 						h2 {
 							padding-top: 85px;
-							font: normal 60px/1 'Lalezar', cursive;
+							font: normal 43px/1 'Lalezar', cursive;
 						}
 					}
 
@@ -529,7 +535,7 @@
 						height: 230px;
 						h2 {
 							padding-top: 80px;
-							font: normal 70px/1 'Passion One', cursive;
+							font: normal 66px/1 'Passion One', cursive;
 						}
 					}
 
@@ -545,7 +551,7 @@
 						height: 230px;
 						h2 {
 							padding-top: 80px;
-							font: normal 54px/1 'Fugaz One', cursive;
+							font: normal 50px/1 'Fugaz One', cursive;
 						}
 					}
 
@@ -553,7 +559,7 @@
 						height: 230px;
 						h2 {
 							padding-top: 80px;
-							font: normal 55px/1 'Prosto One', cursive;
+							font: normal 50px/1 'Prosto One', cursive;
 						}
 					}
 				}
