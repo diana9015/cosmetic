@@ -1577,8 +1577,8 @@ aside .close {
 .product .contmid {
   margin: 0 auto;
   width: 1180px;
-  padding-top: 130px;
-  padding-bottom: 140px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   height: 600px;
 }
 .product .contmid .best {
@@ -1691,7 +1691,7 @@ aside .close {
   height: 100%;
   position: relative;
   margin: 0 auto;
-  margin-top: 130px;
+  margin-top: 120px;
 }
 .product .contbottom .bottomtxt {
   width: 600px;
@@ -1740,12 +1740,8 @@ aside .close {
     opacity: 0.9;
   }
   .product .contmid {
-    margin-left: 20px;
-    margin: 0 auto;
+    padding-left: 0px;
     width: 100%;
-    padding-top: 130px;
-    padding-bottom: 140px;
-    height: 100%;
   }
   .product .contmid .best {
     flex-direction: column;
@@ -1805,6 +1801,13 @@ aside .close {
     position: relative;
     opacity: 0.8;
   }
+  .product .contbottom .bottombox .bottomtxt h2 {
+    font: bold 26px/1 "arial";
+    margin-bottom: 20px;
+  }
+  .product .contbottom .bottombox .bottomtxt p {
+    font: normal 17px/1.2 "arial";
+  }
   .product .contbottom .bottombox .bottompic {
     width: 100%;
     height: 100%;
@@ -1815,68 +1818,23 @@ aside .close {
   }
 }
 @media screen and (max-width: 539px) {
-  .product .innertop {
-    height: 500px;
-  }
   .product .innertop .toptxtbox h1 {
     font: normal 3em "arial";
     padding-left: 20px;
   }
   .product .contmid {
-    margin-left: 20px;
-    margin: 0 auto;
-    width: 100%;
-    padding-top: 100px;
-    padding-bottom: 100px;
     height: 100%;
-  }
-  .product .contmid .best {
-    flex-direction: column;
-    padding-bottom: 40px;
-  }
-  .product .contmid .best .txt {
-    width: 100%;
-    height: auto;
-    padding: 40px 20px 10px 20px;
-  }
-  .product .contmid .best .txt h2 {
-    margin-bottom: 15px;
-    font: bold 20px/1 "arial";
-  }
-  .product .contmid .best .pduc {
-    margin: 0 auto;
-    width: calc(100% - 40px);
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .product .contmid .best .pduc ul {
-    position: relative;
-  }
-  .product .contmid .best .pduc ul li article {
-    height: auto;
-  }
-  .product .contmid .best .pduc ul li article:nth-of-type(2) {
-    margin-right: 0px;
-  }
-  .product .contbottom {
-    width: 100%;
-  }
-  .product .contbottom .bottombox {
-    width: 100%;
   }
   .product .contbottom .bottombox .bottomtxt {
     padding: 60px 20px 60px 20px;
     width: 100vw;
-    position: relative;
-    opacity: 0.8;
   }
-  .product .contbottom .bottombox .bottompic {
-    width: 100%;
-    height: 100%;
-    padding-top: 0px;
+  .product .contbottom .bottombox .bottomtxt h2 {
+    font: bold 25px/1 "arial";
+    margin-bottom: 20px;
   }
-  .product .contbottom .bottombox .bottompic .bottomimg {
-    width: auto;
+  .product .contbottom .bottombox .bottomtxt p {
+    font: normal 15px/1.2 "arial";
   }
 }
 .community .inner table {
